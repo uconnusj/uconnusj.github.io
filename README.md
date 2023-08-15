@@ -1,3 +1,3 @@
-# usj.uconn.github.io
+# uconnusj.github.io
 
 ## Website for UConn's Undergraduate Science Journal
