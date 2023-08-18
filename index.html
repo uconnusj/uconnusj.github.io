@@ -1,15 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
 
-    <link rel="stylesheet" href="/src/styles.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="./images/usj_logo.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UConn USJ</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- logo -->
+  <a href="../">
+    <img src="./images/usj_logo.jpeg"
+      style="position: absolute; top: 2px; left: 15px; width: 40px; height: 40px; z-index: 1000;" alt="Logo" />
+  </a>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="./html/journal.html">Journal</a>
+          <a class="navbar-item" href="insertlinkhere">UConntact</a>
+          <a class="navbar-item" href="./html/form.html">Form</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-info is-medium is-bold">
+    <div class="hero-body"
+      style="background: url('https://hillsideventures.uconn.edu/wp-content/uploads/sites/3266/2022/11/UConn-Campus.jpg')">
+      <div class="container has-text-centered">
+        <h1 class="title is-2">
+          Welcome to UConn Undergraduate Student Journal
+        </h1>
+        <br /><br /><br /><br /><br />
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="articles">
+      <div class="column is-8 is-offset-2">
+
+        <!-- START Peer Review -->
+        <div class="card article">
+          <div class="card-content">
+            <h1 class="title is-1 article-title">Peer Review</h1>
+
+            <div class="content">
+              <p>
+                Talk about how interesting this club is
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Peer Review -->
+
+        <!-- START Blogs -->
+        <section class="hero is-info is-bold is-small promo-block">
+          <a href="blog/blog-template.html">
+            <div class="hero-body"
+              style="height: 300px; background-image: url(https://bulmatemplates.github.io/bulma-templates/images/first-post.png)">
+              <div class="container">
+                <h1 class="title" style="color: black;">
+                  Blogs
+                </h1>
+              </div>
+            </div>
+          </a>
+        </section>
+        <!-- END Blogs -->
+
+        <!-- START FAQs -->
+        <section class="hero is-info is-bold is-small promo-block">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                FAQs
+              </h1>
+            </div>
+          </div>
+        </section>
+        <!-- END FAQs -->
+
+        <!-- Husky Devs promo -->
+        <a href="https://husky-developers.github.io">
+          <section class="hero is-info is-bold is-small promo-block"
+            style="height: 500px; background-image: url('./images/banner.jpg')">
+            <div class="container">
+              <h1 class="title"> <br />
+                Made with the help of husky developers
+              </h1>
+            </div>
+          </section>
+        </a>
+        <!-- END Husky Devs promo -->
+
+      </div>
+    </section>
+
+  </div>
+  </section>
+  </div>
+
+  <!-- dont touch this (its for the hamburger menu) -->
+  <script>
+    // The following code is based off a toggle menu by @Bradcomp
+    // source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+    (function () {
+      var burger = document.querySelector('.burger');
+      var menu = document.querySelector('#' + burger.dataset.target);
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    })();
+  </script>
+
+</body>
+
 </html>
