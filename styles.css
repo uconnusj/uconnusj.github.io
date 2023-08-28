@@ -13,6 +13,18 @@ body {
   font-weight: bold;
 }
 
+.card-content {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  flex-direction: column;  /* Stack children vertically */
+  height: 100%;            /* Optional: You might need to set a height if the container doesn't have one */
+}
+
+.articles-padding {
+  padding-top: 5rem; /* Adjust the value as necessary */
+}
+
 .articles {
   margin: 5rem 0;
   margin-top: -200px;
@@ -59,9 +71,52 @@ div.column.is-8:first-child {
   line-height: 1.4;
   margin: 0 6rem;
 }
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer {
+  text-align: center;
+}
+
+#members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* spacing between members */
+  padding: 20px;
+}
+
+.member {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.member img {
+  max-width: 150px; /* adjust as needed */
+  border-radius: 50%; /* circular image */
+}
+
 .promo-block .container {
   margin: 1rem 5rem;
 }
+
+/* If you're using the sticky footer, make sure to add padding/margin to the main content so it doesn't overlap the footer. */
+
 :root {
   ::-webkit-scrollbar {
     height: 10px;
@@ -79,3 +134,5 @@ div.column.is-8:first-child {
     background: #c4c4c4;
   }
 }
+
+
