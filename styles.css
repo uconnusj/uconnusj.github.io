@@ -22,16 +22,21 @@ body {
 }
 
 .articles-padding {
-  padding-top: 5rem; /* Adjust the value as necessary */
+  padding-top: 10rem; /* Adjust the value as necessary */
 }
 
 .articles {
-  margin: 5rem 0;
+  margin: 3rem 0;
   margin-top: -200px;
 }
 .articles .content p {
-  line-height: 1.9;
-  margin: 15px 0;
+  line-height: 1.9;   /*Adjust the height b/w lines*/
+  margin: 1px 0;
+  text-align: justify;
+  font-size: 16px;
+  margin-left: 70px;  /* Adjust this value as per your requirement */
+  margin-right: 70px; /* Adjust this value as per your requirement */
+  margin-bottom: 2rem;
 }
 .author-image {
   position: absolute;
@@ -50,8 +55,7 @@ body {
 .media-content {
   margin-top: 3rem;
 }
-.article,
-.promo-block {
+.article, .promo-block {
   margin-top: 6rem;
 }
 div.column.is-8:first-child {
@@ -114,6 +118,37 @@ footer {
 .promo-block .container {
   margin: 1rem 5rem;
 }
+
+/* Peer Review Process Diagram */
+.process-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.process-diagram .content {
+  padding: 10px 20px;
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #e9e9e9;
+}
+
 
 /* If you're using the sticky footer, make sure to add padding/margin to the main content so it doesn't overlap the footer. */
 
