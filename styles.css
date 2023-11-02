@@ -19,6 +19,7 @@ body {
   align-items: center;     /* Center content vertically */
   flex-direction: column;  /* Stack children vertically */
   height: 100%;            /* Optional: You might need to set a height if the container doesn't have one */
+  text-align: center;
 }
 
 .articles-padding {
@@ -79,7 +80,36 @@ div.column.is-8:first-child {
   margin: 0 6rem;
 }
 
-/* styles.css */
+/* START blog */
+.blogs {
+  margin: 1rem 0;
+}
+
+.blogs .content p {
+  line-height: 1.9;   /*Adjust the height b/w lines*/
+  margin: 1px 0;
+  text-align: justify;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 70px;  /* Adjust this value as per your requirement */
+  margin-right: 70px; /* Adjust this value as per your requirement */
+  margin-bottom: 0.5rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1;
+  text-align: center;
+}
+
+.centered-blog-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* END blog */
 
 body {
   font-family: Arial, sans-serif;
