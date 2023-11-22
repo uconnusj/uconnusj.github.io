@@ -128,26 +128,6 @@ footer {
   text-align: center;
 }
 
-#members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* spacing between members */
-  padding: 20px;
-}
-
-.member {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.member img {
-  max-width: 150px; /* adjust as needed */
-  border-radius: 50%; /* circular image */
-}
-
 .promo-block .container {
   margin: 1rem 5rem;
 }
@@ -176,6 +156,7 @@ footer {
   border-right: 10px solid transparent;
   border-top: 20px solid #e9e9e9;
 }
+
 
 /*Paper Review Process*/
 
