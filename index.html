@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image" href="./images/usj_logo.jpeg" />
+  <link rel="icon" type="image" href="./images/USJ_logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UConn USJ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -14,7 +14,7 @@
 
   <!-- logo -->
   <a href="../">
-    <img src="./images/usj_logo.jpeg"
+    <img src="./images/USJ_logo.png"
       style="position: absolute; top: 2px; left: 15px; width: 40px; height: 40px; z-index: 1000;" alt="Logo" />
   </a>
 
@@ -58,7 +58,7 @@
       <div>
 
       <!-- START USJ Description -->
-    <div class="card article">
+    <div class="card article first-block">
       <div class="card-content">
         <h1 class="title is-1 article-title">What is the Undergraduate Science Journal?</h1>
           <div class="content">
@@ -84,20 +84,42 @@
       <!-- END USJ Description-->
 
         <!-- START Peer Review -->
-      <div class="card article"> 
+      <div class="card article promo-block"> 
         <div class="card-content">
           <h1 class="title is-1 article-title">Peer Review Process</h1>
             <div class="content">
               <p>
                 <div class="process-diagram">
-                  <div class="step">
-                      <div class="content">Step 1: UConn USJ Editorial Borad Review</div>
+                  <!-- Start of Step 1 -->
+                  <div class="step-box">
+                    <h2 class="step-title">Step 1: Student Review Committee</h2>
+                      <div class="step-content">
+                        The Student Review Committee is a team of highly motivated undergraduate UConn students 
+                        under the direction of the Managing Editor. The committee will review student papers 
+                        through a double blind review process (see below) and score each paper based on the Official 
+                        USJ Rubric (we will link the rubric here when we develop it). Every member of the UConn 
+                        Undergraduate Science Journal is eligible to apply to become a part of the Student Review 
+                        Committee.
+                      </div>
                   </div>
-                  <div class="step">
-                      <div class="content">Step 2: Peer-Review</div>
+                  <div class="step-box">
+                    <h2 class="step-title">Step 2: Faculty Review</h2>
+                      <div class="step-content">
+                        The Faculty Review Committee is a team of UConn faculty from various scientific 
+                        disciplines that has been selected to review undergraduate student papers and score 
+                        them based on the Official USJ Rubric - Faculty (we will link this one too) through 
+                        a double blind review process. 
+                      </div>
                   </div>
-                  <div class="step">
-                      <div class="content">Step 3: Decision</div>
+                  <div class="step-box">
+                    <h2 class="step-title">What is the Double Blind Review Process?</h2>
+                      <div class="step-content">
+                        A double blind process is a review process in which the identity of the author of a 
+                        submitted paper is concealed from the reviewer and the identity of the reviewer is 
+                        concealed from the author. This process was decided to be the fairest review process 
+                        by the USJ leadership and will serve as an assurance of impartial paper selection 
+                        for publication. 
+                      </div>
                   </div>
               </div>
               </p>
@@ -114,25 +136,13 @@
               style="height: 300px; background-image: url(https://bulmatemplates.github.io/bulma-templates/images/first-post.png)">
               <div class="container">
                 <h1 class="title" style="color: black;">
-                  Blogs
+                  Blog
                 </h1>
               </div>
             </div>
           </a>
         </section>
         <!-- END Blogs -->
-
-        <!-- START CONTACT INFORMATION -->
-        <section class="hero is-info is-bold is-small promo-block">
-          <div class="card-content">
-            <div class="container">
-              <h1 class="title is-1 article-title" style="color: black;">
-                Contact Information
-              </h1>
-            </div>
-          </div>
-        </section>
-        <!-- END CONTACT INFORMATION -->
 
       </div>
     </section>
@@ -160,7 +170,22 @@
 
 <!-- START FOOTER-->
 <footer>
-  <p>UConn Undergraduate Science Journal &copy; 2023</p>
+  <!-- START CONTACT INFORMATION -->
+  <div class="contact-section">
+    <div class="contact-section content">
+      Contact Us
+    </div>
+    <div>
+      <a href="mailto: sofya.levitina@uconn.edu"><img src="./images/gmail_logo.svg" width="40px" /></a>
+      <a href="https://linkedin.com/in/"><img src="./images/linkedin_logo.svg" width="40px" /></a>
+      <a href="https://www.instagram.com/uconnusj/"><img src="./images/instagram_logo.svg" width="40px" /></a>
+      <a href="https://uconntact.uconn.edu/organization/usj/"><img src="./images/uconntact_logo.png" width="150px"></a>
+    </div>
+    <div>
+      <p>UConn Undergraduate Science Journal &copy; 2023. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- END CONTACT INFORMATION -->
 </footer>
 <!-- END FOOTER -->
 
