@@ -9,9 +9,28 @@
 </head>
 
 <body>
-    <div style="height: 85vh; padding: 5vh;">
-        Use Iframe to embed the google drive PDF here here
-    </div>
+    <!-- <div style="height: 85vh; padding: 5vh;"> -->
+        <!-- Use Iframe to embed the google drive PDF here here -->
+        <iframe src="https://drive.google.com/file/d/1zUpT2h671Z5NQLFXRmBfgAYVvahI26BD/preview" width="640" height="480"
+            allow="autoplay"></iframe>
+    <!-- </div> -->
+
+        <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var iframe = document.querySelector('iframe');
+
+            function resizeIframe() {
+                var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+                iframe.width = windowWidth * 1; // Adjust the width as needed
+                iframe.height = windowHeight * 0.8; // Adjust the height as needed
+            }
+
+            resizeIframe();
+            window.addEventListener('resize', resizeIframe);
+        });
+    </script>
 
     <div class="buttons is-centered mt-5">
         <p class="is-2">See previous years edition:</p>
