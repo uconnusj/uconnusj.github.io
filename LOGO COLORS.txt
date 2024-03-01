@@ -1,0 +1,6 @@
+White (text): ffffff
+Blue (illuminated): 18405f
+Blue (shadow): 041333
+Gold (illuminated): fa9839
+Gold (shadow): b04d13
+Background: 050019
