@@ -109,6 +109,14 @@ div.column.is-8:first-child {
   margin-right: auto;
 }
 
+
+.image-caption {
+  margin-top: 10px; /* Add space between the image and the caption */
+  color: #000000; 
+  font-style: italic; /* Italicize the text */
+  text-align: center;
+}
+
 /* END blog */
 
 body {
