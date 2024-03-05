@@ -3,12 +3,7 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-        $(function() {
-            $("#includeIncludes").load("/uconnusj.github.io/includes/includes.html");
-        });
-    </script>
-    <script id="includeIncludes"></script>
+    <script src="/uconnusj.github.io/includes/includes.js"></script>
     <style id="includeStyle"></style>
 </head>
 
@@ -18,130 +13,56 @@
     <div id="includeNavbar"></div>
     <!-- END NAV -->
 
-
     <!-- Members Pictures and Position -->
     <div id="members" style="width: 100%;"></div>
     <!-- END Members Pictures and Position -->
 
-    <script>
-        // Assuming you have an array of people objects called 'members'
-        const members = [
-            {
-                name: "Sofya Levitina",
-                position: "Editor-in-Chief",
-                imageSrc: "../images/member_images/sopha_eboard.jpeg"
-            },
-            {
-                name: "Joseph Mooney",
-                position: "Director of Outreach",
-                imageSrc: "../images/member_images/joe_eb.jpeg"
-            },
-            {
-                name: "Enya Goonetilleke",
-                position: "Editorial Team",
-                imageSrc: "../images/member_images/enya.png"
-            },
-            {
-                name: "Malak Nechnach",
-                position: "Journalism Team",
-                imageSrc: "../images/member_images/malak.png"
-            },
-            {
-                name: "Yarden Sackett",
-                position: "Treasury Team",
-                imageSrc: "../images/member_images/yarden.png"
-            },
-            {
-                name: "Christian Bjork",
-                position: "Executive Editor",
-                imageSrc: "../images/member_images/christian_eb.png"
-            },
-            {
-                name: "Laura Augenbraun",
-                position: "Director of Journalism",
-                imageSrc: ""  // Add the correct image source
-            },
-            {
-                name: "Devesh Karthik",
-                position: "Journalism Team",
-                imageSrc: "../images/member_images/devesh.jpeg"
-            },
-            {
-                name: "Rilee Harris",
-                position: "Editorial Team",
-                imageSrc: "../images/member_images/rilee.jpeg"
-            },
-            {
-                name: "John-Michael Mendez",
-                position: "Technology Team",
-                imageSrc: ""  // Add the correct image source
-            },
-            {
-                name: "Siddharth Sinha",
-                position: "Head of Web Development",
-                imageSrc: "../images/member_images/siddharth_eb.jpg"
-            },
-            {
-                name: "Natalie Aloisio",
-                position: "Editorial Team",
-                imageSrc: "../images/member_images/natalie.jpeg"
-            },
-            {
-                name: "Ryan Durrell",
-                position: "Journalism Team",
-                imageSrc: "../images/member_images/ryan.jpeg"
-            },
-            {
-                name: "Sravya Lingam",
-                position: "Advertisement Team",
-                imageSrc: ""  // Add the correct image source
-            },
-            {
-                name: "Danya Alboslani",
-                position: "Journalism Team",
-                imageSrc: "../images/member_images/danya.jpeg"
-            },
-            {
-                name: "Suheera Haq",
-                position: "Director of Advertisement",
-                imageSrc: "../images/member_images/suheera_eb.jpeg"
-            },
-            {
-                name: "Enya Goonetilleke",
-                position: "Editorial Team",
-                imageSrc: "../images/member_images/enya.jpeg"
-            },
-            // Add more member objects as needed...
-        ];
+    <script src="members-info.js"></script>
 
+    <script>
         function generateMemberCards(members) {
+            member_image_path="/uconnusj.github.io/images/member_images/"
             html=""
             index = 0;
+
+            html+=`
+            <div class="container">
+                <div class="card article promo-block">
+                    <div class="card-content">
+                        <h1 class="title is-1 article-title">Members</h1>
+            `
 
             members.forEach(member => {
                 console.log(index)
 
                 if (index % 4 === 0) {
-                    html += '<div class="tile is-ancestor" style="margin:1%">';
+                    html += '<div class="tile is-ancestor has-text-centered">';
                 }
 
                 console.log(html)
 
+                imageSrc=member.imageSrc
+                if (imageSrc=="") {
+                    imageSrc="BLANK.png";
+                }
+
                 html +=
-                    `<div class="tile is-vertical is-8" style="width:300px; margin: 5px">
-                        <div class="tile is-vertical is-8">
-                            <div class="card-image" style="width:300px; height: 400px;">
-                                <img src="${member.imageSrc}" alt="${member.name}" style="object-fit: cover; height: 400px;">
+                    `
+                    <section class="section">
+                        <div class="tile is-vertical is-2">
+                            <div class="card-image" style="width:200px; height: 350px;">
+                                <img src="${member_image_path}${imageSrc}" alt="${member.name}"; style="object-fit: cover; height: 350px;">
                             </div>
-                            <div class="card-content" style="width:300px;">
+                            <div class="card-content" style="width:200px;">
                                 <p class="title is-4">${member.name}</p>
                                 <p class="subtitle is-5">${member.position}</p>
                                 <div class="buttons">
-                                    <button class="button is-info"> About Me</button>
+                                    <button class="button is-info">About Me</button>
                                 </div>
                             </div>
                         </div>
-                    </div>`;
+                    </section>
+                    `;
 
                 // Close the ancestor div every 4th member
                 if ((index + 1) % 4 === 0 || (index + 1) === members.length) {
@@ -150,6 +71,8 @@
 
                 index++;
             });
+
+            html+=`</div></div></div><div class="container articles-padding"></div>`
 
             return html;
         }
