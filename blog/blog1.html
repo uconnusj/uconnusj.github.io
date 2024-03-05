@@ -2,45 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog - Tailsaw </title>
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/bulma-divider.min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function() {
+          $("#includeIncludes").load("/uconnusj.github.io/includes/includes.html");
+      });
+    </script>
+    <script id="includeIncludes"></script>
+    <style id="includeStyle"></style>
 </head>
 
 <body>
     <!-- START NAV -->
-
-    <a href="../">
-        <img src="../images/USJ_logo.png"
-            style="position: absolute; top: 2px; left: 15px; width: 40px; height: 40px; z-index: 1000;" alt="Logo" />
-    </a>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-burger burger" data-target="navbarMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                <a class="navbar-item" href="https://docs.google.com/forms/d/1xumkiPGQoglu6pL0_Q8Kyy3Uhz_TYw6qx20driwnBio/edit">Submit Your Paper!</a>
-                <a class="navbar-item" href="../">Home</a>
-                <a class="navbar-item" href="../html/journal.html">Journal</a>
-                <a class="navbar-item" href="../html/members.html">Members</a>
-                <a class="navbar-item" href="./blog-template.html">Blog</a>
-                <a class="navbar-item" href="../html/faqs.html">FAQs</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="includeNavbar"></div>
     <!-- END NAV -->
 
     <!-- START Blog -->
@@ -116,25 +90,11 @@
         })();
     </script>
 </body>
+
 <!-- START FOOTER-->
 <footer>
-    <!-- START CONTACT INFORMATION -->
-    <div class="contact-section">
-      <div class="contact-section content">
-        Contact Us
-      </div>
-      <div>
-        <a href="mailto: sofya.levitina@uconn.edu"><img src="../images/gmail_logo.svg" width="40px" /></a>
-        <a href="https://linkedin.com/in/"><img src="../images/linkedin_logo.svg" width="40px" /></a>
-        <a href="https://www.instagram.com/uconnusj/"><img src="../images/instagram_logo.svg" width="40px" /></a>
-        <a href="https://uconntact.uconn.edu/organization/usj/"><img src="../images/uconntact_logo.png" width="150px"></a>
-      </div>
-      <div>
-        <p>UConn Undergraduate Science Journal &copy; 2023. All Rights Reserved.</p>
-      </div>
-    </div>
-    <!-- END CONTACT INFORMATION -->
-  </footer>
-  <!-- END FOOTER -->
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
 
 </html>
