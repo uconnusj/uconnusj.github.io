@@ -5,7 +5,7 @@ const roles={
         eboard:"Executive Editor"
     },
     journalism:{
-        member:"Jounralism Team",
+        member:"Journalism Team",
         eboard:"Director of Journalism"
     },
     treasury:{
@@ -106,7 +106,3 @@ const members = [
     },
     // Add more member objects as needed...
 ];
-
-if (members.imageSrc=="") {
-    members.imageSrc="BLANK.png";
-  }
