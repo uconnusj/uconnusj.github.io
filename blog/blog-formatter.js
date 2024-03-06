@@ -52,7 +52,8 @@ function generate_blog_card(blog) {
                         <div class="content is-medium">
                             <h2 class="subtitle is-4">${format_date(blog.date)}</h2>
                             <h1 class="title">${blog.title}</h1>
-                            <p class="gradientback">${blog.content[0]}</p>
+                            <p>${blog.content[0]}</p>
+                            <div class="gradientback"></div>
                         </div>
                     </div>
                 </div>
