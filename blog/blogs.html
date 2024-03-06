@@ -12,78 +12,13 @@
     <div id="includeNavbar"></div>
     <!-- END NAV -->
 
-    <!-- Image -->
-    <section class="hero ">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-8 is-offset-2">
-                        <figure class="image is-16by9">
-                            <img src="https://bulmatemplates.github.io/bulma-templates/images/first-post.png" alt="">
-                        </figure>
-                    </div>
-                </div>
+    <div id="blogs_list"></div>
 
-                <section class="section">
-                    <div class="columns">
-                        <div class="column is-8 is-offset-2">
-                            <a href="blog1.html" style="text-decoration: none; color: inherit;"></ahref>
-                            <div class="content is-medium">
-                                <h2 class="subtitle is-4">Novmber 2, 2023</h2>
-                                <h1 class="title">Professor Metin Coşgel Blog Post</h1>
-                                <p>Metin Coşgel is a professor in the Economics Department at the University 
-                                    of Connecticut with a focus on research in historical economics. 
-                                    Originally from Turkey, Professor Coşgel attended Boğaziçi University in 
-                                    Istanbul, where he obtained an undergraduate degree in economics. 
-                                    Educational opportunities then led him to the United States at age 22, 
-                                    where he continued his graduate studies at the University of Iowa, 
-                                    obtaining a PhD in economics.</p>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <div class="columns">
-                        <div class="column is-8 is-offset-2">
-                            <a href="blog2.html" style="text-decoration: none; color: inherit;"></ahref>
-                            <div class="content is-medium">
-                                <h2 class="subtitle is-4">March 1, 2024</h2>
-                                <h1 class="title">Bio-Integrated “Smart” Materials and Structures 
-                                    Research Group - Dr. Thanh Nguyen</h1>
-                                <p>Dr. Thanh Nguyen is an associate professor in the Mechanical Engineering 
-                                    Department at the University of Connecticut and the principal investigator 
-                                    of the Nguyen Research Group. The research group focuses on developing the 
-                                    properties of natural and synthetic materials that can be applied to biological 
-                                    systems.</p>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </section>
-
-                <!-- <div class="is-divider"></div>
-
-                <section class="section">
-                    <div class="columns">
-                        <div class="column is-8 is-offset-2">
-                            <div class="content is-medium">
-                                <h2 class="subtitle is-4">May 25, 2023</h2>
-                                <h1 class="title">Blog 2</h1>
-                                <p>This is a starter template for creating a beautiful, customizable blog with minimal
-                                    effort. You’ll only have to change a few settings and you’re ready to go. As with
-                                    all Jigsaw sites,
-                                    configuration settings can be found in config</p>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
-
-            </div>
-        </div>
-    </section>
+    <script src="blog-content.js"></script>
+    <script src="blog-formatter.js"></script>
+    <script>
+        document.getElementById('blogs_list').innerHTML=generate_blogs(blogs);
+    </script>
 
     <!-- newsletter -->
     <!-- <section class="section">

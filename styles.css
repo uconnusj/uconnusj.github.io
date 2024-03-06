@@ -79,6 +79,17 @@ div.column.is-8:first-child {
   line-height: 1.4;
   margin: 0 6rem;
 }
+.gradientback {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 80%);
+}
 
 /* START blog */
 .blogs {
@@ -118,6 +129,14 @@ div.column.is-8:first-child {
 }
 
 /* END blog */
+
+div.hoverable {
+  opacity: 0.8;
+}
+
+div.hoverable:hover {
+  opacity: 1.0;
+}
 
 body {
   font-family: Arial, sans-serif;
