@@ -4,13 +4,17 @@ const roles={
         member:"Editorial Team",
         eboard:"Executive Editor"
     },
+    outreach:{
+        member:"Outreach Team",
+        eboard:"Director of Outreach"
+    },
     journalism:{
         member:"Journalism Team",
         eboard:"Director of Journalism"
     },
     treasury:{
         member:"Treasury Team",
-        eboard:"Director of Outreach"
+        eboard:"Treasurer"
     },
     technology:{
         member:"Technology Team",
@@ -31,7 +35,7 @@ const members = [
     },
     {
         name: "Joseph Mooney",
-        position: roles.treasury.eboard,
+        position: roles.outreach.eboard,
         imageSrc: "joe_eb.jpeg"
     },
     {
@@ -104,5 +108,28 @@ const members = [
         position: roles.editorial.member,
         imageSrc: "enya.jpeg"
     },
+    {
+        name: "Caelah Etter",
+        position: roles.treasury.eboard,
+        imageSrc: "caelah_eboard.jpeg"
+    },
+    {
+        name: "Mishael Gill",
+        position: roles.journalism.member,
+        imageSrc: "mishael.jpeg"
+    },
+    {
+        name: "Anshul Rastogi",
+        position: [
+            roles.editorial.member,
+            roles.technology.member
+        ],
+        imageSrc: "" // Add the correct image source
+    },
+    {
+        name: "Sophia Balskus",
+        position: roles.advertisement.member,
+        imageSrc: "sophia.png" // Add the correct image source
+    }
     // Add more member objects as needed...
 ];

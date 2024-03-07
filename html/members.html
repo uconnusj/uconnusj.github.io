@@ -48,6 +48,16 @@
                     imageSrc="BLANK.png";
                 }
 
+                positions="";
+                if (typeof member.position=="string") {
+                    positions=`<p class="subtitle is-5">${member.position}</p>`;
+                }
+                else {
+                    for (idx in member.position) {
+                        positions+=`<p class="subtitle">${member.position[idx]}</p>`
+                    };
+                }
+
                 html +=
                     `
                     <section class="section">
@@ -57,7 +67,7 @@
                             </div>
                             <div class="card-content" style="width: ${img_width};">
                                 <p class="title is-4">${member.name}</p>
-                                <p class="subtitle is-5">${member.position}</p>
+                                ${positions}
                                 <div class="buttons">
                                     <button class="button is-info">About Me</button>
                                 </div>
