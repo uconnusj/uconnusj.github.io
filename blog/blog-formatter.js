@@ -45,14 +45,17 @@ function generate_blog(blog) {
 function generate_blog_card(blog) {
     return `
     <a href=${generate_blog_link(blog)} style="text-decoration: none; color: inherit;">
-        <div class="card article promo-block">
+        <div class="card article promo-block" style="height:450px">
             <section class="section">
                 <div class="columns">
                     <div class="column is-8 is-offset-2">
                         <div class="content is-medium">
                             <h2 class="subtitle is-4">${format_date(blog.date)}</h2>
                             <h1 class="title">${blog.title}</h1>
-                            <p>${blog.content[0]}</p>
+                            <div class="clipped">
+                                <p style="text-indent: 40px;">${blog.content[0]}</p>
+                                <p style="text-indent: 40px;">${blog.content[1]}</p>
+                            </div>
                             <div class="gradientback"></div>
                         </div>
                     </div>
@@ -83,5 +86,25 @@ function generate_blogs(blogs) {
         html+=generate_blog_card(blogs[arr[key]]);
     };
     html+=`</div></div></section>`;
+    return html;
+}
+
+function generate_navbar_blog_links(blogs) {
+    html="";
+    Object.values(blogs).forEach(
+        blog=>{
+            html+=`
+                <a class="navbar-item" href="${generate_blog_link(blog)}">
+                    ${format_date(blog.date)}
+                </a>
+            `;
+        }
+    );
+    html+=`
+    <hr class="navbar-divider">
+    <a class="navbar-item" href="/uconnusj.github.io/blog/blogs.html">
+        All
+    </a>
+    `;
     return html;
 }

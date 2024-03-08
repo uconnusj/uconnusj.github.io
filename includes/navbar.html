@@ -20,24 +20,11 @@
             <a class="navbar-item" href="/uconnusj.github.io/html/journal.html">Journal</a>
             <a class="navbar-item" href="/uconnusj.github.io/html/members.html">Members</a>
             <div class="navbar-item has-dropdown is-hoverable" href="/uconnusj.github.io/blog/blogs.html">
-                <a class="navbar-link">
+                <a class="navbar-link" href="/uconnusj.github.io/blog/blogs.html">
                     Blog
                 </a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item" href="/uconnusj.github.io/blog/blogs.html">
-                        All
-                    </a>
+                <div class="navbar-dropdown" id="blog_dropdown">
+                    <div id="blog_dropdown"></div>
                 </div>
             </div>
             <a class="navbar-item" href="/uconnusj.github.io/html/faqs.html">FAQs</a>
@@ -46,5 +33,18 @@
 </div>
 </nav>
 <div class="pt-6"></div>
+
+<!--<div id="blog-dropdown"></div>-->
+<!--
+<hr class="navbar-divider">
+<a class="navbar-item" href="/uconnusj.github.io/blog/blogs.html">
+    All
+</a>
+-->
+<script src="/uconnusj.github.io/blog/blog-content.js"></script>
+<script src="/uconnusj.github.io/blog/blog-formatter.js"></script>
+<script>
+    document.getElementById('blog_dropdown').innerHTML=generate_navbar_blog_links(blogs);
+</script>
 
 </html>
