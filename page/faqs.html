@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="/uconnusj.github.io/includes/includes.js"></script>
-  <style id="includeStyle"></style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/uconnusj.github.io/includes/includes.js"></script>
+    <style id="includeStyle"></style>
 </head>
 
 <body>
@@ -12,50 +12,18 @@
     <div id="includeNavbar"></div>
     <!-- END NAV -->
 
-    <div class="container articles-padding">
-      <div class="card article first-block">
-        <section class="articles">
-          <div class="card article promo-block"> 
-            <div class="card-content is-centered">
-              <h1 class="title is-1 article-title">Frequently Asked Questions</h1>
-                <div class="content">
-                  <p>
-                    <div class="process-diagram">
-                      <div class="step-box">
-                        <h2 class="step-title">Q: Normal question?</h2>
-                          <div class="step-content">
-                            Normal response.
-                          </div>
-                      </div>
-                      <div class="step-box">
-                        <h2 class="step-title">Q: Will this website ever be done?</h2>
-                          <div class="step-content">
-                            Hmm. We'll consider it.
-                          </div>
-                      </div>
-                      <div class="step-box">
-                        <h2 class="step-title">Q: What is the Double-Blind Review Process?</h2>
-                          <div class="step-content">
-                            A double-blind review process is one where the identity of the author of a 
-                            submitted paper is concealed from the reviewer and the identity of the reviewer is 
-                            likewise concealed from the author. This process was decided to be the fairest review process 
-                            by the USJ leadership and will serve as an assurance of impartial paper selection 
-                            for publication. 
-                          </div>
-                      </div>
-                    </div>
-                  </p>
-                </div>
-            </div>
-          </section>
-      </div>
-    </div>
-            <!-- END Peer Review -->
+    <!-- START FAQS -->
+    <div id="faqs"></div>
+    <script src="./faqs-info.js"></script>
+    <script>
+        document.getElementById('faqs').innerHTML=generate_faqs();
+    </script>
+    <!-- END FAQS -->
 </body>
 
 <!-- START FOOTER-->
 <footer>
-  <div id="includeFooter"></div>
+    <div id="includeFooter"></div>
 </footer>
 <!-- END FOOTER -->
 
