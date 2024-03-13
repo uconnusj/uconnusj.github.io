@@ -14,17 +14,21 @@ function generate_blog(blog) {
     html=""
 
     img_width="300px"
-    img_height="200px"
+    img_height="300px"
 
     html+=`
     <section class="blogs">
-        <div class="card-content">
-            <h1 class="title is-1 blog-title">
-                ${blog.title}
-            </h1>
-            <h2 class="subtitle is-4">${format_date(blog.date)}</h2>
-                <div class="blogs content">
-                    <img src="${img_path}${blog.img.src}" alt="${blog.img.alt}" width="${img_width}" height="${img_height}" class="centered-blog-image">
+        <div class="container">
+            <div class="card article promo-block">
+                <div class="card-content">
+                    <h1 class="title is-1 blog-title">
+                        ${blog.title}
+                    </h1>
+                    <h2 class="subtitle is-4 is-centered">${format_date(blog.date)}</h2>
+                        <div class="blogs content">
+                            <img src="${img_path}${blog.img.src}" alt="${blog.img.alt}"
+                            class="centered-blog-image" style="border-radius:8px; object-fit:cover;
+                            width:${img_width}; height:${img_height}">
     `;
     blog.content.forEach(paragraph=>{
         if (paragraph[0]=="<") {
@@ -38,7 +42,7 @@ function generate_blog(blog) {
             `
         }
     });
-    html+=`</div></div></section>`
+    html+=`</div></div></div></section>`
     return html;
 }
 
@@ -66,7 +70,7 @@ function generate_blog_card(blog) {
     `;
 }
 
-function generate_blogs(blogs) {
+function generate_blogs_list(blogs) {
     html="";
     html+=`
     <section class="hero ">
@@ -100,11 +104,5 @@ function generate_navbar_blog_links(blogs) {
             `;
         }
     );
-    html+=`
-    <hr class="navbar-divider">
-    <a class="navbar-item" href="/uconnusj.github.io/blog/blogs.html">
-        All
-    </a>
-    `;
     return html;
 }

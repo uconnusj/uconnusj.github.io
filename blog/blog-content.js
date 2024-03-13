@@ -1,10 +1,12 @@
 img_path="/uconnusj.github.io/images/blogs/"
+em="—"
 
 const blogs={
     //Blog 1
     blog_2023_11_02:{
         date:new Date("November 2, 2023"),
         title:`Professor Metin Coşgel`,
+        author:"Ryan Durrell",
         img:{
             src:"Metin.Cosgel-9.13.2020-scaled.jpg",
             alt:"Professor Cosgel"
@@ -64,7 +66,8 @@ const blogs={
     //Blog 2
     blog_2024_03_01:{
         date:new Date("March 1, 2024"),
-        title:`Bio-Integrated “Smart” Materials and Structures Research Group - Dr. Thanh Nguyen`,
+        title:`Bio-Integrated “Smart” Materials and Structures Research Group ${em} Dr. Thanh Nguyen`,
+        author:"Mishael Gill",
         img:{
             src:"blog2.png",
             alt:"Dr. Thanh Nguyen"
@@ -130,7 +133,7 @@ const blogs={
             <img src="${img_path}blog2_team.png" alt="The Nguyen Research Group (postdocs and graduate students) in 2023." width="400" height="300" class="centered-blog-image">
             `,
             `
-            <p style="text-indent: 325px;">The Nguyen Research Group (postdocs and graduate students) in 2023.</p>
+            <p class="is-centered">The Nguyen Research Group (postdocs and graduate students) in 2023.</p>
             `
         ]
     }

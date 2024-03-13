@@ -17,17 +17,26 @@
         <div class="navbar-end">
             <a class="navbar-item" href="/uconnusj.github.io/"><i class="fa fa-home"></i>| Home</a>
             <a class="navbar-item" href="https://docs.google.com/forms/d/1xumkiPGQoglu6pL0_Q8Kyy3Uhz_TYw6qx20driwnBio/edit">Submit Your Paper!</a>
-            <a class="navbar-item" href="/uconnusj.github.io/html/journal.html">Journal</a>
-            <a class="navbar-item" href="/uconnusj.github.io/html/members.html">Members</a>
+            <a class="navbar-item" href="/uconnusj.github.io/page/journal.html">Journal</a>
+
+            <div class="navbar-item has-dropdown is-hoverable" href="/uconnusj.github.io/blog/blogs.html">
+                <a class="navbar-link" href="/uconnusj.github.io/page/members.html">
+                    Members
+                </a>
+                <div class="navbar-dropdown">
+                    <div id="teams_dropdown"></div>
+                </div>
+            </div>
+
             <div class="navbar-item has-dropdown is-hoverable" href="/uconnusj.github.io/blog/blogs.html">
                 <a class="navbar-link" href="/uconnusj.github.io/blog/blogs.html">
                     Blog
                 </a>
-                <div class="navbar-dropdown" id="blog_dropdown">
+                <div class="navbar-dropdown">
                     <div id="blog_dropdown"></div>
                 </div>
             </div>
-            <a class="navbar-item" href="/uconnusj.github.io/html/faqs.html">FAQs</a>
+            <a class="navbar-item" href="/uconnusj.github.io/page/faqs.html">FAQs</a>
         </div>
     </div>
 </div>
@@ -45,6 +54,14 @@
 <script src="/uconnusj.github.io/blog/blog-formatter.js"></script>
 <script>
     document.getElementById('blog_dropdown').innerHTML=generate_navbar_blog_links(blogs);
+</script>
+
+<script src="/uconnusj.github.io/page/members-info.js"></script>
+<script src="/uconnusj.github.io/page/members-formatter.js"></script>
+<script>
+    set_eboard_name(teams.eboard.name)
+    set_teams(teams)
+    document.getElementById('teams_dropdown').innerHTML=generate_navbar_team_links();
 </script>
 
 </html>

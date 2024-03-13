@@ -12,17 +12,24 @@
     <div id="includeNavbar"></div>
     <!-- END NAV -->
 
-    <!-- START Blog Position -->
-    <div id="blog" style="width: 100%;"></div>
-    <!-- END Blog Position -->
-
     <!-- START Blog content -->
+    <div id="blog" style="width:100%;"></div>
     <script src="blog-formatter.js"></script>
     <script src="blog-content.js"></script>
     <script>
-        document.getElementById('blog').innerHTML=generate_blog(blogs.blog_2023_11_02);
+        blog=blogs.blog_2023_11_02
+        document.getElementById('blog').innerHTML=generate_blog(blog);
     </script>
     <!-- END Blog content -->
+
+    <!-- START Author Card-->
+    <div id="blog_author" style="width:100%;"></div>
+    <script src="/uconnusj.github.io/page/members-info.js"></script>
+    <script src="/uconnusj.github.io/page/members-formatter.js"></script>
+    <script>
+        document.getElementById('blog_author').innerHTML=generate_author_card(blog.author,members);
+    </script>
+    <!-- END Author Card-->
 
     <!-- dont touch this (its for the hamburger menu) -->
     <script>

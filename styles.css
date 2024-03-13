@@ -13,7 +13,8 @@ body {
   font-weight: bold;
 }
 
-.card-content {
+
+.is-centered {
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center;     /* Center content vertically */
@@ -49,13 +50,7 @@ body {
   border: 3px solid #ccc;
   border-radius: 50%;
 }
-.media-center {
-  display: block;
-  margin-bottom: 1rem;
-}
-.media-content {
-  margin-top: 3rem;
-}
+
 .article.first-block {
   margin-top: 6rem;
 }
@@ -244,4 +239,8 @@ footer {
   }
 }
 
-
+.bio-collapsible {
+  overflow:hidden;
+  transition:max-height 0.2s ease-out;
+  text-overflow:ellipsis;
+}
