@@ -1,4 +1,4 @@
-img_path="/uconnusj.github.io/images/blogs/"
+img_path="/images/blogs/"
 em="—"
 
 const blogs={

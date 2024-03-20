@@ -1,4 +1,4 @@
-page_path="/uconnusj.github.io/page/members.html"
+page_path="/page/members.html"
 placeholder=`
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Mauris a mattis est, vel pretium augue. Nullam eu auctor
@@ -35,7 +35,7 @@ img_width=`${Math.min(100/3*card_width,200)}px`
 img_height=`${Math.min(50*card_width,300)}px`
 
 function generate_member_card(member) {
-    member_image_path="/uconnusj.github.io/images/member_images/"
+    member_image_path="/images/member_images/"
     font_size=`${Math.min(1/6*card_width,1)}em`
 
     imageSrc=member.imageSrc

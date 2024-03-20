@@ -1,14 +1,14 @@
 //Navbar
 $(function() {
-    $("#includeNavbar").load("/uconnusj.github.io/includes/navbar.html");
+    $("#includeNavbar").load("/includes/navbar.html");
 });
 
 //Style
 $(function() {
-    $("#includeStyle").load("/uconnusj.github.io/includes/style.html");
+    $("#includeStyle").load("/includes/style.html");
 });
 
 //Footer
 $(function() {
-    $("#includeFooter").load("/uconnusj.github.io/includes/footer.html");
+    $("#includeFooter").load("/includes/footer.html");
 });

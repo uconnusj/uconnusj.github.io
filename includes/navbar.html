@@ -3,8 +3,8 @@
 <nav class="navbar is-fixed-top">
 <div class="container">
     <div class="navbar-brand">
-        <a href="/uconnusj.github.io/">
-            <img src="/uconnusj.github.io/images/USJ_logo.png"
+        <a href="/">
+            <img src="/images/USJ_logo.png"
                 style="position: absolute; top: 2px; width: 40px; height: 40px; z-index: 1000;" alt="Logo" />
         </a>
         <span class="navbar-burger burger" data-target="navbarMenu">
@@ -15,12 +15,12 @@
     </div>
     <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
-            <a class="navbar-item" href="/uconnusj.github.io/"><i class="fa fa-home"></i>| Home</a>
+            <a class="navbar-item" href="/"><i class="fa fa-home"></i>| Home</a>
             <a class="navbar-item" href="https://docs.google.com/forms/d/1xumkiPGQoglu6pL0_Q8Kyy3Uhz_TYw6qx20driwnBio/edit">Submit Your Paper!</a>
-            <a class="navbar-item" href="/uconnusj.github.io/page/journal.html">Journal</a>
+            <a class="navbar-item" href="/page/journal.html">Journal</a>
 
-            <div class="navbar-item has-dropdown is-hoverable" href="/uconnusj.github.io/blog/blogs.html">
-                <a class="navbar-link" href="/uconnusj.github.io/page/members.html">
+            <div class="navbar-item has-dropdown is-hoverable" href="/blog/blogs.html">
+                <a class="navbar-link" href="/page/members.html">
                     Members
                 </a>
                 <div class="navbar-dropdown">
@@ -28,15 +28,15 @@
                 </div>
             </div>
 
-            <div class="navbar-item has-dropdown is-hoverable" href="/uconnusj.github.io/blog/blogs.html">
-                <a class="navbar-link" href="/uconnusj.github.io/blog/blogs.html">
+            <div class="navbar-item has-dropdown is-hoverable" href="/blog/blogs.html">
+                <a class="navbar-link" href="/blog/blogs.html">
                     Blog
                 </a>
                 <div class="navbar-dropdown">
                     <div id="blog_dropdown"></div>
                 </div>
             </div>
-            <a class="navbar-item" href="/uconnusj.github.io/page/faqs.html">FAQs</a>
+            <a class="navbar-item" href="/page/faqs.html">FAQs</a>
         </div>
     </div>
 </div>
@@ -46,18 +46,18 @@
 <!--<div id="blog-dropdown"></div>-->
 <!--
 <hr class="navbar-divider">
-<a class="navbar-item" href="/uconnusj.github.io/blog/blogs.html">
+<a class="navbar-item" href="/blog/blogs.html">
     All
 </a>
 -->
-<script src="/uconnusj.github.io/blog/blog-content.js"></script>
-<script src="/uconnusj.github.io/blog/blog-formatter.js"></script>
+<script src="/blog/blog-content.js"></script>
+<script src="/blog/blog-formatter.js"></script>
 <script>
     document.getElementById('blog_dropdown').innerHTML=generate_navbar_blog_links(blogs);
 </script>
 
-<script src="/uconnusj.github.io/page/members-info.js"></script>
-<script src="/uconnusj.github.io/page/members-formatter.js"></script>
+<script src="/page/members-info.js"></script>
+<script src="/page/members-formatter.js"></script>
 <script>
     set_eboard_name(teams.eboard.name)
     set_teams(teams)

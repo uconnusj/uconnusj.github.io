@@ -1,5 +1,5 @@
-img_path="/uconnusj.github.io/images/blogs/"
-blog_path="/uconnusj.github.io/blog/"
+img_path="/images/blogs/"
+blog_path="/blog/"
 
 function format_date(date) {
     date_str=date.toDateString().slice(3)
