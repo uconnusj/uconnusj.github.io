@@ -13,7 +13,7 @@ placeholder=`
 eboard_name=""
 misc_dict={}
 teams_dict={}
-card_width=6
+card_width=12
 
 function set_eboard_name(name) {
     eboard_name=name;
@@ -34,7 +34,7 @@ function set_card_width(width) {
 img_width=`${Math.min(100/3*card_width,200)}px`
 img_height=`${Math.min(50*card_width,300)}px`
 
-function generate_member_card(member) {
+function generate_member_card(member,card_width) {
     member_image_path="/images/member_images/"
     font_size=`${Math.min(1/6*card_width,1)}em`
 
@@ -104,7 +104,13 @@ function generate_member_card(member) {
 
 function generate_team(name,team) {
     index=0;
-    new_row=Math.floor(12/card_width)
+    new_col=Math.ceil(team.length/2);
+    if (team.length<2) {
+        card_width=6;
+    }
+    else {
+        card_width=12;
+    }
     desc=placeholder;
     Object.values(teams_dict).forEach(
         team_val=>{
@@ -118,21 +124,19 @@ function generate_team(name,team) {
     <div class="card article promo-block">
         <div class="card-content" id="${name}">
             <h1 class="title is-1 article-title is-centered">${name}</h1>
-            <div class="tile is-ancestor is-vertical">
-            <div class="tile is-parent">
-                <div class="container">
-                    <p class="subtitle" style="text-indent:40px;">
-                        ${desc}
-                    </p>
-                </div>
+            <div class="container">
+                <p class="subtitle" style="text-indent:40px;">
+                    ${desc}
+                </p>
             </div>
+            <div class="tile is-ancestor">
     `
     team.forEach(member=>{
-        if (index%new_row==0) {
-            html+='<div class="tile is-parent">';
+        if (index%new_col==0) {
+            html+='<div class="tile is-parent is-vertical">';
         }
         html+=generate_member_card(member,card_width);
-        if ((index+1)%new_row==0) {
+        if ((index+1)%new_col==0) {
             html+='</div>';
         }
         index++;
