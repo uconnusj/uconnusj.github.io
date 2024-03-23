@@ -30,7 +30,7 @@ function generate_blog(blog) {
                             class="centered-blog-image" style="border-radius:8px; object-fit:cover;
                             width:${img_width}; height:${img_height}">
     `;
-    blog.content.forEach(paragraph=>{
+    blog.content.split("\n\n").forEach(paragraph=>{
         if (paragraph[0]=="<") {
             html+=paragraph
         }
@@ -57,8 +57,8 @@ function generate_blog_card(blog) {
                             <h2 class="subtitle is-4">${format_date(blog.date)}</h2>
                             <h1 class="title">${blog.title}</h1>
                             <div class="clipped">
-                                <p style="text-indent: 40px;">${blog.content[0]}</p>
-                                <p style="text-indent: 40px;">${blog.content[1]}</p>
+                                <p style="text-indent: 40px;">${blog.content.split("\n\n")[0]}</p>
+                                <p style="text-indent: 40px;">${blog.content.split("\n\n")[1]}</p>
                             </div>
                             <div class="gradientback"></div>
                         </div>
