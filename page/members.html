@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/includes/includes.js"></script>
+    <style id="includeStyle"></style>
+</head>
+
+<body>
+
+    <!-- START NAV -->
+    <div id="includeNavbar"></div>
+    <!-- END NAV -->
+
+    <!-- Members Pictures and Position -->
+    <div id="members"></div>
+    <!-- END Members Pictures and Position -->
+
+    <script src="members-info.js"></script>
+    <script src="members-formatter.js"></script>
+    <script>
+        set_eboard_name(teams.eboard.name)
+        set_misc(misc)
+        set_teams(teams)
+        document.getElementById('members').innerHTML=generate_all_teams(by_team);
+        //make_collapsible(document.getElementsByClassName("bio-collapsible"))
+        // ^^ option to make bios that are too long collapsible (click overly long bios to expand). Is somewhat clunky at the moment.
+    </script>
+
+</body>
+
+<!-- START FOOTER-->
+<footer>
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
+
+</html>

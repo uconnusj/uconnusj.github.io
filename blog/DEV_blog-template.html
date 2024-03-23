@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/includes/includes.js"></script>
+    <style id="includeStyle"></style>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <div id="includeNavbar"></div>
+    <!-- END NAV -->
+
+    <!-- START Blog content -->
+    <div id="blog" style="width:100%;"></div>
+    <script src="blog-formatter.js"></script>
+    <script src="blog-content.js"></script>
+    <script>
+        blog=blogs.blog_yyyy_mm_dd //ADD DATE HERE!!
+        document.getElementById('blog').innerHTML=generate_blog(blog);
+    </script>
+    <!-- END Blog content -->
+
+    <!-- START Author Card-->
+    <div id="blog_author" style="width:100%;"></div>
+    <script src="/page/members-info.js"></script>
+    <script src="/page/members-formatter.js"></script>
+    <script>
+        document.getElementById('blog_author').innerHTML=generate_author_card(blog.author,members);
+    </script>
+    <!-- END Author Card-->
+
+    <!-- dont touch this (its for the hamburger menu) -->
+    <script>
+        // The following code is based off a toggle menu by @Bradcomp
+        // source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+        (function () {
+            var burger = document.querySelector('.burger');
+            var menu = document.querySelector('#' + burger.dataset.target);
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        })();
+    </script>
+</body>
+
+<!-- START FOOTER-->
+<footer>
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
+
+</html>

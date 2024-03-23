@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/includes/includes.js"></script>
+    <style id="includeStyle"></style>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <div id="includeNavbar"></div>
+    <!-- END NAV -->
+
+    <!-- START FAQS -->
+    <div id="faqs"></div>
+    <script src="./faqs-info.js"></script>
+    <script>
+        document.getElementById('faqs').innerHTML=generate_faqs();
+    </script>
+    <!-- END FAQS -->
+</body>
+
+<!-- START FOOTER-->
+<footer>
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
+
+</html>
