@@ -54,7 +54,7 @@ const blogs={
                 research and grow historical Ottoman research in America while simultaneously pursuing his research 
                 on American economic history. Professor Coşgel is open to inviting any interested undergraduate students 
                 to assist him in his research. He can be reached at
-                <a href="mailto:metin.cosgel@uconn.edu">metin.cosgel@uconn.edu</a>,and further information can be gathered
+                <a href="mailto:metin.cosgel@uconn.edu">metin.cosgel@uconn.edu</a>, and further information can be gathered
                 at his personal website <a href="https://metin-cosgel.scholar.uconn.edu/">here</a>.
             `
     },
