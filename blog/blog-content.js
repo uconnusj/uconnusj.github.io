@@ -136,5 +136,39 @@ const blogs={
             <p class="is-centered">The Nguyen Research Group (postdocs and graduate students) in 2023.</p>
             `
         ]
-    }
+    },
+
+    //Blog 3
+    blog_2024_03_22:{
+        date:new Date("March 22, 2024"),
+        title:`Menka Jain`,
+        author:"Devesh Karthik",
+        img:{
+            src:"JainMenka.jpg",
+            alt:"Dr. Menka Jain"
+        },
+        content:[
+            `
+                Menka Jain is a professor in the Department of Physics at the University of Connecticut, and a member of the Institute of Materials Science. Jain got her undergraduate physics and mathematics degree from Shri Sahu Ji Maharaj University in Kanpur, India in 1996.
+            `,
+            `
+                After Jain received her masters at the same university in 1998, she worked as a project associate in the Department of Physics at IIT, Kanpur for one and a half years, which Jain describes as the reason she pursued a PhD. She graduated from the University of Puerto Rico with a PhD in Chemical Physics in 2004.
+            `,
+            `
+                Jain received a Director's Postdoctoral Fellowship at the Los Alamos National Laboratory, which allowed her to research anything she wanted. Jain researched multiferroics: materials that have more than one of the ferroic properties in the same phase (ferromagnetism, ferroelectricity, and ferroelasticity).
+            `,
+            `
+                In 2008, Jain was hired by the Institute of Materials Science to work at UConn. She currently teaches the undergraduate courses General Physics II (PHYS 1202Q) and The Development of Quantum Physics (PHYS 2300).
+            `,
+            `
+                Jain performs experimental research in the magnetic electrical and magnetic properties of materials. She is especially interested in the applications of her research. Thus, she focuses on researching and developing materials that can be used to improve technology.
+            `,
+            `
+                One of her latest projects, in collaboration with Dr. Ilya Sochnikov, is to develop a magnetic refrigerator that can cool to temperatures less than one Kelvin. The refrigerator would influence the temperature of the material by applying a magnetic field, and applying stress and strain. These refrigerators are useful in quantum computing, where qubits—quantum bits that store information—must be stored at very low temperatures.
+            `,
+            `
+                Jain works with undergraduate students in her lab, where they learn to make materials using chemical methods, check the purities of the materials, and analyze the resulting data. Jain looks for self-motivated students who have taken PHYS 1602 and are willing to spend at least five hours per week on research. Interested students should reach out to Menka Jain at <a href="mailto:menka.jain@uconn.edu">menka.jain@uconn.edu</a>.
+            `,
+        ]
+    },
 };

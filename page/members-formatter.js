@@ -196,6 +196,7 @@ function generate_author_card(name,members) {
                     <div class="container">
                     <div class="card article promo-block">
                         <div class="card-content">
+                            <h1 class="title is-1 article-title is-centered">Author</h1>
                             <div class="tile is-ancestor is-vertical">
                             <div class="tile is-parent">
                 `;
