@@ -17,12 +17,8 @@
     <div id="members"></div>
     <!-- END Members Pictures and Position -->
 
-    <script src="members-info.js"></script>
-    <script src="members-formatter.js"></script>
+    <script src="members.js"></script>
     <script>
-        set_eboard_name(teams.eboard.name)
-        set_misc(misc)
-        set_teams(teams)
         document.getElementById('members').innerHTML=generate_all_teams(by_team);
         //make_collapsible(document.getElementsByClassName("bio-collapsible"))
         // ^^ option to make bios that are too long collapsible (click overly long bios to expand). Is somewhat clunky at the moment.
