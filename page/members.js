@@ -607,7 +607,7 @@ function generate_team(name,team) {
                     ${desc}
                 </p>
             </div>
-            <div class="tile is-ancestor">
+            <div class="tile section is-ancestor">
     `
     team.forEach(member=>{
         if (index%new_col==0) {
