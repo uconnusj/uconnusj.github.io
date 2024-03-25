@@ -70,11 +70,11 @@ const eboard={
 /////////////////////////////////////////////////////////////////////////////////////////
 
 // stores all members info
-const members = [
-    {
+const members={
+    "Sofya Levitina":{
         name: "Sofya Levitina",
         position: eboard.chief,
-        imageSrc: "Sofya_Levitina.jpeg",
+        imageSrc: ".jpeg",
         email:"sofya.levitina@uconn.edu",
         bio:`
         Sofya Levitina is a Physics and Mathematics-Statistics major
@@ -90,10 +90,10 @@ const members = [
         Sofya enjoys cooking and traveling.
         `
     },
-    {
+    "Joseph Mooney":{
         name: "Joseph Mooney",
         position: eboard.outreach,
-        imageSrc: "Joseph Mooney.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Joseph Mooney is a senior pursuing a dual degree in Physiology
@@ -110,16 +110,16 @@ const members = [
         enjoys playing soccer, cooking, and eating said cooked food.
         `
     },
-    {
+    "Caelah Etter":{
         name: "Caelah Etter",
         position: eboard.treasury,
-        imageSrc: "Caelah_Etter.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Caelah Etter is a sophomore at UConn majoring in Physics, with minors in Astrophysics and Art! She is the treasurer of the Undergraduate Science Journal. Outside of USJ, she is currently involved in research with Jonathan Trump and Bren Backhaus on the emission lines (specifically Lyman alpha) of the CEERS, JADES, and GLASS galaxies. On campus, she is also in Alpha Phi Omega, Alpha Omicron Pi, the Honors Program, and is a member of Hus-Keys Acapella. In her free time, she enjoys reading, singing, traveling, and photography.
         `
     },
-    {
+    "Laura Augenbraun":{
         name: "Laura Augenbraun",
         position: eboard.journalism,
         imageSrc: "",
@@ -131,10 +131,10 @@ const members = [
         involved in UConn Hillel and her sorority Alpha Epsilon Phi.
         `
     },
-    {
+    "Christian Bjork":{
         name: "Christian Bjork",
         position: eboard.editorial,
-        imageSrc: "Christian_Bjork.png",
+        imageSrc: ".png",
         email:"",
         bio:`
         Christian Bjork is a senior majoring in Mechanical Engineering
@@ -151,17 +151,17 @@ const members = [
         instruments, and more.
         `
     },
-    {
+    "Siddharth Sinha":{
         name: "Siddharth Sinha",
         position: eboard.technology,
-        imageSrc: "Siddharth_Sinha.jpg",
+        imageSrc: ".jpg",
         email:"",
         bio:``
     },
-    {
+    "Suheera Haq":{
         name: "Suheera Haq",
         position: eboard.advertisement,
-        imageSrc: "Suheera_Haq.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Suheera Haq is a sophomore majoring in Molecular and Cell
@@ -175,10 +175,10 @@ const members = [
         playing pool, and doing the NYT Wordle daily!
         `
     },
-    {
+    "Mishael Gill":{
         name: "Mishael Gill",
         position: eboard.advertisement.concat([teams.journalism.name]),
-        imageSrc: "Mishael_Gill.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Mishael Gill is a first-year Physiology and Neurobiology major
@@ -193,10 +193,10 @@ const members = [
         and listening to Gracie Abrams.
         `
     },
-    {
+    "Malak Nechnach":{
         name: "Malak Nechnach",
         position: eboard.assistant.concat([teams.journalism.name]),
-        imageSrc: "Malak_Nechnach.png",
+        imageSrc: ".png",
         email:"",
         bio:`
         Malak Nechnach is a sophomore majoring in PNB and minoring in Computer Science.
@@ -211,10 +211,10 @@ const members = [
         playing the piano and traveling!
         `
     },
-    {
+    "Yarden Sackett":{
         name: "Yarden Sackett",
         position: [teams.treasury.name],
-        imageSrc: "Yarden_Sackett.png",
+        imageSrc: ".png",
         email:"",
         bio:`
         Yarden Sackett is a physics major at UConn, and is part of the
@@ -228,25 +228,25 @@ const members = [
         a graduate degree in Aerospace Engineering.
         `
     },
-    {
+    "Devesh Karthik":{
         name: "Devesh Karthik",
         position: [teams.journalism.name],
-        imageSrc: "Devesh_Karthik.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Devesh Karthik is a first year physics student in the Journalism team of the Undergraduate Science Journal. In high school, he was the Co-Editor-in-Chief of <i>The Broadside</i> and Captain of the Rocky Hill High School Math Team. At UConn, he is a screenwriter in the UCTV film club, and a member of the Undergraduate Philosophy Society. Devesh is a member of Santos’ Group, researching theoretical many-body quantum dynamics. In his free time, Devesh likes to watch movies, listen to music, and explore the outdoors.
         `
     },
-    {
+    "Rilee Harris":{
         name: "Rilee Harris",
         position: [teams.editorial.name],
-        imageSrc: "Rilee_Harris.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Rilee Harris is a freshman majoring in Molecular and Cell Biology with a Fine Arts minor. She is on the Editorial Team of the Undergraduate Science Journal and is a member of the Undergraduate Organization of Molecular and Cell Biology and Paint Club. She has done independent research using statistical analysis to compare analog chronometry to mathematical competencies in preadolescents. In her free time, Rilee enjoys reading and doodling on her biology notebooks.
         `
     },
-    {
+    "John-Michael Mendez":{
         name: "John-Michael Mendez",
         position: [teams.technology.name],
         imageSrc: "",
@@ -259,19 +259,19 @@ const members = [
         He is also a United Multiple Sulfatase Deficiency foundation Ambassador.
         `
     },
-    {
+    "Natalie Aloisio":{
         name: "Natalie Aloisio",
         position: [teams.editorial.name],
-        imageSrc: "Natalie_Aloisio.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Natalie is a senior Physiology and Neurobiology major, and is a part of the Editorial Team of the Undergraduate Science Journal. Outside of USJ, Natalie works in Dr. Geoffrey Tanner’s lab at UConn where she is investigating the effectiveness of creatine monohydrate and exogenous ketone body supplementation on ameliorating symptoms of mild traumatic brain injury (mTBI) using Drosophila melanogaster as a model organism. This study uses a multibeam activity monitor to analyze circadian rhythm patterns in Drosophila post-mTBI. Natalie is also the Development Coordinator for Camp Kesem at UConn, a club that organizes a free, annual summer camp for children who have been impacted by a parent or guardian’s cancer. In her spare time, Natalie loves to lift in the gym, cook, and play basketball!
         `
     },
-    {
+    "Ryan Durrell":{
         name: "Ryan Durrell",
         position: [teams.journalism.name],
-        imageSrc: "Ryan_Durrell.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Ryan Durrell is a senior Economics and Mathematics major. He is
@@ -284,7 +284,7 @@ const members = [
         music and travel.
         `
     },
-    {
+    "Sravya Lingam":{
         name: "Sravya Lingam",
         position: [teams.advertisement.name],
         imageSrc: "",
@@ -299,10 +299,10 @@ const members = [
         Sravya enjoys cooking, working out, and finding new shows to watch.
         `
     },
-    {
+    "Danya Alboslani":{
         name: "Danya Alboslani",
         position: [teams.journalism.name],
-        imageSrc: "Danya_Alboslani.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Danya Alboslani is a senior Physics student minoring in astrophysics.
@@ -314,10 +314,10 @@ const members = [
         In her free time, Danya likes to draw, travel, cook, and play tennis!
         `
     },
-    {
+    "Enya Goonetilleke":{
         name: "Enya Goonetilleke",
         position: [teams.editorial.name,misc.ignite],
-        imageSrc: "Enya Goonetilleke.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Enya Goonetilleke is a freshman in the Honors College majoring
@@ -331,7 +331,7 @@ const members = [
         hiking, and learning surgical stitches using a suture pad.
         `
     },
-    {
+    "Anshul Rastogi":{
         name: "Anshul Rastogi",
         position: [teams.editorial.name,teams.technology.name,misc.graphic],
         imageSrc: "",
@@ -353,10 +353,10 @@ const members = [
         never been sighted in public (hence no photos).
         `
     },
-    {
+    "Sophia Balskus":{
         name: "Sophia Balskus",
         position: [teams.advertisement.name],
-        imageSrc: "Sophia Balskus.png",
+        imageSrc: ".png",
         email:"",
         bio:`
         Sophia Balskus is a Allied Health major, and is an active member
@@ -370,70 +370,70 @@ const members = [
         Sophia likes to paint and hike.
         `
     },
-    {
+    "Katherine Lee":{
         name: "Katherine Lee",
         position: [teams.outreach.name],
-        imageSrc: "Katherine Lee.jpg",
+        imageSrc: ".jpg",
         email:"",
         bio:`
         Katherine Lee is a freshman dual majoring in Cognitive Science and Physiology and Neurobiology. Her role in the Undergraduate Science Journal is part of the Outreach Team! Outside of the club, Katherine is involved in the EcoHouse Learning Community, serving as FYE Mentor for the 2024-2025 year, volunteers at various Eco- and stem events, and dabbles in backstage crew for the Connecticut Repertory Theater! Beyond academics, she enjoys reading, listening to Noah Floersch and The Brook and the Bluff, and spending time outdoors!
         `
     },
-    {
+    "Erica Lavoie":{
         name: "Erica Lavoie",
         position: [teams.editorial.name],
-        imageSrc: "Erica Lavoie.jpeg",
+        imageSrc: ".jpeg",
         email:"",
         bio:`
         Erica Lavoie is a junior studying Molecular and Cell Biology with a minor in Neuroscience. She is a member of the Editorial Team with the Undergraduate Science Journal. Erica is also involved in the Honors Program, Women in Math, Science, and Engineering (WiMSE) Club, Uconn’s Chapter of the Red Cross, and the National Multiple Sclerosis Society. She is also involved in research in the Crocker Lab at Uconn Health, and her project focuses on investigating proteolytic processing of the extracellular matrix and glial pathology in the brains of a genetic mouse model for Globoid Cell Leukodystrophy. Beyond academics, she is a big Philly sports fan and loves to go to sporting games, concerts, and the beach!
         `
     },
-    {
+    "Michael Lanteri":{
         name: "Michael Lanteri",
         position: [teams.journalism.name],
-        imageSrc: "Michael Lanteri.jpg",
+        imageSrc: ".jpg",
         email:"",
         bio:`
         Michael Lanteri is a first year student studying Computer Science. He is part of the Journalism Team of the Undergraduate Science Journal (USJ). Outside of USJ, Michael is interested in the fields of software design and AI, being involved in Husky Developers and the UConn AI Safety Team. He is also a member of the Engineering Learning Community. In his free time, Michael likes listening to music and playing the NYT games.
         `
     },
-    {
+    "Henry Driscoll":{
         name: "Henry Driscoll",
         position: [teams.editorial.name],
-        imageSrc: "Henry Driscoll.png",
+        imageSrc: ".png",
         email:"",
         bio:`
         Henry Driscoll is a second year Math-Physics major. He is part of the Editorial team with the Undergraduate Student Journal. He is a part of UConn’s Society of Physics Students and volunteers at Quinebaug Valley special olympics as an assistant soccer coach and has research interests in theoretical quantum mechanics. In his free time, Henry enjoys snowboarding and has an impressive collection of bow ties.
         `
     },
-    {
+    "Edrik Morales":{
         name: "Edrik Morales",
         position: [teams.outreach.name],
-        imageSrc: "Edrik Morales.jpg",
+        imageSrc: ".jpg",
         email:"",
         bio:`
         Edrik Morales is currently a first year MCB & Chemistry double major. He is a member of the Outreach Team at Undergraduate Science Journal. Edrik is currently part of the Gilmore Lab focusing on the niche of flow chemistry, which presents the automation of reactions via pumps as well as a member of Calisthenics and Breakdancing club. In his free time, he enjoys gaming and exercising.
         `
     },
-    {
+    "Lia Gilmore":{
         name: "Lia Gilmore",
         position: [teams.outreach.name],
-        imageSrc: "Lia Gilmore.jpg",
+        imageSrc: ".jpg",
         email:"",
         bio:`
         Lia Gilmore is a junior physics major and an astrophysics minor. She is on the outreach team for the UConn Undergraduate Science Journal. Outside of USJ, Lia recently started her undergraduate research project studying the molecular gas around the active galactic nucleus (AGN) of NGC 3621. Lia is also currently involved in Her Campus at UConn, Kappa Alpha Theta sorority, Women in Physics, and Fencing Club. When not studying for class or at a club meeting, Lia enjoys crocheting, watching YouTube, and reading in her spare time.
         `
     },
-    {
+    "Alexander Quell":{
         name: "Alexander Quell",
         position: [teams.journalism.name],
-        imageSrc: "Alexander Quell.jpg",
+        imageSrc: ".jpg",
         email:"",
         bio:`
         Alexander Quell is a Freshman Mathematics major. He is a member of the Journalism Team of the Undergraduate Science Journal. He has yet to engage in any undergraduate research due to being a first semester student, but he still takes any chance he can get to fuel his interests in Biology and Mathematics, such as attending the weekly Math Club. In terms of hobbies, he has recently become fascinated with music and the prospect of making it.
         `
     },
-];
+};
 
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -506,7 +506,7 @@ Object.values(teams).forEach(
         by_team[team.name]=[];
     }
 );
-members.forEach(
+Object.values(members).forEach(
     member=>{
         common_items=intersection(member.position,Object.keys(by_team));
         if (common_items.length>0) {
@@ -546,8 +546,11 @@ function generate_member_card(member,card_width) {
     font_size=`${Math.min(1/6*card_width,1)}em`
 
     imageSrc=member.imageSrc
-    if (imageSrc=="") {
-        imageSrc="BLANK.png";
+    if (imageSrc.length==0) {
+        imageSrc="_BLANK.png";
+    }
+    else if (imageSrc[0]==".") {
+        imageSrc=member.name+imageSrc
     }
 
     positions="";
@@ -702,25 +705,21 @@ function make_collapsible(bios) {
 }
 
 // for blog posts
-function generate_author_card(name,members) {
+function generate_author_card(name) {
     set_card_width(12);
     html="";
-    members.forEach(
-        member=>{
-            if (member.name==name) {
-                html+=`
-                    <div class="container">
-                    <div class="card article promo-block">
-                        <div class="card-content">
-                            <h1 class="title is-1 article-title is-centered">Author</h1>
-                            <div class="tile is-ancestor is-vertical">
-                            <div class="tile is-parent">
-                `;
-                html+=generate_member_card(member);
-                html+=`</div></div></div></div></div>`;
-            };
-        }
-    );
+    if (Object.keys(members).includes(name)) {
+        html+=`
+                <div class="container">
+                <div class="card article promo-block">
+                    <div class="card-content">
+                        <h1 class="title is-1 article-title is-centered">Author</h1>
+                        <div class="tile is-ancestor is-vertical">
+                        <div class="tile is-parent">
+            `;
+            html+=generate_member_card(members[name]);
+            html+=`</div></div></div></div></div>`;
+    }
     if (html=="") {
         html=`
             Unable to find author with name "${name}."
