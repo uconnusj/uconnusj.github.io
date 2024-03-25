@@ -1,3 +1,15 @@
+// this big chunky members.js file takes care of the following for the members.html page:
+// - stores all member information
+// - formats all member display html
+// - Also author card formatting for blog pages
+
+
+
+// next several dictionaries used to store team and position names
+// this way if we ever want to change a team name we can just change it here
+// and it updates for all members
+
+// contains team position names and descriptions
 const teams={
     eboard:{
         name:"Executive Board",
@@ -29,11 +41,13 @@ const teams={
     }
 }
 
+// contains miscellaneous positions that don't have an associated team
 const misc={
     graphic:"Graphic Designer",
     ignite:"Head of Ignite Initiative"
 }
 
+// contains all eboard positions
 const eboard={
     chief:["Editor-in-Chief",],
     editorial:["Executive Editor",teams.editorial.name],
@@ -46,7 +60,16 @@ const eboard={
 }
 
 
-// Assuming you have an array of people objects called 'members'
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// stores all members info
 const members = [
     {
         name: "Sofya Levitina",
@@ -99,7 +122,7 @@ const members = [
     {
         name: "Laura Augenbraun",
         position: eboard.journalism,
-        imageSrc: "",  // Add the correct image source
+        imageSrc: "",
         email:"",
         bio:`
         Laura Augenbraun is a Senior at UConn double majoring in
@@ -226,7 +249,7 @@ const members = [
     {
         name: "John-Michael Mendez",
         position: [teams.technology.name],
-        imageSrc: "",  // Add the correct image source
+        imageSrc: "",
         email:"",
         bio:`
         John-Michael Mendez is a freshman Materials Science and Engineering
@@ -264,7 +287,7 @@ const members = [
     {
         name: "Sravya Lingam",
         position: [teams.advertisement.name],
-        imageSrc: "",  // Add the correct image source
+        imageSrc: "",
         email:"",
         bio:`
         Sravya Lingam is a sophomore allied health major. She is in the
@@ -311,7 +334,7 @@ const members = [
     {
         name: "Anshul Rastogi",
         position: [teams.editorial.name,teams.technology.name,misc.graphic],
-        imageSrc: "", // Add the correct image source
+        imageSrc: "",
         email:"",
         bio:`
         Anshul Rastogi is an elitist gnome pursuing a
@@ -413,10 +436,25 @@ const members = [
 ];
 
 /////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
+// very useful function to return the intersection of two arrays
 function intersection(arr_1,arr_2) {
     return arr_1.filter(item=>new Set(arr_2).has(item))
 }
+
+// next two functions used for ranking members
+// currently ranking is as follows:
+// - Editor-In-Chief is always first in the list
+// - second priority are eboard members
+// - all else is done alphabetically by first name
+//   (including between multiple eboard members)
 
 function compare_by_name(m_1,m_2) {
     if (m_1.name<m_2.name) {
@@ -456,6 +494,7 @@ Object.values(eboard).forEach(
     }
 );
 
+// function to easily check if a given member object is on the eboard
 function in_eboard(member) {
     return intersection(eboard_names,member.position).length>0
 }
@@ -467,7 +506,6 @@ Object.values(teams).forEach(
         by_team[team.name]=[];
     }
 );
-
 members.forEach(
     member=>{
         common_items=intersection(member.position,Object.keys(by_team));
@@ -503,8 +541,9 @@ placeholder=`
     sed finibus leo, et accumsan lectus. Donec a nunc ex.
     Aenean tincidunt ex ullamcorper aliquet eleifend.
 `
-card_width=12
 
+// used to set member card width on different pages
+card_width=12
 function set_card_width(width) {
     card_width=width;
 }
@@ -512,6 +551,7 @@ function set_card_width(width) {
 img_width=`${Math.min(100/3*card_width,200)}px`
 img_height=`${Math.min(50*card_width,300)}px`
 
+// generates a card w/ image and bio for a given member object and card_width
 function generate_member_card(member,card_width) {
     member_image_path="/images/member_images/"
     font_size=`${Math.min(1/6*card_width,1)}em`
@@ -580,6 +620,7 @@ function generate_member_card(member,card_width) {
     return html;
 }
 
+// generates a given team on members page
 function generate_team(name,team) {
     index=0;
     new_col=Math.ceil(team.length/2);
@@ -623,6 +664,7 @@ function generate_team(name,team) {
     return html;
 }
 
+// generates the entire members page
 function generate_all_teams(by_team) {
     html="";
     Object.keys(by_team).forEach(
@@ -633,6 +675,7 @@ function generate_all_teams(by_team) {
     return html;
 }
 
+// used in navbar dropdown of members to create links to each team on the members page
 function generate_navbar_team_links() {
     html="";
     Object.values(teams).forEach(
@@ -650,6 +693,7 @@ function generate_navbar_team_links() {
     return html;
 }
 
+// optional way to make extra-long bios collapsible
 function make_collapsible(bios) {
     for (idx=0;idx<bios.length;idx++) {
         element=bios[idx];
@@ -668,6 +712,7 @@ function make_collapsible(bios) {
     };
 }
 
+// for blog posts
 function generate_author_card(name,members) {
     set_card_width(12);
     html="";
