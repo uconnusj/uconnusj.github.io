@@ -244,3 +244,43 @@ footer {
   transition:max-height 0.2s ease-out;
   text-overflow:ellipsis;
 }
+.journaleditions{
+  background-color: #050019;
+  display: flex;
+  flex: row;
+  flex-direction: end;
+  height: auto;
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.journaledition1,
+.journaledition2, 
+.journaledition3{
+  display: flex;
+  flex: row;
+  flex-direction: end;
+  height: auto;
+  width: 10%;
+  border-radius: 2px;
+  background-color: #041333;
+  box-shadow: rgba(		250,	152,	57, 0.35) 0px 10px 25px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom:10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.journaledition1 img,
+.journaledition2 img, 
+.journaledition3 img{
+  border: 1px solid #b04d13;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  box-shadow: #fa9839 0px 0px 10px;
+}

@@ -13,25 +13,37 @@
     <!-- END NAV -->
 
     <!-- <div style="height: 85vh; padding: 5vh;"> -->
-        <!-- Use Iframe to embed the google drive PDF here here -->
+        <!-- Use Iframe to embed the google drive PDF here here 
         <iframe src="https://drive.google.com/file/d/1zUpT2h671Z5NQLFXRmBfgAYVvahI26BD/preview" width="640" height="480"
             allow="autoplay"></iframe>
-    <!-- </div> -->
-
+         </div> -->
+         <container class="journaleditions">
+            <div class="journaledition1">
+                <!--<iframe src="../Lizard Regeneration Infographics.pdf#scrollbar=0&toolbar=0&statusbar=0&navpanes=0" type="application/pdf" width="800px" height="100%" style="border: none;"></iframe>-->
+                <a href="/Lizard Regeneration Infographics.pdf"><img src="../lizardcover.png" /></a>
+            </div>
+            <div class="journaledition2">
+                <a href="/Editted_Papadim_Chem_1128_Chapter_16N_notes(1).pdf"><img src="../chemcover.png" /></a>
+            </div>
+            <div class="journaledition3">PREVIEW</div>
+        </container>
         <script>
         window.addEventListener('DOMContentLoaded', function () {
-            var iframe = document.querySelector('iframe');
+            var container = document.querySelector('container');
+            var img = document.querySelector('img');
 
-            function resizeIframe() {
+            function resizeContainer(e1, e2) {
                 var windowWidth = window.innerWidth || document.documentElement.clientWidth;
                 var windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-                iframe.width = windowWidth * 1; // Adjust the width as needed
-                iframe.height = windowHeight * 0.8; // Adjust the height as needed
+                e1.width = windowWidth * 1; // Adjust the width as needed
+                e1.height = windowHeight * 0.8; // Adjust the height as needed
+                e2.width = windowWidth * .1; // Adjust the width as needed
             }
 
-            resizeIframe();
-            window.addEventListener('resize', resizeIframe);
+            resizeContainer(iframe);
+            resizeContainer(img);
+            window.addEventListener('resize', resizeContainer);
         });
     </script>
 
