@@ -72,7 +72,6 @@ const eboard={
 // stores all members info
 const members={
     "Sofya Levitina":{
-        name: "Sofya Levitina",
         position: eboard.chief,
         imageSrc: ".jpeg",
         email:"sofya.levitina@uconn.edu",
@@ -91,7 +90,6 @@ const members={
         `
     },
     "Joseph Mooney":{
-        name: "Joseph Mooney",
         position: eboard.outreach,
         imageSrc: ".jpeg",
         email:"",
@@ -111,7 +109,6 @@ const members={
         `
     },
     "Caelah Etter":{
-        name: "Caelah Etter",
         position: eboard.treasury,
         imageSrc: ".jpeg",
         email:"",
@@ -120,7 +117,6 @@ const members={
         `
     },
     "Laura Augenbraun":{
-        name: "Laura Augenbraun",
         position: eboard.journalism,
         imageSrc: "",
         email:"",
@@ -132,7 +128,6 @@ const members={
         `
     },
     "Christian Bjork":{
-        name: "Christian Bjork",
         position: eboard.editorial,
         imageSrc: ".png",
         email:"",
@@ -152,14 +147,12 @@ const members={
         `
     },
     "Siddharth Sinha":{
-        name: "Siddharth Sinha",
         position: eboard.technology,
         imageSrc: ".jpg",
         email:"",
         bio:``
     },
     "Suheera Haq":{
-        name: "Suheera Haq",
         position: eboard.advertisement,
         imageSrc: ".jpeg",
         email:"",
@@ -176,7 +169,6 @@ const members={
         `
     },
     "Mishael Gill":{
-        name: "Mishael Gill",
         position: eboard.advertisement.concat([teams.journalism.name]),
         imageSrc: ".jpeg",
         email:"",
@@ -194,7 +186,6 @@ const members={
         `
     },
     "Malak Nechnach":{
-        name: "Malak Nechnach",
         position: eboard.assistant.concat([teams.journalism.name]),
         imageSrc: ".png",
         email:"",
@@ -212,7 +203,6 @@ const members={
         `
     },
     "Yarden Sackett":{
-        name: "Yarden Sackett",
         position: [teams.treasury.name],
         imageSrc: ".png",
         email:"",
@@ -229,7 +219,6 @@ const members={
         `
     },
     "Devesh Karthik":{
-        name: "Devesh Karthik",
         position: [teams.journalism.name],
         imageSrc: ".jpeg",
         email:"",
@@ -238,7 +227,6 @@ const members={
         `
     },
     "Rilee Harris":{
-        name: "Rilee Harris",
         position: [teams.editorial.name],
         imageSrc: ".jpeg",
         email:"",
@@ -247,7 +235,6 @@ const members={
         `
     },
     "John-Michael Mendez":{
-        name: "John-Michael Mendez",
         position: [teams.technology.name],
         imageSrc: "",
         email:"",
@@ -260,7 +247,6 @@ const members={
         `
     },
     "Natalie Aloisio":{
-        name: "Natalie Aloisio",
         position: [teams.editorial.name],
         imageSrc: ".jpeg",
         email:"",
@@ -269,7 +255,6 @@ const members={
         `
     },
     "Ryan Durrell":{
-        name: "Ryan Durrell",
         position: [teams.journalism.name],
         imageSrc: ".jpeg",
         email:"",
@@ -285,7 +270,6 @@ const members={
         `
     },
     "Sravya Lingam":{
-        name: "Sravya Lingam",
         position: [teams.advertisement.name],
         imageSrc: "",
         email:"",
@@ -300,7 +284,6 @@ const members={
         `
     },
     "Danya Alboslani":{
-        name: "Danya Alboslani",
         position: [teams.journalism.name],
         imageSrc: ".jpeg",
         email:"",
@@ -315,7 +298,6 @@ const members={
         `
     },
     "Enya Goonetilleke":{
-        name: "Enya Goonetilleke",
         position: [teams.editorial.name,misc.ignite],
         imageSrc: ".jpeg",
         email:"",
@@ -332,7 +314,6 @@ const members={
         `
     },
     "Anshul Rastogi":{
-        name: "Anshul Rastogi",
         position: [teams.editorial.name,teams.technology.name,misc.graphic],
         imageSrc: "",
         email:"",
@@ -354,7 +335,6 @@ const members={
         `
     },
     "Sophia Balskus":{
-        name: "Sophia Balskus",
         position: [teams.advertisement.name],
         imageSrc: ".png",
         email:"",
@@ -371,7 +351,6 @@ const members={
         `
     },
     "Katherine Lee":{
-        name: "Katherine Lee",
         position: [teams.outreach.name],
         imageSrc: ".jpg",
         email:"",
@@ -380,7 +359,6 @@ const members={
         `
     },
     "Erica Lavoie":{
-        name: "Erica Lavoie",
         position: [teams.editorial.name],
         imageSrc: ".jpeg",
         email:"",
@@ -389,7 +367,6 @@ const members={
         `
     },
     "Michael Lanteri":{
-        name: "Michael Lanteri",
         position: [teams.journalism.name],
         imageSrc: ".jpg",
         email:"",
@@ -398,7 +375,6 @@ const members={
         `
     },
     "Henry Driscoll":{
-        name: "Henry Driscoll",
         position: [teams.editorial.name],
         imageSrc: ".png",
         email:"",
@@ -407,7 +383,6 @@ const members={
         `
     },
     "Edrik Morales":{
-        name: "Edrik Morales",
         position: [teams.outreach.name],
         imageSrc: ".jpg",
         email:"",
@@ -416,7 +391,6 @@ const members={
         `
     },
     "Lia Gilmore":{
-        name: "Lia Gilmore",
         position: [teams.outreach.name],
         imageSrc: ".jpg",
         email:"",
@@ -425,7 +399,6 @@ const members={
         `
     },
     "Alexander Quell":{
-        name: "Alexander Quell",
         position: [teams.journalism.name],
         imageSrc: ".jpg",
         email:"",
@@ -456,33 +429,35 @@ function intersection(arr_1,arr_2) {
 // - all else is done alphabetically by first name
 //   (including between multiple eboard members)
 
-function compare_by_name(m_1,m_2) {
-    if (m_1.name<m_2.name) {
+function compare_by_name(name_1,name_2) {
+    if (name_1<name_2) {
         return -1
     }
-    else if (m_1.name>m_2.name) {
+    else if (name_1>name_2) {
         return 1
     }
     return 0
 }
 
-function compare_members(m_1,m_2) {
-    if (intersection(m_1.position,eboard.chief).length>0) {
+function compare_members(entry_1,entry_2) {
+    var [name_1,member_1]=entry_1;
+    var [name_2,member_2]=entry_2;
+    if (intersection(member_1.position,eboard.chief).length>0) {
         return -1;
     }
-    if (intersection(m_2.position,eboard.chief).length>0) {
+    if (intersection(member_2.position,eboard.chief).length>0) {
         return 1;
     }
-    if (in_eboard(m_1)) {
-        if (in_eboard(m_2)) {
-            return compare_by_name(m_1,m_2);
+    if (in_eboard(member_1)) {
+        if (in_eboard(member_2)) {
+            return compare_by_name(name_1,name_2);
         }
         return -1;
     }
-    if (in_eboard(m_2)) {
+    if (in_eboard(member_2)) {
         return 1;
     }
-    return compare_by_name(m_1,m_2);
+    return compare_by_name(name_1,name_2);
   }
 
 //put all eboard position names into one list
@@ -506,18 +481,19 @@ Object.values(teams).forEach(
         by_team[team.name]=[];
     }
 );
-Object.values(members).forEach(
-    member=>{
+Object.entries(members).forEach(
+    entry=>{
+        var [name,member]=entry;
         common_items=intersection(member.position,Object.keys(by_team));
         if (common_items.length>0) {
             common_items.forEach(
                 item=>{
-                    by_team[item].push(member);
+                    by_team[item].push(entry);
                 }
             );
         };
         if (in_eboard(member)) {
-            by_team[eboard_name].push(member);
+            by_team[eboard_name].push(entry);
         };
     }
 );
@@ -541,7 +517,7 @@ img_width=`${Math.min(100/3*card_width,200)}px`
 img_height=`${Math.min(50*card_width,300)}px`
 
 // generates a card w/ image and bio for a given member object and card_width
-function generate_member_card(member,card_width) {
+function generate_member_card(name,member,card_width) {
     member_image_path="/images/member_images/"
     font_size=`${Math.min(1/6*card_width,1)}em`
 
@@ -550,7 +526,7 @@ function generate_member_card(member,card_width) {
         imageSrc="_BLANK.png";
     }
     else if (imageSrc[0]==".") {
-        imageSrc=member.name+imageSrc
+        imageSrc=name+imageSrc
     }
 
     positions="";
@@ -586,13 +562,13 @@ function generate_member_card(member,card_width) {
         <div class="tile is-child  is-${card_width}">
             <div class="card">
                 <div class="card-header">
-                    <p class="card-header-title is-centered">${member.name}${contact}</p>
+                    <p class="card-header-title is-centered">${name}${contact}</p>
                 </div>
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
                             <img src="${member_image_path}${imageSrc}"
-                                alt="${member.name}"; style="object-fit: cover;
+                                alt="${name}"; style="object-fit: cover;
                                 width:${img_width}; height:${img_height};
                                 border-radius:8px;">
                         </div>
@@ -642,11 +618,11 @@ function generate_team(name,team) {
             </div>
             <div class="tile section is-ancestor">
     `
-    team.forEach(member=>{
+    team.forEach(entry=>{
         if (index%new_col==0) {
             html+='<div class="tile is-parent is-vertical">';
         }
-        html+=generate_member_card(member,card_width);
+        html+=generate_member_card(entry[0],entry[1],card_width);
         if ((index+1)%new_col==0) {
             html+='</div>';
         }
@@ -717,7 +693,7 @@ function generate_author_card(name) {
                         <div class="tile is-ancestor is-vertical">
                         <div class="tile is-parent">
             `;
-            html+=generate_member_card(members[name]);
+            html+=generate_member_card(name,members[name]);
             html+=`</div></div></div></div></div>`;
     }
     if (html=="") {
