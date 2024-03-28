@@ -211,15 +211,7 @@ const members={
         imageSrc: ".png",
         email:"",
         bio:`
-        Malak Nechnach is a sophomore majoring in PNB and minoring in Computer Science.
-        She is part of USJ because she is passionate about research. Outside of USJ, Malak is a mentor for the program Women
-        in STEM as well as co-vice president of the French Club. She is
-        a Research Assistant for the CALLlab which aims to better
-        understand the pathology of ASD by linking research at the
-        molecular, neurofunctional and at the behavioral level, with the
-        goal to connect complex behaviors to underlying genetic
-        mechanisms. During her free time, she enjoys playing soccer,
-        playing the piano and traveling!
+        Malak Nechnach is a sophomore majoring in PNB and minoring in Computer Science. She joined USJ because she is passionate about research, and she is part of the journalism team. Outside of the club, she is a research assistant for Sciolino’s Lab, where her research focuses on understanding how the effects of the central norepinephrine system regulates motivated behaviors. She is a mentor for WiSTEM, Vice president of EDI for the TWN and a SPIN instructor.
         `
     },
     "Yarden Sackett":{
