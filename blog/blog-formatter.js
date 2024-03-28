@@ -11,10 +11,19 @@ function generate_blog_link(blog) {
 }
 
 function generate_blog(blog) {
-    html=""
+    html="";
 
-    img_width="300px"
-    img_height="300px"
+    img_width="300px";
+    img_height="300px";
+
+    img="";
+    if (blog.img.src!="") {
+        img=`
+            <img src="${img_path}${blog.img.src}" alt="${blog.img.alt}"
+            class="centered-blog-image" style="border-radius:8px; object-fit:cover;
+            width:${img_width}; height:${img_height}">
+        `;
+    };
 
     html+=`
     <section class="blogs">
@@ -26,9 +35,7 @@ function generate_blog(blog) {
                     </h1>
                     <h2 class="subtitle is-4 is-centered">${format_date(blog.date)}</h2>
                         <div class="blogs content">
-                            <img src="${img_path}${blog.img.src}" alt="${blog.img.alt}"
-                            class="centered-blog-image" style="border-radius:8px; object-fit:cover;
-                            width:${img_width}; height:${img_height}">
+                            ${img}
     `;
     blog.content.split("\n\n").forEach(paragraph=>{
         if (paragraph[0]=="<") {

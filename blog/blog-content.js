@@ -1,6 +1,17 @@
 img_path="/images/blogs/"
 em="—"
 
+function link(link,text) {
+    return `<a href="${link}">${text}</a>`;
+}
+
+function email(address,text=null) {
+    if (Object.is(text,null)) {
+        text=address;
+    };
+    return `<a href="mailto:${address}">${text}</a>`;
+}
+
 const blogs={
     //Blog 1
     blog_2023_11_02:{
@@ -54,8 +65,8 @@ const blogs={
                 research and grow historical Ottoman research in America while simultaneously pursuing his research 
                 on American economic history. Professor Coşgel is open to inviting any interested undergraduate students 
                 to assist him in his research. He can be reached at
-                <a href="mailto:metin.cosgel@uconn.edu">metin.cosgel@uconn.edu</a>, and further information can be gathered
-                at his personal website <a href="https://metin-cosgel.scholar.uconn.edu/">here</a>.
+                ${email("metin.cosgel@uconn.edu")}, and further information can be gathered
+                at his personal website ${link("https://metin-cosgel.scholar.uconn.edu/","here")}.
             `
     },
 
@@ -116,8 +127,8 @@ const blogs={
                 ” Das said.
 
                 Professor Nguyen is open to inviting any interested undergraduate students to join his lab. 
-                You can reach him at <a href="mailto:nguyentd@uconn.edu">nguyentd@uconn.edu</a> or access the 
-                Nguyen Research Group’s website <a href="https://www.nguyenresearchgroup.com/">here</a>.
+                You can reach him at ${email("nguyentd@uconn.edu")} or access the 
+                Nguyen Research Group’s website ${link("https://www.nguyenresearchgroup.com/","here")}.
 
             <img src="${img_path}blog2_team.png" alt="The Nguyen Research Group (postdocs and graduate students) in 2023." width="400" height="300" class="centered-blog-image">
 
@@ -150,7 +161,28 @@ const blogs={
 
                 One of her latest projects, in collaboration with Dr. Ilya Sochnikov, is to develop a magnetic refrigerator that can cool to temperatures less than one Kelvin. The refrigerator would influence the temperature of the material by applying a magnetic field, and applying stress and strain. These refrigerators are useful in quantum computing, where qubits—quantum bits that store information—must be stored at very low temperatures.
 
-                Jain works with undergraduate students in her lab, where they learn to make materials using chemical methods, check the purities of the materials, and analyze the resulting data. Jain looks for self-motivated students who have taken PHYS 1602 and are willing to spend at least five hours per week on research. Interested students should reach out to Menka Jain at <a href="mailto:menka.jain@uconn.edu">menka.jain@uconn.edu</a>.
+                Jain works with undergraduate students in her lab, where they learn to make materials using chemical methods, check the purities of the materials, and analyze the resulting data. Jain looks for self-motivated students who have taken PHYS 1602 and are willing to spend at least five hours per week on research. Interested students should reach out to Menka Jain at ${email("menka.jain@uconn.edu")}.
+            `
+    },
+
+    //Blog 4
+    blog_2024_03_29:{
+        date:new Date("March 29, 2024"),
+        title:`Bernard Goffinet`,
+        author:"Danya Alboslani",
+        img:{
+            src:"",
+            alt:"Dr. Bernard Goffinet"
+        },
+        content:
+            `
+                Dr. Bernard Goffinet is a professor in the Ecology and Evolutionary Biology department at the University of Connecticut. He received his Botany degree from the University of  Liège, Belgium, in 1989, and his Ph.D. in Botany from the University of Alberta, Edmonton, Canada, in 1997. After his Ph.D., he became a research associate at Duke University until 1999, when he joined the University of Connecticut as a professor.
+                \n\n
+                Dr. Goffinet currently teaches Introduction to Plant Biology (BIO1110), Bryophyte and Lichen Biology (EEB3240/5240) and Evolution of Green Plants (EEB3220/5220). In addition to teaching, Dr. Goffinet’s laboratory works on studying bryophytes, more commonly known as mosses, and lichens, which are symbiotic associations between a fungus and an alga. Dr. Goffinet says although bryophytes are small, their genomes “have a toolbox that is as well developed and sophisticated as that of flowering plants.” He is interested in the biology of these organisms and how they survive, grow, and evolve. In recent years, Dr. Goffinet has collaborated with other researchers to sequence entire genomes of bryophytes, as well as record new species of bryophytes and lichens. Recently, he has been reconstructing the evolutionary histories of these organisms using their genomes with the help of his graduate and undergraduate students.
+                \n\n
+                In addition to research, Dr. Goffinet is very passionate about outreach. His goal is to increase awareness of mosses and lichens across the broader community and inspire curiosity for the natural world. He leads tours, local moss walks, and occasionally gives talks about local biodiversity. He also helped develop the concept of tourism with a hand lens, a new form of tourism highlighting the newly discovered biodiversity of mosses, lichens, and liverworts in the Cape Horn Biosphere Reserve in Chile to its community and the world. If you are curious about bryophytes and lichens you can visit the “Below your feet” exhibit on campus in Wilbur Cross, filled with high resolution images of mosses from New England and Chile photographed by Dr. Goffinet and his collaborator. You can also visit the Connecticut State Museum of Natural History ${link("https://csmnh.uconn.edu/programs/","website")} to learn more about events going on at UConn.
+                \n\n
+                Dr. Goffinet encourages students to go beyond the classroom and find opportunities to strengthen their experience at UConn. If you are interested in research in Dr. Goffinet’s lab you can view his website ${link("https://bryology.uconn.edu/","here")}. You can also contact him at ${email("bernard.goffinet@uconn.edu")}. Research in his lab is often tailored to a student’s individual interests after multiple discussions, and he would love to hear from passionate students!
             `
     },
 };

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/includes/includes.js"></script>
+    <style id="includeStyle"></style>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <div id="includeNavbar"></div>
+    <!-- END NAV -->
+
+    <!-- START Blog content -->
+    <div id="blog" style="width:100%;"></div>
+    <script src="blog-formatter.js"></script>
+    <script src="blog-content.js"></script>
+    <script>
+        blog=blogs.blog_2024_03_29 //ADD DATE HERE!!
+        document.getElementById('blog').innerHTML=generate_blog(blog);
+    </script>
+    <!-- END Blog content -->
+
+    <!-- START Author Card-->
+    <div id="blog_author" style="width:100%;"></div>
+    <script src="/page/members.js"></script>
+    <script>
+        document.getElementById('blog_author').innerHTML=generate_author_card(blog.author);
+    </script>
+    <!-- END Author Card-->
+</body>
+
+<!-- START FOOTER-->
+<footer>
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
+
+</html>
