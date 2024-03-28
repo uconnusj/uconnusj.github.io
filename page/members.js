@@ -1,6 +1,7 @@
-// this big chunky members.js file takes care of the following for the members.html page:
+// this big chunky members.js file takes care of the following:
 // - stores all member information
 // - formats all member display html
+// - formats all eboard display html
 // - Also author card formatting for blog pages
 
 
@@ -17,11 +18,11 @@ const teams={
     },
     editorial:{
         name:"Editorial Team",
-        desc:""
+        desc:"The editorial team is responsible for reviewing all papers submitted to the Undergraduate Science Journal. This includes thoroughly reading each paper, leaving productive feedback, and scoring it on the USJ rubric. As a whole, the team decides which papers advance to the next step of the process: revision, and submission to the Faculty Review Committee. Members of this team typically read at least two papers each to ensure several reviewers read each paper. Throughout the process, members gain skills in reading academic literature and determining effective writing and what makes an effective paper. Additionally, the editorial team assists other teams as necessary, especially with the search for prospective papers."
     },
     outreach:{
         name:"Outreach Team",
-        desc:""
+        desc:"The outreach team is responsible for working with the Director of Outreach to create and coordinate events, as well as promote events to professors and students via email. The outreach team is also responsible for writing promotional messages that are then disseminated by other members of USJ. Outreach team members are tasked with forming connections with their professors and professors/advisors in their department to expand the reach of USJ and to most effectively promote organization events and submission timelines."
     },
     journalism:{
         name:"Journalism Team",
@@ -29,7 +30,7 @@ const teams={
     },
     treasury:{
         name:"Treasury Team",
-        desc:""
+        desc:"The treasury team is responsible for helping the treasurer do administrative tasks, such as booking fundraisers, rooms, tables, etc. They also help with creating fundraisers, and are a big part in USJ’s ignite campaign. They are also expected to participate in the fundraisers and events by manning tables, help set up for events, help the Director of Advertising, etc."
     },
     technology:{
         name:"Technology Team",
@@ -50,14 +51,38 @@ const misc={
 
 // contains all eboard positions
 const eboard={
-    chief:["Editor-in-Chief",],
-    editorial:["Executive Editor",teams.editorial.name],
-    outreach:["Director of Outreach",teams.outreach.name],
-    journalism:["Director of Journalism",teams.journalism.name],
-    treasury:["Treasurer",teams.treasury.name],
-    technology:["Head of Web Development",teams.technology.name],
-    advertisement:["Director of Advertising",teams.advertisement.name],
-    assistant:["E-Board Assistant",]
+    chief:{
+        name:["Editor-in-Chief",],
+        desc:"The Editor in Chief is the acting president of USJ who oversees and keeps track of all organizational activities to ensure timeliness and completion. The Editor in Chief is responsible for creating semesterly and yearly plans and goals for the organization, brainstorming organizational optimization, and conducting biweekly GBMs and E-board meetings. They do not oversee the teams; each team leader works individually to make sure their team is on track. The Editor in Chief is the main point of contact with the Faculty Review Committee along with the Director of Outreach, and is responsible for keeping them up-to-date on the organization’s progress and events. Finally, the Editor in Chief is in charge of recruiting and acts as the main point of contact for all members. An acting Editor in Chief will problem-solve, strategize, and streamline the publishing and promotion of the Journal.",
+    },
+    editorial:{
+        name:["Executive Editor",teams.editorial.name],
+        desc:"The Executive Editor oversees the paper review process from start to finish. This includes everything from curating the rubric and standard used to evaluate the papers, ensuring the integrity of the double-blind review process, assigning reviewers from the student review committee (a.k.a. Editorial Team) to each paper, and reading each paper to ensure a standard of quality. They are also responsible for communicating with the authors of the papers throughout the review process to let them know the status of their paper and deliver their feedback. Finally, the executive editor assists other teams as necessary, especially with the search for prospective papers.",
+    },
+    outreach:{
+        name:["Director of Outreach",teams.outreach.name],
+        desc:"The Director of Outreach is responsible for maintaining the club’s relationship with the Faculty Review Committee and promoting the club within UConn offices and UConn organizations. This also includes updating and working with the Office of Undergraduate Research to remain involved in current on-campus research presentations and events. The Director of Outreach is also responsible for creating and managing USJ events, coordinating with the honors office to approve applicable events as honors, and communicating with the advertisement and treasury team to promote and manage event funding. The Director of Outreach also oversees and manages the outreach team to implement events and promote the club to professors and undergraduate students.",
+    },
+    journalism:{
+        name:["Director of Journalism",teams.journalism.name],
+        desc:"",
+    },
+    treasury:{
+        name:["Treasurer",teams.treasury.name],
+        desc:"The Treasurer is responsible for the financial management, most importantly the banking contract and budget of USJ, which include paying for event spaces, catering, and reimbursing club members. The treasurer is also responsible for planning, organizing, and staffing all of USJ’s fundraising events which in the past have included Krispy Kreme, Ignite, Blaze, and Mooyah. They also do the administrative work for USJ, such as booking rooms and dates. This allows them to work closely with the outreach team, as they are responsible for booking the rooms for all of USJ’s events. They also work with the treasury team to complete SABS’ requirements and funding requests.",
+    },
+    technology:{
+        name:["Head of Web Development",teams.technology.name],
+        desc:"",
+    },
+    advertisement:{
+        name:["Director of Advertising",teams.advertisement.name],
+        desc:"The Director of Advertisement promotes USJ and its mission to the undergraduate community through social and print media. The Director of Advertisement generates weekly content for the Instagram on a consistent schedule; posts may include photos of GBMs, events, links to blog posts, or notices of upcoming deadlines for the journal. They will also distribute flyers for upcoming events and notices for paper submissions. Finally, to engage undergraduate STEM students, the Director also uses media to recruit new team members and submissions for the journal.",
+    },
+    assistant:{
+        name:["E-Board Assistant",],
+        desc:"",
+    },
 }
 
 
@@ -73,7 +98,7 @@ const eboard={
 // stores all members info
 const members={
     "Sofya Levitina":{
-        position: eboard.chief.concat(misc.founder),
+        position: eboard.chief.name.concat(misc.founder),
         imageSrc: ".jpeg",
         email:"sofya.levitina@uconn.edu",
         bio:`
@@ -90,7 +115,7 @@ const members={
         `
     },
     "Joseph Mooney":{
-        position: eboard.outreach,
+        position: eboard.outreach.name,
         imageSrc: ".jpeg",
         email:"",
         bio:`
@@ -108,7 +133,7 @@ const members={
         `
     },
     "Caelah Etter":{
-        position: eboard.treasury,
+        position: eboard.treasury.name,
         imageSrc: ".jpeg",
         email:"",
         bio:`
@@ -116,7 +141,7 @@ const members={
         `
     },
     "Laura Augenbraun":{
-        position: eboard.journalism,
+        position: eboard.journalism.name,
         imageSrc: "",
         email:"",
         bio:`
@@ -126,7 +151,7 @@ const members={
         `
     },
     "Christian Bjork":{
-        position: eboard.editorial,
+        position: eboard.editorial.name,
         imageSrc: ".png",
         email:"",
         bio:`
@@ -145,13 +170,13 @@ const members={
         `
     },
     "Siddharth Sinha":{
-        position: eboard.technology,
+        position: eboard.technology.name,
         imageSrc: ".jpg",
         email:"",
         bio:``
     },
     "Suheera Haq":{
-        position: eboard.advertisement,
+        position: eboard.advertisement.name,
         imageSrc: ".jpeg",
         email:"",
         bio:`
@@ -166,7 +191,7 @@ const members={
         `
     },
     "Mishael Gill":{
-        position: eboard.advertisement.concat([teams.journalism.name]),
+        position: eboard.advertisement.name.concat([teams.journalism.name]),
         imageSrc: ".jpeg",
         email:"",
         bio:`
@@ -182,7 +207,7 @@ const members={
         `
     },
     "Malak Nechnach":{
-        position: eboard.assistant.concat([teams.journalism.name]),
+        position: eboard.assistant.name.concat([teams.journalism.name]),
         imageSrc: ".png",
         email:"",
         bio:`
@@ -431,10 +456,10 @@ function compare_by_name(name_1,name_2) {
 function compare_members(entry_1,entry_2) {
     var [name_1,member_1]=entry_1;
     var [name_2,member_2]=entry_2;
-    if (intersection(member_1.position,eboard.chief).length>0) {
+    if (intersection(member_1.position,eboard.chief.name).length>0) {
         return -1;
     }
-    if (intersection(member_2.position,eboard.chief).length>0) {
+    if (intersection(member_2.position,eboard.chief.name).length>0) {
         return 1;
     }
     if (in_eboard(member_1)) {
@@ -451,16 +476,16 @@ function compare_members(entry_1,entry_2) {
 
 //put all eboard position names into one list
 var eboard_name=teams.eboard.name
-var eboard_names=[];
+var eboard_names={};
 Object.values(eboard).forEach(
     position=>{
-        eboard_names=eboard_names.concat([position[0]]);
+        eboard_names[position.name[0]]=position.desc;
     }
 );
 
 // function to easily check if a given member object is on the eboard
 function in_eboard(member) {
-    return intersection(eboard_names,member.position).length>0
+    return intersection(Object.keys(eboard_names),member.position).length>0
 }
 
 //sorts members by teams
@@ -495,6 +520,7 @@ Object.values(by_team).forEach(
 /////////////////////////////////////////////////////////////////////////////////////////
 
 page_path="/page/members.html"
+eboard_path="/page/eboard.html"
 
 // used to set member card width on different pages
 card_width=12
@@ -522,7 +548,7 @@ function generate_member_card(name,member,card_width) {
     for (idx in member.position) {
         pos=member.position[idx]
         if (idx==0 && in_eboard(member)) {
-            positions+=`<a href="${page_path}#${eboard_name}" class="card-footer-item">${pos}<br>(${eboard_name})</a>`
+            positions+=`<a href="${eboard_path}#${pos}" class="card-footer-item">${pos}<br>(${eboard_name})</a>`
         }
         else if (Object.values(misc).includes(pos)) {
             positions+=`<p class="card-footer-item">${pos}</p>`
@@ -626,9 +652,48 @@ function generate_all_teams(by_team) {
     html="";
     Object.keys(by_team).forEach(
         name=>{
-            html+=generate_team(name,by_team[name]);
+            if (name!=eboard_name) {
+                html+=generate_team(name,by_team[name]);
+            };
         }
     );
+    return html;
+}
+
+// used to generate eboard page
+function generate_eboard(eboard) {
+    card_width=12;
+    html=`
+        <div class="container">
+        <div class="card article promo-block">
+            <div class="card-content" id="${eboard_name}">
+                <h1 class="title is-1 article-title is-centered">${eboard_name}</h1>
+                <div class="tile section is-ancestor is-vertical">
+    `
+    Object.keys(eboard_names).forEach(pos=>{
+        html+=`
+            <div class="container card" id="${pos}" style="background-color: lightgrey;">
+                <div class="container">
+                    <p class="subtitle is-centered">
+                        <strong>${pos}</strong>
+                    </p>
+                    <p style="text-indent:40px;">
+                        ${eboard_names[pos]}
+                    </p>
+                </div>
+        `;
+            eboard.forEach(entry=>{
+                name=entry[0];
+                member=entry[1];
+                if (member.position.includes(pos)) {
+                    html+=`<div class="tile is-parent">`;
+                    html+=generate_member_card(name,member,card_width);
+                    html+=`</div>`
+                };
+            });
+        html+=`</div>`;
+    });
+    html+=`</div></div></div></div>`
     return html;
 }
 
@@ -637,8 +702,12 @@ function generate_navbar_team_links() {
     html="";
     Object.values(teams).forEach(
         val=>{
+            path=`${page_path}#${val.name}`;
+            if (val.name==eboard_name) {
+                path=`${eboard_path}`;
+            }
             html+=`
-                <a class="navbar-item" href="${page_path}#${val.name}">
+                <a class="navbar-item" href="${path}">
                     ${val.name}
                 </a>
             `;

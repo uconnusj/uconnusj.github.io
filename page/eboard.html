@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/includes/includes.js"></script>
+    <style id="includeStyle"></style>
+</head>
+
+<body>
+
+    <!-- START NAV -->
+    <div id="includeNavbar"></div>
+    <!-- END NAV -->
+
+    <!-- Members Pictures and Position -->
+    <div id="eboard"></div>
+    <!-- END Members Pictures and Position -->
+
+    <script src="members.js"></script>
+    <script>
+        document.getElementById('eboard').innerHTML=generate_eboard(by_team[eboard_name]);
+        //make_collapsible(document.getElementsByClassName("bio-collapsible"))
+        // ^^ option to make bios that are too long collapsible (click overly long bios to expand).
+        // Is somewhat clunky at the moment as it just clips off the long bios when not expanded.
+    </script>
+
+</body>
+
+<!-- START FOOTER-->
+<footer>
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
+
+</html>
