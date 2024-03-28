@@ -43,6 +43,7 @@ const teams={
 
 // contains miscellaneous positions that don't have an associated team
 const misc={
+    founder:"Founder",
     graphic:"Graphic Designer",
     ignite:"Head of Ignite Initiative"
 }
@@ -72,13 +73,12 @@ const eboard={
 // stores all members info
 const members={
     "Sofya Levitina":{
-        position: eboard.chief,
+        position: eboard.chief.concat(misc.founder),
         imageSrc: ".jpeg",
         email:"sofya.levitina@uconn.edu",
         bio:`
         Sofya Levitina is a Physics and Mathematics-Statistics major
-        and Astrophysics minor. She is the Editor in Chief and Founder
-        of the Undergraduate Science Journal. Outside of USJ, Sofya
+        and Astrophysics minor. Outside of USJ, Sofya
         has worked with her research mentor Daniel Angles-Alcazar
         since her freshman year investigating black hole properties
         within Simba and CAMELS simulations. Sofya is a University
@@ -95,8 +95,7 @@ const members={
         email:"",
         bio:`
         Joseph Mooney is a senior pursuing a dual degree in Physiology
-        and Neurobiology and Anthropology. He is the Director of Outreach
-        for the Undergraduate Science Journal. Outside of USJ, he has
+        and Neurobiology and Anthropology. Outside of USJ, he has
         worked under his research mentor, Dr. Geoffrey Tanner, for four
         years investigating the effectiveness of beta-hydroxybutyrate
         isomers at ameliorating symptoms following traumatic brain injury
@@ -113,7 +112,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Caelah Etter is a sophomore at UConn majoring in Physics, with minors in Astrophysics and Art! She is the treasurer of the Undergraduate Science Journal. Outside of USJ, she is currently involved in research with Jonathan Trump and Bren Backhaus on the emission lines (specifically Lyman alpha) of the CEERS, JADES, and GLASS galaxies. On campus, she is also in Alpha Phi Omega, Alpha Omicron Pi, the Honors Program, and is a member of Hus-Keys Acapella. In her free time, she enjoys reading, singing, traveling, and photography.
+        Caelah Etter is a sophomore at UConn majoring in Physics, with minors in Astrophysics and Art! Outside of USJ, she is currently involved in research with Jonathan Trump and Bren Backhaus on the emission lines (specifically Lyman alpha) of the CEERS, JADES, and GLASS galaxies. On campus, she is also in Alpha Phi Omega, Alpha Omicron Pi, the Honors Program, and is a member of Hus-Keys Acapella. In her free time, she enjoys reading, singing, traveling, and photography.
         `
     },
     "Laura Augenbraun":{
@@ -122,8 +121,7 @@ const members={
         email:"",
         bio:`
         Laura Augenbraun is a Senior at UConn double majoring in
-        mathematics and journalism. She is the chief Journalist at USJ
-        and manages the journalism team. Outside of USJ, Laura is
+        mathematics and journalism. Outside of USJ, Laura is
         involved in UConn Hillel and her sorority Alpha Epsilon Phi.
         `
     },
@@ -159,8 +157,7 @@ const members={
         bio:`
         Suheera Haq is a sophomore majoring in Molecular and Cell
         Biology as well as an individualized major in Social
-        Determinants of Women’s Healthcare. Her position in USJ is
-        the Director of Advertisement. Outside of USJ, she is
+        Determinants of Women’s Healthcare. Outside of USJ, she is
         currently involved in research in the department of radiation
         oncology at Dana-Farber Cancer Institute. On campus she is
         involved with UConn choirs, the Bengali Student Association,
@@ -174,8 +171,7 @@ const members={
         email:"",
         bio:`
         Mishael Gill is a first-year Physiology and Neurobiology major
-        in the Special Program in Medicine (SPiM). As a member of the
-        journalism team, she contributes articles featuring professors
+        in the Special Program in Medicine (SPiM). She contributes articles featuring professors
         and students conducting research around campus. She is currently
         working with Dr. Isaac Macwan at Fairfield University to conduct
         molecular dynamics simulations of the MDR-1 protein and various
@@ -191,8 +187,7 @@ const members={
         email:"",
         bio:`
         Malak Nechnach is a sophomore majoring in PNB and minoring in Computer Science.
-        She is part of the journalism team
-        at USJ because she is passionate about research. Outside of USJ, Malak is a mentor for the program Women
+        She is part of USJ because she is passionate about research. Outside of USJ, Malak is a mentor for the program Women
         in STEM as well as co-vice president of the French Club. She is
         a Research Assistant for the CALLlab which aims to better
         understand the pathology of ASD by linking research at the
@@ -207,8 +202,7 @@ const members={
         imageSrc: ".png",
         email:"",
         bio:`
-        Yarden Sackett is a physics major at UConn, and is part of the
-        Treasury team for the Undergraduate Science Journal. He has
+        Yarden Sackett is a physics major at UConn. He has
         previously worked on research involving modifying digital light
         sensors to pick up the spectra of bright stellar objects. In the
         future Yarden will work under professor and researcher Jonathan
@@ -223,7 +217,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Devesh Karthik is a first year physics student in the Journalism team of the Undergraduate Science Journal. In high school, he was the Co-Editor-in-Chief of <i>The Broadside</i> and Captain of the Rocky Hill High School Math Team. At UConn, he is a screenwriter in the UCTV film club, and a member of the Undergraduate Philosophy Society. Devesh is a member of Santos’ Group, researching theoretical many-body quantum dynamics. In his free time, Devesh likes to watch movies, listen to music, and explore the outdoors.
+        Devesh Karthik is a first year physics student in the Undergraduate Science Journal. In high school, he was the Co-Editor-in-Chief of <i>The Broadside</i> and Captain of the Rocky Hill High School Math Team. At UConn, he is a screenwriter in the UCTV film club, and a member of the Undergraduate Philosophy Society. Devesh is a member of Santos’ Group, researching theoretical many-body quantum dynamics. In his free time, Devesh likes to watch movies, listen to music, and explore the outdoors.
         `
     },
     "Rilee Harris":{
@@ -231,7 +225,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Rilee Harris is a freshman majoring in Molecular and Cell Biology with a Fine Arts minor. She is on the Editorial Team of the Undergraduate Science Journal and is a member of the Undergraduate Organization of Molecular and Cell Biology and Paint Club. She has done independent research using statistical analysis to compare analog chronometry to mathematical competencies in preadolescents. In her free time, Rilee enjoys reading and doodling on her biology notebooks.
+        Rilee Harris is a freshman majoring in Molecular and Cell Biology with a Fine Arts minor. Beyond USJ, she is a member of the Undergraduate Organization of Molecular and Cell Biology and Paint Club. She has done independent research using statistical analysis to compare analog chronometry to mathematical competencies in preadolescents. In her free time, Rilee enjoys reading and doodling on her biology notebooks.
         `
     },
     "John-Michael Mendez":{
@@ -240,7 +234,7 @@ const members={
         email:"",
         bio:`
         John-Michael Mendez is a freshman Materials Science and Engineering
-        major. He is on the technology team at USJ. He aims to pursue research
+        major. He aims to pursue research
         in the rising field of regenerative engineering. Outside of USJ he plays
         saxophone in the UConn Marching Band and is a developer for GoalTac.
         He is also a United Multiple Sulfatase Deficiency foundation Ambassador.
@@ -251,7 +245,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Natalie is a senior Physiology and Neurobiology major, and is a part of the Editorial Team of the Undergraduate Science Journal. Outside of USJ, Natalie works in Dr. Geoffrey Tanner’s lab at UConn where she is investigating the effectiveness of creatine monohydrate and exogenous ketone body supplementation on ameliorating symptoms of mild traumatic brain injury (mTBI) using Drosophila melanogaster as a model organism. This study uses a multibeam activity monitor to analyze circadian rhythm patterns in Drosophila post-mTBI. Natalie is also the Development Coordinator for Camp Kesem at UConn, a club that organizes a free, annual summer camp for children who have been impacted by a parent or guardian’s cancer. In her spare time, Natalie loves to lift in the gym, cook, and play basketball!
+        Natalie is a senior Physiology and Neurobiology major. Outside of USJ, Natalie works in Dr. Geoffrey Tanner’s lab at UConn where she is investigating the effectiveness of creatine monohydrate and exogenous ketone body supplementation on ameliorating symptoms of mild traumatic brain injury (mTBI) using Drosophila melanogaster as a model organism. This study uses a multibeam activity monitor to analyze circadian rhythm patterns in Drosophila post-mTBI. Natalie is also the Development Coordinator for Camp Kesem at UConn, a club that organizes a free, annual summer camp for children who have been impacted by a parent or guardian’s cancer. In her spare time, Natalie loves to lift in the gym, cook, and play basketball!
         `
     },
     "Ryan Durrell":{
@@ -259,9 +253,8 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Ryan Durrell is a senior Economics and Mathematics major. He is
-        a member of the journalism team for USJ. Outside of the club, he
-        has worked with Professor Metin Cosgel for research in American
+        Ryan Durrell is a senior Economics and Mathematics major. Outside of the club, he
+        has worked with Professor Metin Coşgel for research in American
         historical economics. On campus, he is involved as a tutor with
         the university, as well as the Economics Society. He has
         conducted research on interests such as the harmonic complexity
@@ -274,8 +267,7 @@ const members={
         imageSrc: "",
         email:"",
         bio:`
-        Sravya Lingam is a sophomore allied health major. She is in the
-        advertisement team of the Undergraduate Student Journal. She
+        Sravya Lingam is a sophomore allied health major. She
         also participates in research under Dr. Waring studying social
         media and the effect on perinatal and maternal health as well as
         other maternal health topics. She also works for a non-profit
@@ -289,7 +281,7 @@ const members={
         email:"",
         bio:`
         Danya Alboslani is a senior Physics student minoring in astrophysics.
-        She is a member of the journalist team for USJ. Outside of USJ Danya
+        Outside of USJ, Danya
         researches the structure of stellar nurseries at the Milky Way
         Laboratory. She is dedicated to diversity and inclusion in STEM and
         thus is the President for the Women in Physics club as well as a
@@ -304,8 +296,7 @@ const members={
         bio:`
         Enya Goonetilleke is a freshman in the Honors College majoring
         in Physiology and Neurobiology and minoring in Anthropology of
-        Global Health. She is on the editorial Board of the USJ, a
-        journal she loves working with! She is currently researching
+        Global Health. Beyond USJ, she is currently researching
         with Dr. Sharon Casavant on genetic markers of premature
         infants and is a member of the Collegiate Health Service Corp.
         She is also a member of the Native American and Indigenous
@@ -318,10 +309,8 @@ const members={
         imageSrc: "",
         email:"",
         bio:`
-        Anshul Rastogi is an elitist gnome pursuing a
-        dual degree in Computer Science and Molecular & Cell Biology.
-        He's on the Editorial and Technology Team of the Undergraduate
-        Science Journal. He has no qualifications and is part of the club
+        Anshul Rastogi is an elitist gnome pursuing a dual degree in Computer Science and Molecular & Cell Biology.
+        He has no qualifications and is part of USJ
         as a running joke. He won the position of freshman representative
         for the SPiM Class of 2027 as part of an illicit bet and
         chronically abuses his newfound power to divert SPiM Board funds
@@ -340,7 +329,7 @@ const members={
         email:"",
         bio:`
         Sophia Balskus is a Allied Health major, and is an active member
-        of the Advertisement Team at Undergraduate Science Journal. As
+        of Undergraduate Science Journal. As
         an ambitious freshman, she aspires to pursue the Dietetics program
         at the end of her sophomore year. Driven by her curiosity about
         the world of science, Sophia envisions a future filled with
@@ -355,7 +344,7 @@ const members={
         imageSrc: ".jpg",
         email:"",
         bio:`
-        Katherine Lee is a freshman dual majoring in Cognitive Science and Physiology and Neurobiology. Her role in the Undergraduate Science Journal is part of the Outreach Team! Outside of the club, Katherine is involved in the EcoHouse Learning Community, serving as FYE Mentor for the 2024-2025 year, volunteers at various Eco- and stem events, and dabbles in backstage crew for the Connecticut Repertory Theater! Beyond academics, she enjoys reading, listening to Noah Floersch and The Brook and the Bluff, and spending time outdoors!
+        Katherine Lee is a freshman dual majoring in Cognitive Science and Physiology and Neurobiology. Outside of USJ, Katherine is involved in the EcoHouse Learning Community, serving as FYE Mentor for the 2024-2025 year, volunteers at various Eco- and stem events, and dabbles in backstage crew for the Connecticut Repertory Theater! Beyond academics, she enjoys reading, listening to Noah Floersch and The Brook and the Bluff, and spending time outdoors!
         `
     },
     "Erica Lavoie":{
@@ -363,7 +352,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Erica Lavoie is a junior studying Molecular and Cell Biology with a minor in Neuroscience. She is a member of the Editorial Team with the Undergraduate Science Journal. Erica is also involved in the Honors Program, Women in Math, Science, and Engineering (WiMSE) Club, Uconn’s Chapter of the Red Cross, and the National Multiple Sclerosis Society. She is also involved in research in the Crocker Lab at Uconn Health, and her project focuses on investigating proteolytic processing of the extracellular matrix and glial pathology in the brains of a genetic mouse model for Globoid Cell Leukodystrophy. Beyond academics, she is a big Philly sports fan and loves to go to sporting games, concerts, and the beach!
+        Erica Lavoie is a junior studying Molecular and Cell Biology with a minor in Neuroscience. In addition to USJ, Erica is also involved in the Honors Program, Women in Math, Science, and Engineering (WiMSE) Club, UConn’s Chapter of the Red Cross, and the National Multiple Sclerosis Society. She is also involved in research in the Crocker Lab at UConn Health, and her project focuses on investigating proteolytic processing of the extracellular matrix and glial pathology in the brains of a genetic mouse model for Globoid Cell Leukodystrophy. Beyond academics, she is a big Philly sports fan and loves to go to sporting games, concerts, and the beach!
         `
     },
     "Michael Lanteri":{
@@ -371,7 +360,7 @@ const members={
         imageSrc: ".jpg",
         email:"",
         bio:`
-        Michael Lanteri is a first year student studying Computer Science. He is part of the Journalism Team of the Undergraduate Science Journal (USJ). Outside of USJ, Michael is interested in the fields of software design and AI, being involved in Husky Developers and the UConn AI Safety Team. He is also a member of the Engineering Learning Community. In his free time, Michael likes listening to music and playing the NYT games.
+        Michael Lanteri is a first year student studying Computer Science. Outside of USJ, Michael is interested in the fields of software design and AI, being involved in Husky Developers and the UConn AI Safety Team. He is also a member of the Engineering Learning Community. In his free time, Michael likes listening to music and playing the NYT games.
         `
     },
     "Henry Driscoll":{
@@ -379,7 +368,7 @@ const members={
         imageSrc: ".png",
         email:"",
         bio:`
-        Henry Driscoll is a second year Math-Physics major. He is part of the Editorial team with the Undergraduate Student Journal. He is a part of UConn’s Society of Physics Students and volunteers at Quinebaug Valley special olympics as an assistant soccer coach and has research interests in theoretical quantum mechanics. In his free time, Henry enjoys snowboarding and has an impressive collection of bow ties.
+        Henry Driscoll is a second year Math-Physics major. Besides USJ, he is a part of UConn’s Society of Physics Students and volunteers at Quinebaug Valley special olympics as an assistant soccer coach and has research interests in theoretical quantum mechanics. In his free time, Henry enjoys snowboarding and has an impressive collection of bow ties.
         `
     },
     "Edrik Morales":{
@@ -387,7 +376,7 @@ const members={
         imageSrc: ".jpg",
         email:"",
         bio:`
-        Edrik Morales is currently a first year MCB & Chemistry double major. He is a member of the Outreach Team at Undergraduate Science Journal. Edrik is currently part of the Gilmore Lab focusing on the niche of flow chemistry, which presents the automation of reactions via pumps as well as a member of Calisthenics and Breakdancing club. In his free time, he enjoys gaming and exercising.
+        Edrik Morales is currently a first year MCB & Chemistry double major. Edrik is currently part of the Gilmore Lab focusing on the niche of flow chemistry, which presents the automation of reactions via pumps as well as a member of Calisthenics and Breakdancing club. In his free time, he enjoys gaming and exercising.
         `
     },
     "Lia Gilmore":{
@@ -395,7 +384,7 @@ const members={
         imageSrc: ".jpg",
         email:"",
         bio:`
-        Lia Gilmore is a junior physics major and an astrophysics minor. She is on the outreach team for the UConn Undergraduate Science Journal. Outside of USJ, Lia recently started her undergraduate research project studying the molecular gas around the active galactic nucleus (AGN) of NGC 3621. Lia is also currently involved in Her Campus at UConn, Kappa Alpha Theta sorority, Women in Physics, and Fencing Club. When not studying for class or at a club meeting, Lia enjoys crocheting, watching YouTube, and reading in her spare time.
+        Lia Gilmore is a junior physics major and an astrophysics minor. Outside of USJ, Lia recently started her undergraduate research project studying the molecular gas around the active galactic nucleus (AGN) of NGC 3621. Lia is also currently involved in Her Campus at UConn, Kappa Alpha Theta sorority, Women in Physics, and Fencing Club. When not studying for class or at a club meeting, Lia enjoys crocheting, watching YouTube, and reading in her spare time.
         `
     },
     "Alexander Quell":{
@@ -403,7 +392,7 @@ const members={
         imageSrc: ".jpg",
         email:"",
         bio:`
-        Alexander Quell is a Freshman Mathematics major. He is a member of the Journalism Team of the Undergraduate Science Journal. He has yet to engage in any undergraduate research due to being a first semester student, but he still takes any chance he can get to fuel his interests in Biology and Mathematics, such as attending the weekly Math Club. In terms of hobbies, he has recently become fascinated with music and the prospect of making it.
+        Alexander Quell is a Freshman Mathematics major. He has yet to engage in any undergraduate research due to being a first semester student, but he still takes any chance he can get to fuel his interests in Biology and Mathematics, such as attending the weekly Math Club. In terms of hobbies, he has recently become fascinated with music and the prospect of making it.
         `
     },
 };
