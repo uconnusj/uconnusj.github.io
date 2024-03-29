@@ -515,6 +515,7 @@ page_path="/page/members.html"
 eboard_path="/page/eboard.html"
 
 // used to set member card width on different pages
+// 12 = full width
 card_width=12
 function set_card_width(width) {
     card_width=width;
