@@ -211,7 +211,7 @@ const members={
         imageSrc: ".png",
         email:"",
         bio:`
-        Malak Nechnach is a sophomore majoring in PNB and minoring in Computer Science. She joined USJ because she is passionate about research, and she is part of the journalism team. Outside of the club, she is a research assistant for Sciolino’s Lab, where her research focuses on understanding how the effects of the central norepinephrine system regulates motivated behaviors. She is a mentor for WiSTEM, Vice president of EDI for the TWN and a SPIN instructor.
+        Malak Nechnach is a sophomore majoring in PNB and minoring in Computer Science. She joined USJ because she is passionate about research. Outside of the club, she is a research assistant for Sciolino’s Lab, where her research focuses on understanding how the effects of the central norepinephrine system regulates motivated behaviors. She is a mentor for WiSTEM, Vice president of EDI for the TWN and a SPIN instructor.
         `
     },
     "Yarden Sackett":{
