@@ -8,7 +8,14 @@ const faqs={
         likewise concealed from the author. This process was decided to be the fairest review process 
         by the USJ leadership and will serve as an assurance of impartial paper selection 
         for publication.
-    `
+    `,
+    "Yet another frequently asked question?":`
+        Kinda.
+    `,
+    "How are you doing?":`
+        Thanks for asking! No one's asked me that in three years. Personally I'm hoping to see
+        the sun tomorrow, maybe touch grass. What about you?
+    `,
 };
 
 function generate_faqs() {

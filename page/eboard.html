@@ -14,12 +14,12 @@
     <!-- END NAV -->
 
     <!-- Members Pictures and Position -->
-    <div id="members"></div>
+    <div id="eboard"></div>
     <!-- END Members Pictures and Position -->
 
     <script src="members.js"></script>
     <script>
-        document.getElementById('members').innerHTML=generate_all_teams(by_team);
+        document.getElementById('eboard').innerHTML=generate_eboard(by_team[eboard_name]);
         //make_collapsible(document.getElementsByClassName("bio-collapsible"))
         // ^^ option to make bios that are too long collapsible (click overly long bios to expand).
         // Is somewhat clunky at the moment as it just clips off the long bios when not expanded.
