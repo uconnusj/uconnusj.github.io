@@ -17,7 +17,9 @@
     <script src="blog-content.js"></script>
     <script src="blog-formatter.js"></script>
     <script>
-        document.getElementById('blogs_list').innerHTML=generate_blogs_list(blogs);
+        select_filters=filters;
+        arranged=arrange_blogs(blogs,select_filters);
+        document.getElementById('blogs_list').innerHTML=generate_blogs_list(arranged);
     </script>
 
     <!-- newsletter -->

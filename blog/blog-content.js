@@ -12,10 +12,16 @@ function email(address,text=null) {
     return `<a href="mailto:${address}">${text}</a>`;
 }
 
+const categories={
+    misc:"Miscellaneous",
+    faculty:"Faculty Highlight",
+};
+
 const blogs={
     //Blog 1
     blog_2023_11_02:{
         date:new Date("November 2, 2023"),
+        category:categories.faculty,
         title:`Professor Metin Coşgel`,
         author:"Ryan Durrell",
         img:{
@@ -73,6 +79,7 @@ const blogs={
     //Blog 2
     blog_2024_03_01:{
         date:new Date("March 1, 2024"),
+        category:categories.faculty,
         title:`Bio-Integrated “Smart” Materials and Structures Research Group ${em} Dr. Thanh Nguyen`,
         author:"Mishael Gill",
         img:{
@@ -139,6 +146,7 @@ const blogs={
     //Blog 3
     blog_2024_03_22:{
         date:new Date("March 22, 2024"),
+        category:categories.faculty,
         title:`Menka Jain`,
         author:"Devesh Karthik",
         img:{
@@ -168,6 +176,7 @@ const blogs={
     //Blog 4
     blog_2024_03_29:{
         date:new Date("March 29, 2024"),
+        category:categories.faculty,
         title:`Bernard Goffinet`,
         author:"Danya Alboslani",
         img:{
@@ -185,4 +194,25 @@ const blogs={
                 Dr. Goffinet encourages students to go beyond the classroom and find opportunities to strengthen their experience at UConn. If you are interested in research in Dr. Goffinet’s lab you can view his website ${link("https://bryology.uconn.edu/","here")}. You can also contact him at ${email("bernard.goffinet@uconn.edu")}. Research in his lab is often tailored to a student’s individual interests after multiple discussions, and he would love to hear from passionate students!
             `
     },
+};
+
+var all_terms={};
+const spring=(year)=>[new Date(`January 1, ${year}`),new Date(`May 31, ${year}`)];
+const fall=(year)=>[new Date(`August 1, ${year}`),new Date(`December 31, ${year}`)];
+Object.values(blogs).forEach(
+    blog=>{
+        var year=blog.date.getFullYear();
+        var spring_term=spring(year);
+        var fall_term=fall(year);
+        if (blog.date>spring_term[0] && blog.date<spring_term[1]) {
+            all_terms[`${year} Spring`]=spring_term;
+        }
+        else {
+            all_terms[`${year} Fall`]=fall_term;
+        };
+    }
+);
+var filters={
+    category:Object.values(categories),
+    terms:Object.values(all_terms),
 };

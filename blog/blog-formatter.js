@@ -77,6 +77,62 @@ function generate_blog_card(blog) {
     `;
 }
 
+const sorts={
+    old_to_new:{
+        name:"Oldest to newest",
+        alg:
+        function (blog_1,blog_2) {
+            if (blog_1.date>blog_2.date) {
+                return -1;
+            }
+            if (blog_1.date<blog_2.date) {
+                return 1;
+            }
+            return 0;
+        },
+    },
+    new_to_old:{
+        name:"Newest to oldest",
+        alg:
+        function (blog_1,blog_2) {
+            if (blog_1.date<blog_2.date) {
+                return -1;
+            }
+            if (blog_1.date>blog_2.date) {
+                return 1;
+            }
+            return 0;
+        },
+    },
+    alphabetical:{
+        name:"A-Z",
+        alg:
+        function (blog_1,blog_2) {
+            if (blog_1.title<blog_2.title) {
+                return -1;
+            }
+            if (blog_1.title>blog_2.title) {
+                return 1;
+            }
+            return 0;
+        },
+    },
+};
+
+function arrange_blogs(blogs,select_filters,sort_alg=sorts.old_to_new.alg) {
+    var arranged=[];
+    Object.values(blogs).forEach(
+        blog=>{
+            const in_terms=(term)=>blog.date>term[0] && blog.date<term[1];
+            if (select_filters.category.includes(blog.category) && select_filters.terms.some(in_terms)) {
+                arranged.push(blog);
+            }
+        }
+    );
+    arranged.sort(sort_alg);
+    return arranged;
+}
+
 function generate_blogs_list(blogs) {
     html="";
     html+=`
@@ -91,11 +147,11 @@ function generate_blogs_list(blogs) {
                     </div>
                 </div>
     `;
-    arr=Object.keys(blogs)
-    arr.sort().reverse();
-    for (var key in arr) {
-        html+=generate_blog_card(blogs[arr[key]]);
-    };
+    blogs.forEach(
+        blog=>{
+            html+=generate_blog_card(blog);
+        }
+    );
     html+=`</div></div></section>`;
     return html;
 }
