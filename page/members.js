@@ -374,7 +374,7 @@ const members={
     },
     "Michael Lanteri":{
         position: [teams.journalism.name],
-        imageSrc: ".jpg",
+        imageSrc: ".JPG",
         email:"",
         bio:`
         Michael Lanteri is a first year student studying Computer Science. Outside of USJ, Michael is interested in the fields of software design and AI, being involved in Husky Developers and the UConn AI Safety Team. He is also a member of the Engineering Learning Community. In his free time, Michael likes listening to music and playing the NYT games.
@@ -398,7 +398,7 @@ const members={
     },
     "Lia Gilmore":{
         position: [teams.outreach.name],
-        imageSrc: ".jpg",
+        imageSrc: ".JPG",
         email:"",
         bio:`
         Lia Gilmore is a junior physics major and an astrophysics minor. Outside of USJ, Lia recently started her undergraduate research project studying the molecular gas around the active galactic nucleus (AGN) of NGC 3621. Lia is also currently involved in Her Campus at UConn, Kappa Alpha Theta sorority, Women in Physics, and Fencing Club. When not studying for class or at a club meeting, Lia enjoys crocheting, watching YouTube, and reading in her spare time.
