@@ -531,7 +531,7 @@ function generate_member_card(name,member,card_width) {
 
     imageSrc=member.imageSrc
     if (imageSrc.length==0) {
-        imageSrc="_BLANK.png";
+        imageSrc="0_BLANK.png";
     }
     else if (imageSrc[0]==".") {
         imageSrc=name+imageSrc
