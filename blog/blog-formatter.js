@@ -104,19 +104,19 @@ const sorts={
             return 0;
         },
     },
-    alphabetical:{
-        name:"A-Z",
-        alg:
-        function (blog_1,blog_2) {
-            if (blog_1.title<blog_2.title) {
-                return -1;
-            }
-            if (blog_1.title>blog_2.title) {
-                return 1;
-            }
-            return 0;
-        },
-    },
+    // alphabetical:{
+    //     name:"A-Z",
+    //     alg:
+    //     function (blog_1,blog_2) {
+    //         if (blog_1.title<blog_2.title) {
+    //             return -1;
+    //         }
+    //         if (blog_1.title>blog_2.title) {
+    //             return 1;
+    //         }
+    //         return 0;
+    //     },
+    // },
 };
 
 function arrange_blogs(blogs,select_filters,sort_alg=sorts.old_to_new.alg) {

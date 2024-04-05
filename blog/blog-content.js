@@ -180,7 +180,7 @@ const blogs={
         title:`Bernard Goffinet`,
         author:"Danya Alboslani",
         img:{
-            src:"",
+            src:"bernard goffinet.png",
             alt:"Dr. Bernard Goffinet"
         },
         content:
