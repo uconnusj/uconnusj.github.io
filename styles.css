@@ -265,10 +265,11 @@ footer {
   flex-direction: end;
   height: auto;
   width: 10%;
+  max-width: 3500px;
   border-radius: 2px;
   background-color: #041333;
   box-shadow: rgba(		250,	152,	57, 0.35) 0px 10px 25px;
-  margin: 10px;
+  margin: 20px;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom:10px;
@@ -283,4 +284,19 @@ footer {
   height: 100%;
   width: 100%;
   box-shadow: #fa9839 0px 0px 10px;
+}
+body:hover .journaleditions div:not(:hover) {
+  filter: blur(1px);
+}
+.journaleditions div:hover {
+    width: 30%;
+    max-width: 200px;
+    transition: .7s;
+}
+.journaleditions p{
+  margin: 5px;
+  display: none;
+}
+.journaleditions div:hover p{
+  display: inline;
 }
