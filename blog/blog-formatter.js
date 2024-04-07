@@ -142,7 +142,7 @@ function generate_blogs_list(blogs) {
                 <div class="columns">
                     <div class="column is-8 is-offset-2">
                         <figure class="image is-16by9">
-                            <img src="https://bulmatemplates.github.io/bulma-templates/images/first-post.png" alt="">
+                            <img src="https://bulmatemplates.github.io/bulma-templates/images/first-post.png" alt="Blog">
                         </figure>
                     </div>
                 </div>

@@ -11,51 +11,16 @@
     <!-- START NAV -->
     <div id="includeNavbar"></div>
     <!-- END NAV -->
+ 
+    <!-- Events Pictures and Position -->
+    <div id="events"></div>
+    <!-- END Events Pictures and Position -->
 
-    <div class="container">
-        <div class="card article promo-block">
-            <div class="card-content">
-                <h1 class="title is-1 article-title is-centered">Events</h1>
-                <div class="tile section is-ancestor">
-                <div class="tile is-parent is-vertical">
-                    <div class="tile is-child  is-3">
-                        <div class="card">
-                            <div class="card-header">
-                                <p class="card-header-title is-centered" style="font-size:2em">event title</p>
-                            </div>
-                                <div class="card-image">
-                                    <nav class="level">
-                                        <div class="level-item has-text-centered">
-                                            <figure class="image" style="display:block; margin-left:auto; margin-right:auto;">
-                                                <img src="/images/event_images/2024-04-09 Thesis Revision Event.png"
-                                                alt="idk man"; style="object-fit: cover;
-                                                width:200px; height:200px;
-                                                border-radius:8px;">
-                                            </figure>
-                                        </div>
-                                      </nav>
-                                  </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content" style="font-size:1em">
-                                        <div class="bio-collapsible">
-                                            <p style="text-indent:40px;">
-                                                very dignified description
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <footer class="card-footer is-centered">
-                                location (link to google maps boi)
-                                <br>
-                                timing
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-    </div></div></div></div>
-    
+    <script src="events.js"></script>
+    <script>
+        document.getElementById('events').innerHTML=generate_events(events);
+    </script>
+
 </body>
 
 <!-- START FOOTER-->
