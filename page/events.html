@@ -19,6 +19,15 @@
     <script src="events.js"></script>
     <script>
         document.getElementById('events').innerHTML=generate_events(events);
+        
+        // updates event image sizes dynamically based on window width:
+        function updateSize() {
+            dim_factor=3.75
+            document.getElementById("event_banner").style.height=`${Math.floor(window.innerWidth/dim_factor)}px`
+            document.getElementById("event_banner").style.width=`${Math.floor(window.innerWidth/dim_factor)}px`
+        }
+        updateSize();
+        window.addEventListener("resize",updateSize);
     </script>
 
 </body>

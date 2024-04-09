@@ -15,7 +15,8 @@ const events=[
         Students completing a thesis will receive input from professors and peers as well as
         to share and discuss their research interests. This workshop is not limited to students
         writing a thesis and is open to all undergraduate students! Additionally, it is an
-        HONORS event which is helpful for students looking to complete honors laureate.
+        ${link_html("HONORS event","https://events.uconn.edu/event/64818-thesis-revision-event")}
+        which is helpful for students looking to complete Honors Laureate.
         `
     },
 ];
@@ -35,8 +36,10 @@ function generate_img_path(event) {
     return `${event_img_path}${event.start.toISOString().slice(0,10)} ${event.banner_src}`;
 }
 
+
 function generate_event_card(event) {
     var html="";
+    dim=Math.floor(window.innerWidth/4)
     html+=`
         <div class="card">
             <div class="card-header">
@@ -47,8 +50,9 @@ function generate_event_card(event) {
                         <div class="level-item has-text-centered">
                             <figure class="image" style="display:block; margin-left:auto; margin-right:auto;">
                                 <img src="${generate_img_path(event)}"
+                                id="event_banner"
                                 alt="${event.title}"; style="object-fit: cover;
-                                width: 324px; height:324px;
+                                width: ${dim}px; height:${dim}px;
                                 border-radius:8px;">
                             </figure>
                         </div>
@@ -57,11 +61,9 @@ function generate_event_card(event) {
             <div class="card-content">
                 <div class="media">
                     <div class="media-content" style="font-size:1em">
-                        <div class="bio-collapsible">
-                            <p style="text-indent:40px;">
-                                ${event.desc}
-                            </p>
-                        </div>
+                        <p style="text-indent:40px;">
+                            ${event.desc}
+                        </p>
                     </div>
                 </div>
             </div>

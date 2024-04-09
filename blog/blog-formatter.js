@@ -82,10 +82,10 @@ const sorts={
         name:"Oldest to newest",
         alg:
         function (blog_1,blog_2) {
-            if (blog_1.date>blog_2.date) {
+            if (blog_1.date<blog_2.date) {
                 return -1;
             }
-            if (blog_1.date<blog_2.date) {
+            if (blog_1.date>blog_2.date) {
                 return 1;
             }
             return 0;
@@ -95,10 +95,10 @@ const sorts={
         name:"Newest to oldest",
         alg:
         function (blog_1,blog_2) {
-            if (blog_1.date<blog_2.date) {
+            if (blog_1.date>blog_2.date) {
                 return -1;
             }
-            if (blog_1.date>blog_2.date) {
+            if (blog_1.date<blog_2.date) {
                 return 1;
             }
             return 0;
