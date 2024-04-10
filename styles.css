@@ -277,21 +277,32 @@ footer {
 .journaleditions div img{
   border: 1px solid #b04d13;
   border-radius: 4px;
-  height: 100%;
   width: 100%;
+  height: auto;
   box-shadow: #fa9839 0px 0px 10px;
 }
 body:hover .journaleditions div:not(:hover) {
   filter: blur(1px);
 }
 .journaleditions p{
-  margin: 5px;
+  margin-left: 5px;
+  margin-top: 30px;
+  margin-right: 5px;  
+  vertical-align: top;
   display: none;
 }
-.journaleditions div:hover p{
-  display: flex;
+.desc-group:hover p{
+  display: inline-block;
 }
-
+/*---------end horizontal------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*begin vert*/
 .journaled-vert{
   background-color: #041333;
   display: flex;
@@ -336,5 +347,5 @@ body:hover .journaled-vert div:not(:hover) {
   display: none;
 }
 .journaled-vert div:hover p{
-  display: flex;
+  display: block;
 }
