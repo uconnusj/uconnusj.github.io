@@ -4,6 +4,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 14px;
   background: #f0f2f4;
+  height: 100%;
 }
 .navbar.is-white {
   background: #f0f2f4;
@@ -244,11 +245,14 @@ footer {
   transition:max-height 0.2s ease-out;
   text-overflow:ellipsis;
 }
+
+/*------first horizontal group--------*/
 .journaleditions{
   background-color: #050019;
   display: block;
   /*height: auto;*/
   width: 100%;
+  height: 30%;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 5px;
@@ -257,33 +261,36 @@ footer {
   overflow-x: auto;
   white-space: nowrap;
 }
+/*------each journal--------*/
 .journaleditions div{
   display: inline-block;
   flex: row;
   flex-direction: end;
-  height: auto;
   width: 10%;
-  max-width: 3500px;
+  height: 90%;
   border-radius: 2px;
   background-color: #041333;
   box-shadow: rgba(		250,	152,	57, 0.35) 0px 10px 25px;
-  margin: 20px;
-  padding-top: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
   padding-left: 10px;
-  padding-bottom:10px;
   padding-right: 10px;
   text-align: center;
 }
-.journaleditions div img{
+/*.journaleditions div img{
   border: 1px solid #b04d13;
   border-radius: 4px;
   width: 100%;
   height: auto;
   box-shadow: #fa9839 0px 0px 10px;
-}
+}*/
+
+/*------hover blur effect--------*/
 body:hover .journaleditions div:not(:hover) {
   filter: blur(1px);
 }
+
+/*------description placement and initial visibility--------*/
 .journaleditions p{
   margin-left: 5px;
   margin-top: 30px;
@@ -291,8 +298,20 @@ body:hover .journaleditions div:not(:hover) {
   vertical-align: top;
   display: none;
 }
+
+/*------description hover visibility--------*/
 .desc-group:hover p{
   display: inline-block;
+}
+
+/*------image size consistency refactoring--------*/
+.journaleditionnew{
+  background-image: url("/lizardcover.png");
+  background-size: cover;
+}
+#journaleditionnew2{
+  background-image: url("/chemcover.png");
+  background-size: cover;
 }
 /*---------end horizontal------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -308,12 +327,15 @@ body:hover .journaleditions div:not(:hover) {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: fit-content;
+  width: 100%;
+  height: 50%;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 5px;
   margin-left: 5px;
   border-radius: 5px;
+  height: 60%; /*should limit height of vertical so it ca overflow and activate scrollbar*/
+  overflow-y: scroll;
 }
 .journaled-vert div{
   display: flex;
