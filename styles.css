@@ -246,21 +246,19 @@ footer {
 }
 .journaleditions{
   background-color: #050019;
-  display: flex;
-  flex: row;
-  flex-direction: end;
-  height: auto;
-  width: fit-content;
+  display: block;
+  /*height: auto;*/
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 5px;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
-.journaledition1,
-.journaledition2, 
-.journaledition3{
-  display: flex;
+.journaleditions div{
+  display: inline-block;
   flex: row;
   flex-direction: end;
   height: auto;
@@ -276,9 +274,7 @@ footer {
   padding-right: 10px;
   text-align: center;
 }
-.journaledition1 img,
-.journaledition2 img, 
-.journaledition3 img{
+.journaleditions div img{
   border: 1px solid #b04d13;
   border-radius: 4px;
   height: 100%;
@@ -288,15 +284,57 @@ footer {
 body:hover .journaleditions div:not(:hover) {
   filter: blur(1px);
 }
-.journaleditions div:hover {
-    width: 30%;
-    max-width: 200px;
-    transition: .7s;
-}
 .journaleditions p{
   margin: 5px;
   display: none;
 }
 .journaleditions div:hover p{
-  display: inline;
+  display: flex;
+}
+
+.journaled-vert{
+  background-color: #041333;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.journaled-vert div{
+  display: flex;
+  flex: row;
+  flex-direction: end;
+  height: 30%;
+  width: auto;
+  max-width: 3500px;
+  border-radius: 2px;
+  /*background-color: #050019;*/
+  box-shadow: rgba(		250,	152,	57, 0.35) 0px 10px 25px;
+  margin: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom:10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.journaled-vert div img{
+  border: 1px solid #b04d13;
+  border-radius: 4px;
+  height: 100%;
+  width: 30%;
+  box-shadow: #fa9839 0px 0px 10px;
+}
+body:hover .journaled-vert div:not(:hover) {
+  filter: blur(1px);
+}
+.journaled-vert p{
+  margin: 5px;
+  display: none;
+}
+.journaled-vert div:hover p{
+  display: flex;
 }
