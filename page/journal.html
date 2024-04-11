@@ -16,6 +16,55 @@
     <div id="journal"></div>
     <!-- END Journal -->
 
+    <!--horizontal journal explore-->
+    <!-- <container class="journaleditions">
+        <span class="desc-group">
+            <a href="">
+                <div class="journaleditionnew"></div>
+                <p>Description</p></a
+            >
+        </span>
+        <span class="desc-group">
+            <a href="/Editted_Papadim_Chem_1128_Chapter_16N_notes(1).pdf"
+                ><div id="journaleditionnew2"></div>
+                <p>Description</p></a
+            >
+        </span>
+    </container>
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var container = document.querySelector("container");
+            var img = document.querySelector("img");
+
+            function resizeContainer(e1, e2) {
+                var windowWidth =
+                    window.innerWidth ||
+                    document.documentElement.clientWidth;
+                var windowHeight =
+                    window.innerHeight ||
+                    document.documentElement.clientHeight;
+
+                e1.width = windowWidth * 1; // Adjust the width as needed
+                e1.height = windowHeight * 0.8; // Adjust the height as needed
+                e2.width = windowWidth * 0.1; // Adjust the width as needed
+            }
+
+            resizeContainer(iframe);
+            resizeContainer(img);
+            window.addEventListener("resize", resizeContainer);
+        });
+    </script> -->
+
+
     <div class="container">
         <div class="card article promo-block">
             <div class="card-content">
