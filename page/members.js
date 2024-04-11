@@ -242,7 +242,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Rilee Harris is a freshman majoring in Molecular and Cell Biology with a Fine Arts minor. Beyond USJ, she is a member of the Undergraduate Organization of Molecular and Cell Biology and Paint Club. She has done independent research using statistical analysis to compare analog chronometry to mathematical competencies in preadolescents. In her free time, Rilee enjoys reading and doodling on her biology notebooks.
+        Rilee Harris is a freshman majoring in Molecular and Cell Biology with a Fine Arts minor. She is on the Editorial Team of the Undergraduate Science Journal and is a member of the Undergraduate Organization of Molecular and Cell Biology and Paint Club. She has done independent research using statistical analysis to compare analog chronometry to mathematical competencies in preadolescents. She is now in the Alexandrescu Lab working on zinc finger domains and their interactions with proteins. In her free time, Rilee enjoys reading and doodling on her biology notebooks.
         `
     },
     "John-Michael Mendez":{
