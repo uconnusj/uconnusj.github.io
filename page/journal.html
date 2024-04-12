@@ -30,8 +30,7 @@
                 <p>Description</p></a
             >
         </span>
-    </container>
-    <!--------------------------------------------------->
+    </container>--->
     <!--------------------------------------------------->
     <!--------------------------------------------------->
     <!--------------------------------------------------->
@@ -40,7 +39,7 @@
     <!--------------------------------------------------->
     <!--------------------------------------------------->
 
-    <script>
+    <!-- <script>
         window.addEventListener("DOMContentLoaded", function () {
             var container = document.querySelector("container");
             var img = document.querySelector("img");
@@ -80,8 +79,8 @@
                                 <nav class="level">
                                     <div class="level-item has-text-centered">
                                         <figure class="image" style="display:block; margin-left:auto; margin-right:auto;">
-                                            <a href="/journal/Volume 1.pdf">
-                                                <img src="/journal/ISSUE 1.png"
+                                            <a href="/journal/Issue 1.pdf">
+                                                <img src="/journal/Issue 1.png"
                                                 id="event_banner"
                                                 alt="Issue 1 Cover"; style="object-fit:cover;
                                                 width:340px; height:440px;
@@ -106,10 +105,13 @@
                             <h1 class="subtitle is-4">Content</h1>
                             <ul> 
                                 <li>
-                                    <strong>pg. 01-02</strong> Letter from the Editor
+                                    <strong>pg. 03</strong> Letter from the Editor
                                 </li>
                                 <li>
-                                    <strong>pg. 03-44</strong> The Role of Ketone Bodies in Delaying
+                                    <strong>pg. 03-04</strong> Brief Overview
+                                </li>
+                                <li>
+                                    <strong>pg. 05-23</strong> The Role of Ketone Bodies in Delaying
                                     Neurodegeneration Caused by Traumatic Brain Injuries in a
                                     <i>Drosophila melanogaster</i> Model
                                 </li>  
@@ -128,28 +130,7 @@
 
                             <p class="pb-5"></p>
                             <h1 class="subtitle is-4">Editors</h1>
-                            <ul> 
-                                <li>
-                                    Christian Bjork
-                                </li>
-                                <li>
-                                    Anshul Rastogi
-                                </li>
-                                <li>
-                                    Enya Goonetilleke
-                                </li>
-                                <li>
-                                    Erica Lavoie
-                                </li>
-                                <li>
-                                    Henry Driscoll
-                                </li>
-                                <li>
-                                    Natalie Aloisio
-                                </li>
-                                <li>
-                                    Rilee Harris
-                                </li>
+                            <ul id="editorial_list"> 
                             </ul> 
                         </div>
                     </div>
@@ -166,6 +147,19 @@
     </script>
 
     -->
+
+    <script src="members.js"></script>
+    <script>
+        document.getElementById('editorial_list').innerHTML=generate_editor_list([
+            "Christian Bjork",
+            "Anshul Rastogi",
+            "Enya Goonetilleke",
+            "Erica Lavoie",
+            "Henry Driscoll",
+            "Natalie Aloisio",
+            "Rilee Harris",
+        ]);
+    </script>
 
 </body>
 
