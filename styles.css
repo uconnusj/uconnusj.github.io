@@ -292,7 +292,7 @@ body:hover .journaleditions div:not(:hover) {
 }
 
 /*------description placement and initial visibility--------*/
-.journaleditions p{
+.desc-group p{
   margin-left: 5px;
   margin-top: 30px;
   margin-right: 5px;  
@@ -301,7 +301,7 @@ body:hover .journaleditions div:not(:hover) {
 }
 
 /*------description hover visibility--------*/
-.desc-group:hover p{
+.journallink:hover p{
   display: inline-block;
 }
 
@@ -372,3 +372,60 @@ body:hover .journaled-vert div:not(:hover) {
 .journaled-vert div:hover p{
   display: block;
 }
+
+
+
+
+
+
+
+        /*the image and scrolled text is in one div together*/
+        .image-and-desc{
+          height: 50%;
+          background-color: aliceblue;
+          margin: 5px;
+          /*border: yellow 3px solid*/
+      }
+      /*the image on the side*/
+      .image{
+          display: inline-block;
+          width: 30%;
+          height: 80%;
+          background-image: url("./lizardcover.png");
+          background-size: cover;
+          margin-top: 15px;
+          /*border: orange 4px solid;*/
+      }
+      /*where the text is that you have to scroll on*/
+      .desc{
+          width: 65%;
+          height: 80%;
+          margin-left: 5px;
+          margin-top: 30px;
+          margin-right: 5px;  
+          vertical-align: top;
+          /*display: none;*/
+          display: inline-block;
+          text-wrap: wrap;
+          overflow-y: scroll;
+          scroll-behavior: smooth;
+          /*border: red 4px solid;*/
+      }
+      /*.image-and-desc:hover .desc{
+          display: inline-block;
+      }*/
+      /*horizontal component block*/
+      .bigdiv{
+          display: block;
+          padding: 5px;
+          height: 60%;
+          background-color: black;
+          overflow-y: auto;
+          white-space: nowrap;
+          /*border: green 4px solid;*/
+      }
+
+      /*make the inside scrollbar invisible*/
+      .bigdiv::-webkit-scrollbar, .desc::-webkit-scrollbar {
+          display: none;
+      }
