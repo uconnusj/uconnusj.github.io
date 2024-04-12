@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/includes/includes.js"></script>
+    <style id="includeStyle"></style>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <div id="includeNavbar"></div>
+    <!-- END NAV -->
+ 
+    <!-- Events Pictures and Position -->
+    <div id="events"></div>
+    <!-- END Events Pictures and Position -->
+
+    <script src="events.js"></script>
+    <script>
+        document.getElementById('events').innerHTML=generate_events(events);
+        
+        // updates event image sizes dynamically based on window width:
+        function updateSize() {
+            dim_factor=3.75
+            document.getElementById("event_banner").style.height=`${Math.floor(window.innerWidth/dim_factor)}px`
+            document.getElementById("event_banner").style.width=`${Math.floor(window.innerWidth/dim_factor)}px`
+        }
+        updateSize();
+        window.addEventListener("resize",updateSize);
+    </script>
+
+</body>
+
+<!-- START FOOTER-->
+<footer>
+    <div id="includeFooter"></div>
+</footer>
+<!-- END FOOTER -->
+
+</html>
