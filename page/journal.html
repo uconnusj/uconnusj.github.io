@@ -130,28 +130,7 @@
 
                             <p class="pb-5"></p>
                             <h1 class="subtitle is-4">Editors</h1>
-                            <ul> 
-                                <li>
-                                    Christian Bjork &#183
-                                </li>
-                                <li>
-                                    Anshul Rastogi
-                                </li>
-                                <li>
-                                    Enya Goonetilleke
-                                </li>
-                                <li>
-                                    Erica Lavoie
-                                </li>
-                                <li>
-                                    Henry Driscoll
-                                </li>
-                                <li>
-                                    Natalie Aloisio
-                                </li>
-                                <li>
-                                    Rilee Harris
-                                </li>
+                            <ul id="editorial_list"> 
                             </ul> 
                         </div>
                     </div>
@@ -168,6 +147,19 @@
     </script>
 
     -->
+
+    <script src="members.js"></script>
+    <script>
+        document.getElementById('editorial_list').innerHTML=generate_editor_list([
+            "Christian Bjork",
+            "Anshul Rastogi",
+            "Enya Goonetilleke",
+            "Erica Lavoie",
+            "Henry Driscoll",
+            "Natalie Aloisio",
+            "Rilee Harris",
+        ]);
+    </script>
 
 </body>
 

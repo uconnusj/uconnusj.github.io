@@ -782,12 +782,12 @@ function generate_editor_list(editor_arr) {
             if (Object.keys(members).includes(name)) {
                 html+=`
                         <li>
-                            ${name}
+                            <strong>${name}</strong>
                         
                     `;
                 members[name].position.forEach(
                     position=>{
-                        html+=" &#183 ${position}";
+                        html+=` <strong>&#183</strong> ${position}`;
                     }
                 );
                 html+="</li>";
