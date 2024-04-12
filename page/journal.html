@@ -1,23 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="/includes/includes.js"></script>
+        <style id="includeStyle"></style>
+    </head>
 
-<head>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/includes/includes.js"></script>
-    <style id="includeStyle"></style>
-</head>
+    <body>
+        <!-- START NAV -->
+        <div id="includeNavbar"></div>
+        <!-- END NAV -->
 
-<body>
-    <!-- START NAV -->
-    <div id="includeNavbar"></div>
-    <!-- END NAV -->
- 
-    <!-- START Journal -->
-    <div id="journal"></div>
-    <!-- END Journal -->
+        <!-- START Journal -->
+        <div id="journal"></div>
+        <!-- END Journal -->
 
-    <!--horizontal journal explore-->
-    <!-- <container class="journaleditions">
+        <!--horizontal journal explore-->
+        <!-- <container class="journaleditions">
         <span class="desc-group">
             <a href="">
                 <div class="journaleditionnew"></div>
@@ -32,147 +31,171 @@
         </span>
     </container>
     <!--------------------------------------------------->
-    <!--------------------------------------------------->
-    <!--------------------------------------------------->
-    <!--------------------------------------------------->
-    <!--------------------------------------------------->
-    <!--------------------------------------------------->
-    <!--------------------------------------------------->
-    <!--------------------------------------------------->
+        <!--------------------------------------------------->
+        <!--------------------------------------------------->
+        <!--------------------------------------------------->
+        <!--------------------------------------------------->
+        <!--------------------------------------------------->
+        <!--------------------------------------------------->
+        <!--------------------------------------------------->
 
-    <script>
-        window.addEventListener("DOMContentLoaded", function () {
-            var container = document.querySelector("container");
-            var img = document.querySelector("img");
+        <script>
+            window.addEventListener("DOMContentLoaded", function () {
+                var container = document.querySelector("container");
+                var img = document.querySelector("img");
 
-            function resizeContainer(e1, e2) {
-                var windowWidth =
-                    window.innerWidth ||
-                    document.documentElement.clientWidth;
-                var windowHeight =
-                    window.innerHeight ||
-                    document.documentElement.clientHeight;
+                function resizeContainer(e1, e2) {
+                    var windowWidth =
+                        window.innerWidth ||
+                        document.documentElement.clientWidth;
+                    var windowHeight =
+                        window.innerHeight ||
+                        document.documentElement.clientHeight;
 
-                e1.width = windowWidth * 1; // Adjust the width as needed
-                e1.height = windowHeight * 0.8; // Adjust the height as needed
-                e2.width = windowWidth * 0.1; // Adjust the width as needed
-            }
+                    e1.width = windowWidth * 1; // Adjust the width as needed
+                    e1.height = windowHeight * 0.8; // Adjust the height as needed
+                    e2.width = windowWidth * 0.1; // Adjust the width as needed
+                }
 
-            resizeContainer(iframe);
-            resizeContainer(img);
-            window.addEventListener("resize", resizeContainer);
-        });
-    </script> -->
+                resizeContainer(iframe);
+                resizeContainer(img);
+                window.addEventListener("resize", resizeContainer);
+            });
+        </script>
+        -->
 
-
-    <div class="container">
-        <div class="card article promo-block">
-            <div class="card-content">
-                <h1 class="title is-1 article-title is-centered">Journal Issues</h1>
-                <div class="card">
-                    <div class="card-header">
-                        <p class="card-header-title is-centered" style="font-size:1.5em">Volume 1</p>
-                    </div>
-                    <p class="pb-5"></p>
-                    <div class="columns">
-                        <div class="column is-one-third">
-                            <div class="card-image">
-                                <nav class="level">
-                                    <div class="level-item has-text-centered">
-                                        <figure class="image" style="display:block; margin-left:auto; margin-right:auto;">
-                                            <a href="/journal/Volume 1.pdf">
-                                                <img src="/journal/ISSUE 1.png"
-                                                id="event_banner"
-                                                alt="Issue 1 Cover"; style="object-fit:cover;
-                                                width:340px; height:440px;
-                                                border-radius:8px;">
-                                            </a>
-                                        </figure>
-                                    </div>
+        <div class="container">
+            <div class="card article promo-block">
+                <div class="card-content">
+                    <h1 class="title is-1 article-title is-centered">
+                        Journal Issues
+                    </h1>
+                    <div class="card">
+                        <div class="card-header">
+                            <p
+                                class="card-header-title is-centered"
+                                style="font-size: 1.5em"
+                            >
+                                Volume 1
+                            </p>
+                        </div>
+                        <p class="pb-5"></p>
+                        <div class="columns">
+                            <div class="column is-one-third">
+                                <div class="card-image">
+                                    <nav class="level">
+                                        <div
+                                            class="level-item has-text-centered"
+                                        >
+                                            <figure
+                                                class="image"
+                                                style="
+                                                    display: block;
+                                                    margin-left: auto;
+                                                    margin-right: auto;
+                                                "
+                                            >
+                                                <a href="/journal/Issue 1.pdf">
+                                                    <img
+                                                        src="/journal/ISSUE 1.png"
+                                                        id="event_banner"
+                                                        alt="Issue 1 Cover"
+                                                        ;
+                                                        style="
+                                                            object-fit: cover;
+                                                            width: 340px;
+                                                            height: 440px;
+                                                            border-radius: 8px;
+                                                        "
+                                                    />
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </nav>
                                 </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content is-centered" style="font-size:1.5em">
-                                        Vol. 1 (Spring 2024)
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div
+                                            class="media-content is-centered"
+                                            style="font-size: 1.5em"
+                                        >
+                                            Vol. 1 (Spring 2024)
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <p class="pb-5"></p>
-
-                        <!-- <p class="pr-6"></p> -->
-                        <div class="column is-half">
-                            <h1 class="subtitle is-4">Content</h1>
-                            <ul> 
-                                <li>
-                                    <strong>pg. 01-02</strong> Letter from the Editor
-                                </li>
-                                <li>
-                                    <strong>pg. 03-44</strong> The Role of Ketone Bodies in Delaying
-                                    Neurodegeneration Caused by Traumatic Brain Injuries in a
-                                    <i>Drosophila melanogaster</i> Model
-                                </li>  
-                            </ul>
-
                             <p class="pb-5"></p>
-                            <h1 class="subtitle is-4">Contributing Author(s)</h1>
-                            <ul> 
-                                <li>
-                                    <strong>Francine Cai</strong>
-                                    <p style="text-indent: 40px;">
-                                        Francine is a recent UConn alumni who studied Physiology & Neurobiology with minors in Political Science and Business Analytics. As a UConn student, she studied metabolism and neurodegeneration in the Tanner Lab and was a part of UConn Model UN. In her free time she loves trying new restaurants and listening to Renaissance.
-                                    </p>
-                                </li>
-                            </ul>
 
-                            <p class="pb-5"></p>
-                            <h1 class="subtitle is-4">Editors</h1>
-                            <ul> 
-                                <li>
-                                    Christian Bjork
-                                </li>
-                                <li>
-                                    Anshul Rastogi
-                                </li>
-                                <li>
-                                    Enya Goonetilleke
-                                </li>
-                                <li>
-                                    Erica Lavoie
-                                </li>
-                                <li>
-                                    Henry Driscoll
-                                </li>
-                                <li>
-                                    Natalie Aloisio
-                                </li>
-                                <li>
-                                    Rilee Harris
-                                </li>
-                            </ul> 
+                            <!-- <p class="pr-6"></p> -->
+                            <div class="column is-half">
+                                <h1 class="subtitle is-4">Content</h1>
+                                <ul>
+                                    <li>
+                                        <strong>pg. 01-02</strong> Letter from
+                                        the Editor
+                                    </li>
+                                    <li>
+                                        <strong>pg. 03-44</strong> The Role of
+                                        Ketone Bodies in Delaying
+                                        Neurodegeneration Caused by Traumatic
+                                        Brain Injuries in a
+                                        <i>Drosophila melanogaster</i> Model
+                                    </li>
+                                </ul>
+
+                                <p class="pb-5"></p>
+                                <h1 class="subtitle is-4">
+                                    Contributing Author(s)
+                                </h1>
+                                <ul>
+                                    <li>
+                                        <strong>Francine Cai</strong>
+                                        <p style="text-indent: 40px">
+                                            Francine is a recent UConn alumni
+                                            who studied Physiology &
+                                            Neurobiology with minors in
+                                            Political Science and Business
+                                            Analytics. As a UConn student, she
+                                            studied metabolism and
+                                            neurodegeneration in the Tanner Lab
+                                            and was a part of UConn Model UN. In
+                                            her free time she loves trying new
+                                            restaurants and listening to
+                                            Renaissance.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <p class="pb-5"></p>
+                                <h1 class="subtitle is-4">Editors</h1>
+                                <ul>
+                                    <li>Christian Bjork</li>
+                                    <li>Anshul Rastogi</li>
+                                    <li>Enya Goonetilleke</li>
+                                    <li>Erica Lavoie</li>
+                                    <li>Henry Driscoll</li>
+                                    <li>Natalie Aloisio</li>
+                                    <li>Rilee Harris</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--
-    
+        <!--
+
     <script src="journal.html"></script>
     <script>
         document.getElementById('journal').innerHTML=//generate_events(events);
     </script>
 
-    -->
+    --></body>
 
-</body>
-
-<!-- START FOOTER-->
-<footer>
-    <div id="includeFooter"></div>
-</footer>
-<!-- END FOOTER -->
-
+    <!-- START FOOTER-->
+    <footer>
+        <div id="includeFooter"></div>
+    </footer>
+    <!-- END FOOTER -->
 </html>
