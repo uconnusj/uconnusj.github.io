@@ -417,7 +417,7 @@ const members={
         imageSrc: ".jpeg",
         email:"",
         bio:`
-        Samantha is a first-year Biological Sciences major. She Joined USJ because of her interest in a diverse range of research and is a part of USJ’s Journalism Team. Outside of the club, Samantha is an FYE Mentor for the 2024-2025 year, an intern at Medtronic, and a summer camp counselor. Outside of school she loves to paint, play soccer, and watch rom-coms!
+        Samantha is a first-year Biological Sciences major. She Joined USJ because of her interest in a diverse range of research. Outside of the club, Samantha is an FYE Mentor for the 2024-2025 year, an intern at Medtronic, and a summer camp counselor. Outside of school she loves to paint, play soccer, and watch rom-coms!
         `
     },
     "Ty Zaccagnini":{
