@@ -771,3 +771,29 @@ function generate_author_card(name) {
     };
     return html;
 }
+
+
+// for journal issues
+function generate_editor_list(editor_arr) {
+    set_card_width(12);
+    html="<ul>";
+    editor_arr.forEach(
+        name=>{
+            if (Object.keys(members).includes(name)) {
+                html+=`
+                        <li>
+                            ${name}
+                        
+                    `;
+                members[name].position.forEach(
+                    position=>{
+                        html+=" &#183 ${position}";
+                    }
+                );
+                html+="</li>";
+            }
+        }
+    );
+    html+="</ul>";
+    return html;
+}
