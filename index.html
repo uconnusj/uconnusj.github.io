@@ -18,11 +18,11 @@
       document.getElementById('includeNavbar').innerHTML=navbar();
   </script>
 
-  <section class="hero is-info is-medium is-bold">
+  <section class="hero is-info is-medium is-bold" id="banner-img" style="height: 100px;">
     <div class="hero-body"
       style="background: center/100% url('/images/UConn_IMAGE.jpg')">
       <div class="container has-text-centered">
-        <h1 class="title is-2" style="color: #041333; text-shadow: rgb(255, 255, 255) 1px 0 10px; font-size: 3em;">
+        <h1 class="title is-2" id="banner-text" style="color: #041333; text-shadow: rgb(255, 255, 255) 1px 0 10px; font-family: 'EB Garamond';">
           UConn Undergraduate Science Journal
         </h1>
         <br /><br /><br /><br /><br />
@@ -30,34 +30,10 @@
     </div>
   </section>
 
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-        var container = document.querySelector("container");
-        var img = document.querySelector("img");
-
-        function resizeContainer(e1, e2) {
-            var windowWidth =
-                window.innerWidth ||
-                document.documentElement.clientWidth;
-            var windowHeight =
-                window.innerHeight ||
-                document.documentElement.clientHeight;
-
-            e1.width = windowWidth * 1; // Adjust the width as needed
-            e1.height = windowHeight * 0.8; // Adjust the height as needed
-            e2.width = windowWidth * 0.1; // Adjust the width as needed
-        }
-
-        resizeContainer(iframe);
-        resizeContainer(img);
-        window.addEventListener("resize", resizeContainer);
-    });
-</script>
-
 <div class="container">
     <div class="card article promo-block">
         <div class="card-content">
-            <h1 class="title is-1 article-title is-centered">
+            <h1 class="title article-title is-centered">
                 Read our first journal issue!
             </h1>
             <div class="card">
@@ -92,7 +68,7 @@
                                                 alt="Issue 1 Cover"
                                                 ;
                                                 style="
-                                                    object-fit: cover;
+                                                    object-fit: contain;
                                                     width: 340px;
                                                     height: 440px;
                                                     border-radius: 8px;
@@ -114,10 +90,10 @@
                             </div>
                         </div>
                     </div>
-                    <p class="pb-5"></p>
-
+                    
                     <!-- <p class="pr-6"></p> -->
-                    <div class="column is-half">
+                    
+                    <div class="column" style="margin-left: 10px;">
                         <h1 class="subtitle is-4">Content</h1>
                         <ul>
                             <li>
@@ -180,9 +156,8 @@
       <!-- START USJ Description -->
       <div class="card article first-block">
         <div class="card-content is-centered">
-          <h1 class="title is-1 article-title">What is the Undergraduate Science Journal?</h1>
-            <div class="content">
-              <p>
+          <h1 class="title article-title">What is the Undergraduate Science Journal?</h1>
+              <p id="about-text" style="font-size: 10px; text-align: left;">
                 The UConn Undergraduate Science Journal is an online, open-access, peer-reviewed academic journal
                 dedicated to the select publication of independent research conducted by UConn undergraduate 
                 students within all STEM disciplines, that is any research that explores the physical sciences 
@@ -198,7 +173,6 @@
                 The journal is set to promote student scientific research among the UConn undergraduate student 
                 body and hopes to eliminate some barriers of getting STEM research published by undergraduate students. 
               </p>
-            </div>
           </div>
         </div>
         <!-- END USJ Description-->
@@ -270,6 +244,19 @@
   </div>
   
   </div>
+
+  <script>
+   
+    // updates event image sizes dynamically based on window width:
+    function updateSize() {
+        document.getElementById("banner-img").style.height=`${Math.floor(window.innerWidth/4)}px`;
+        document.getElementById("banner-text").style.fontSize=`${window.innerWidth/200}em`;
+        document.getElementById("event_banner").style.height=`${Math.min(window.innerWidth/1.2,440)}px`;
+        document.getElementById("about-text").style.fontSize=`${Math.min(window.innerWidth/200,1)}em`;
+    }
+    updateSize();
+    window.addEventListener("resize",updateSize);
+  </script>
 </body>
 
 <!-- START FOOTER-->
