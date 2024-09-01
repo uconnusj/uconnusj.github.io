@@ -20,7 +20,7 @@
 
   <section class="hero is-info is-medium is-bold">
     <div class="hero-body"
-      style="background: url('https://hillsideventures.uconn.edu/wp-content/uploads/sites/3266/2022/11/UConn-Campus.jpg')">
+      style="background: center/100% url('/images/UConn_IMAGE.jpg')">
       <div class="container has-text-centered">
         <h1 class="title is-2" style="color: #041333; text-shadow: rgb(255, 255, 255) 1px 0 10px; font-size: 3em;">
           UConn Undergraduate Science Journal
@@ -30,10 +30,153 @@
     </div>
   </section>
 
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+        var container = document.querySelector("container");
+        var img = document.querySelector("img");
+
+        function resizeContainer(e1, e2) {
+            var windowWidth =
+                window.innerWidth ||
+                document.documentElement.clientWidth;
+            var windowHeight =
+                window.innerHeight ||
+                document.documentElement.clientHeight;
+
+            e1.width = windowWidth * 1; // Adjust the width as needed
+            e1.height = windowHeight * 0.8; // Adjust the height as needed
+            e2.width = windowWidth * 0.1; // Adjust the width as needed
+        }
+
+        resizeContainer(iframe);
+        resizeContainer(img);
+        window.addEventListener("resize", resizeContainer);
+    });
+</script>
+
+<div class="container">
+    <div class="card article promo-block">
+        <div class="card-content">
+            <h1 class="title is-1 article-title is-centered">
+                Read our first journal issue!
+            </h1>
+            <div class="card">
+                <div class="card-header">
+                    <p
+                        class="card-header-title is-centered"
+                        style="font-size: 1.5em"
+                    >
+                        Volume 1
+                    </p>
+                </div>
+                <p class="pb-5"></p>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="card-image">
+                            <nav class="level">
+                                <div
+                                    class="level-item has-text-centered"
+                                >
+                                    <figure
+                                        class="image"
+                                        style="
+                                            display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                        "
+                                    >
+                                        <a href="/journal/Issue 1.pdf">
+                                            <img
+                                                src="/journal/Issue 1.png"
+                                                id="event_banner"
+                                                alt="Issue 1 Cover"
+                                                ;
+                                                style="
+                                                    object-fit: cover;
+                                                    width: 340px;
+                                                    height: 440px;
+                                                    border-radius: 8px;
+                                                "
+                                            />
+                                        </a>
+                                    </figure>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div
+                                    class="media-content is-centered"
+                                    style="font-size: 1.5em"
+                                >
+                                    Vol. 1 (Spring 2024)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pb-5"></p>
+
+                    <!-- <p class="pr-6"></p> -->
+                    <div class="column is-half">
+                        <h1 class="subtitle is-4">Content</h1>
+                        <ul>
+                            <li>
+                                <strong>pg. 01-02</strong> Letter from
+                                the Editor
+                            </li>
+                            <li>
+                                <strong>pg. 03-44</strong> The Role of
+                                Ketone Bodies in Delaying
+                                Neurodegeneration Caused by Traumatic
+                                Brain Injuries in a
+                                <i>Drosophila melanogaster</i> Model
+                            </li>
+                        </ul>
+
+                        <p class="pb-5"></p>
+                        <h1 class="subtitle is-4">
+                            Contributing Author(s)
+                        </h1>
+                        <ul>
+                            <li>
+                                <strong>Francine Cai</strong>
+                                <p style="text-indent: 40px">
+                                    Francine is a recent UConn alumni
+                                    who studied Physiology &
+                                    Neurobiology with minors in
+                                    Political Science and Business
+                                    Analytics. As a UConn student, she
+                                    studied metabolism and
+                                    neurodegeneration in the Tanner Lab
+                                    and was a part of UConn Model UN. In
+                                    her free time she loves trying new
+                                    restaurants and listening to
+                                    Renaissance.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="pb-5"></p>
+                        <h1 class="subtitle is-4">Editors</h1>
+                        <ul>
+                            <li>Christian Bjork</li>
+                            <li>Anshul Rastogi</li>
+                            <li>Enya Goonetilleke</li>
+                            <li>Erica Lavoie</li>
+                            <li>Henry Driscoll</li>
+                            <li>Natalie Aloisio</li>
+                            <li>Rilee Harris</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
   <div class="container articles-padding">
     <section class="articles">
       <div>
-
       <!-- START USJ Description -->
       <div class="card article first-block">
         <div class="card-content is-centered">
