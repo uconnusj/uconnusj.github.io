@@ -1,4 +1,8 @@
 html,
+:root {
+  --widescreen-enabled: false;
+  --fullhd-enabled: false;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -12,7 +16,6 @@ body {
   font-size: 1.11rem;
   font-weight: bold;
 }
-
 
 .is-centered {
   display: flex;
