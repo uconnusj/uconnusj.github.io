@@ -19,6 +19,27 @@ const events=[
         which is helpful for students looking to complete Honors Laureate.
         `
     },
+    {
+        title:"Fall 2024 Involvement Fair",
+        start:new Date("September 4, 2024 14:00:00"),
+        end:new Date("September 4, 2024 18:00:00"),
+        banner_src:"Fall 2024 Involvement Fair.jpg",
+        location:link_html("Fairfield Way Table 101","https://maps.uconn.edu/m/map/YAH12"),
+        desc:`
+        Come say hi to us at the Fall 2024 Involvement Fair!
+        `
+    },
+    {
+        title:"Fall 2024 First General Body Meeting",
+        start:new Date("September 12, 2024 19:00:00"),
+        end:new Date("September 12, 2024 20:00:00"),
+        banner_src:"Fall 2024 First GBM.JPG",
+        location:link_html("GANT W001","https://maps.uconn.edu/m/map/GS"),
+        desc:`
+        We're holding our first General Body Meeting of the semester! Stop by to learn about the paper
+        submissions process or how to get involved in any of our diverse teams here at USJ!
+        `
+    },
 ];
 
 function format_date(date) {
@@ -51,8 +72,8 @@ function generate_event_card(event) {
                             <figure class="image" style="display:block; margin-left:auto; margin-right:auto;">
                                 <img src="${generate_img_path(event)}"
                                 id="event_banner"
-                                alt="${event.title}"; style="object-fit: cover;
-                                width: ${dim}px; height:${dim}px;
+                                alt="${event.title}"; style="object-fit: contain;
+                                width: ${dim}px;
                                 border-radius:8px;">
                             </figure>
                         </div>
@@ -89,11 +110,49 @@ function generate_events(events) {
                     <div class="columns">
     `;
     var cols=[];
+    var past_events=[];
     for (let col=0;col<num_cols;col++) {
         cols.push([]);
     };
     idx=0;
     events.forEach(
+        event=>{
+                if (event.start>new Date()) {
+                    cols[idx].push(generate_event_card(event));
+                    idx++;
+                    idx=idx%num_cols;
+                }
+                else {
+                    past_events.push(event)
+                }
+        }
+    );
+    cols.forEach(
+        col=>{
+            html+=`<div class="column">`;
+            col.forEach(
+                event_card=>{
+                    html+=event_card;
+                }
+            )
+            html+=`</div>`
+        }
+    );
+    html+="</div></div></div></div>";
+
+    html+=`
+        <div class="container">
+            <div class="card article promo-block">
+                <div class="card-content">
+                    <h1 class="title is-1 article-title is-centered">Past Events</h1>
+                    <div class="columns">
+    `;
+    var cols=[];
+    for (let col=0;col<num_cols;col++) {
+        cols.push([]);
+    };
+    idx=0;
+    past_events.forEach(
         event=>{
             cols[idx].push(generate_event_card(event));
             idx++;
