@@ -22,9 +22,18 @@
         
         // updates event image sizes dynamically based on window width:
         function updateSize() {
-            dim_factor=3.75
-            document.getElementById("event_banner").style.height=`${Math.floor(window.innerWidth/dim_factor)}px`
-            document.getElementById("event_banner").style.width=`${Math.floor(window.innerWidth/dim_factor)}px`
+            dim_factor=4;
+            event_images=document.querySelectorAll('[id=event_banner]');
+            event_images.forEach(element => {
+                if (window.innerWidth<700) {
+                    dim_factor=1.5;
+                }
+                else {
+                    dim_factor=4;
+                }
+                element.style.width=`${Math.floor(window.innerWidth/dim_factor)}px`;
+            });
+            //document.getElementById("event_banner").style.width=`${Math.floor(window.innerWidth/dim_factor)}px`
         }
         updateSize();
         window.addEventListener("resize",updateSize);
