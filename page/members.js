@@ -104,6 +104,12 @@ const eboard={
 
 // stores all members info
 const members={
+    "Anusha Prabhakar": {
+        position: [teams.editorial.name],
+        imageSrc: ".png",
+        email: "",
+        bio: `Anusha Prabhakar is a sophomore majoring in Structural Biology & Biophysics and Computer Science. Outside of USJ, she serves as President of the Astronomy Association and is a member of the UConn Emergency Med Club and UConn Rescue. In her free time, she enjoys beekeeping, classical dance, photography, and hiking!`
+    },
     "Sean Reddy": {
         position: [teams.technology.name],
         imageSrc: ".png",
@@ -174,7 +180,7 @@ const members={
         position: [teams.journalism.name],
         imageSrc: ".png",
         email: "",
-        bio: `Christopher Smith is a freshman at the University of Connecticut; he is pursuing a degree in physiology and neurobiology within the Honors Program. In high school, he was awarded the Gettysburg College Award for distinguished performance in the study of American History, The CT COLT Award of Excellence in Spanish three years in a row, the Farmington High School Academic Award, the Farmington High School Citizenship Award for exemplary service to their school and community, the FBE (Farmington Board of Education) Student Leadership Award, Environmental Science Award for excellence in environmental science studies, Harriet Woodford Scholarship for excellence in English and global language studies, Dr. Edward P. Dunne Scholarship for remarkable grades in academic studies and dedication to community service, the Leonard Bernstein Award for Conducting, the Cross Country Award, AP Scholar, and AP Scholar with Distinction. At UConn, he was awarded the Academic Excellence scholarship. He was the president of the Tunxis National Honor Society Chapter and a member of National Science Honor Society, National English Honor Society, National Math Honor Society, and Tri-M Honor Society. He has been involved in research in his senior year and is currently part of Dr. Skoe’s research team. Christopher performed and held leadership positions in the undergraduate and graduate Lake George Music Festival and Connecticut Youth Symphony. He has been a part of multiple chamber ensembles and has taken lessons for violin since second grade. In terms of club at UConn, he participates in the Undergraduate Science Journal, Honors Council, and Honors in STEM.`
+        bio: `Christopher Smith is a freshman at the University of Connecticut; he is pursuing a degree in physiology and neurobiology within the Honors Program. In terms of club at UConn, he participates in the Undergraduate Science Journal, Honors Council, and Honors in STEM.`
     },
     "Abby": {
         position: [teams.editorial.name],
