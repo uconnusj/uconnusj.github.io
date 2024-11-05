@@ -40,6 +40,20 @@ const events=[
         submissions process or how to get involved in any of our diverse teams here at USJ!
         `
     },
+    {
+        title:"Fall 2024 Intro to Undergraduate Research",
+        start:new Date("November 7, 2024 19:00:00"),
+        end:new Date("November 7, 2024 20:15:00"),
+        banner_src:"Fall 2024 Intro to Undergrad Research.png",
+        location:link_html("GANT W001","https://maps.uconn.edu/m/map/GS"),
+        desc:`
+        We’re excited to announce our first official research-focused workshop of the year, designed to help you get involved in research at UConn.
+        \n\n
+        In this workshop, we’ll discuss how to start in research, including practical tips on reaching out to professors and PIs through cold emails and connecting your interests with ongoing research on campus. We’ll also have PIs (Principal Investigators) as guest speakers, who will share insights on what they look for in student researchers and give advice on how to make a strong impression when approaching faculty. You’ll hear firsthand about different research projects happening on campus and how to get involved.
+        \n\n
+        You’ll also learn about specific opportunities available to UConn students, such as funding options like the IDEA Grant and SURF Grant to support your own research projects. Additionally, we’ll introduce useful resources, including UConn’s library databases like Lincus and PubMed, to help you deepen your knowledge in areas of interest.
+        `
+    },
 ];
 
 function format_date(date) {
@@ -53,8 +67,20 @@ function format_date(date) {
     return date_str.slice(0,7)+","+date_str.slice(7)+" "+hrs+":"+date.getMinutes().toString().padStart(2,'0')+meridian;
 }
 
+function toISOStringWithTimezone(date) {
+    const timezoneOffsetInMinutes = date.getTimezoneOffset();
+    const offsetHours = Math.floor(Math.abs(timezoneOffsetInMinutes) / 60);
+    const offsetMinutes = Math.abs(timezoneOffsetInMinutes) % 60;
+  
+    const offsetSign = timezoneOffsetInMinutes < 0 ? '+' : '-';
+  
+    const formattedOffset = `${offsetSign}${offsetHours.toString().padStart(2, '0')}:${offsetMinutes.toString().padStart(2, '0')}`;
+  
+    return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}T${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}.${date.getMilliseconds().toString().padStart(3, '0')}${formattedOffset}`;
+  }
+
 function generate_img_path(event) {
-    return `${event_img_path}${event.start.toISOString().slice(0,10)} ${event.banner_src}`;
+    return `${event_img_path}${toISOStringWithTimezone(event.start).slice(0,10)} ${event.banner_src}`;
 }
 
 
