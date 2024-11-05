@@ -188,7 +188,7 @@ const members={
         email: "",
         bio: `Christopher Smith is a freshman at the University of Connecticut; he is pursuing a degree in physiology and neurobiology within the Honors Program. In terms of club at UConn, he participates in the Undergraduate Science Journal, Honors Council, and Honors in STEM.`
     },
-    "Abby": {
+    "Abby Cummings": {
         position: [teams.editorial.name],
         imageSrc: ".jpg",
         email: "",
@@ -259,6 +259,18 @@ const members={
         imageSrc: ".png",
         email: "",
         bio: `Caelah Etter is a junior studying Physics with minors in Astrophysics and Art in the UConn Honors Program. She is currently researching with Dr. Jonathan Trump and Dr. Bren Backhaus in the UConn physics department, researching emission line properties of high redshift galaxies. She is also in the works of planning her own research project using the UConn Observatory. In USJ, she is the Director of Advertisement and runs USJ’s Instagram! Outside of USJ she is part of Alpha Omicron Pi, Alpha Phi Omega, Women in Physics, and Hus-Keys Acapella. She enjoys listening to music, drinking coffee, hanging out with friends, and hanging with her two dogs.`
+    },
+    "Edrik Morales": {
+        position: eboard.chief.name,
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Edrik Morales is a sophomore at the University of Connecticut (UCONN), majoring in Chemistry and Molecular & Cellular Biology. He is the current President of Undergraduate Science Journal. He gained valuable experience working in the Kerry Gilmore lab, where he focuses on flow chemistry. His work involves calibrating pump systems to automate reactions and calculating percent yield for specific chemical processes. Outside of his academics, Edrik serves as the treasurer of the UCONN Calisthenics Club. He enjoys spending time with friends, exploring nature, and staying active through workouts.`
+    },
+    "Malak Nechnach": {
+        position: eboard.outreach.name,
+        imageSrc: ".png",
+        email: "",
+        bio: `Malak Nechnach is a Junior majoring in Physiology and Neurobiology with a minor in Mathematics, on a neuroscience PhD track. She serves as the Head of the Outreach team. Outside of the club, she is a Resident Assistant on campus at Alumni Hall, a SPIN instructor at the rec, and a Peer Research Ambassador for the Office of Undergraduate Research (OUR). In addition, she is the chair of outreach for the PNB society, Vice president for the French club and North African Student Association. She also is a Research Assistant at Dr.Sciolino’s laboratory in the PNB department. In her spare time, Malak enjoys playing soccer, the piano and going on adventures.`
     },
 };
 
