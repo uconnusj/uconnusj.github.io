@@ -54,19 +54,22 @@ function generate_blog(blog) {
 }
 
 function generate_blog_card(blog) {
+    img_width="300px";
+    img_height="300px";
     return `
     <a href=${generate_blog_link(blog)} style="text-decoration: none; color: inherit;">
-        <div class="card article promo-block" style="height:450px">
+        <div class="card article promo-block" style="height:300px">
             <section class="section">
                 <div class="columns">
-                    <div class="column is-8 is-offset-2">
+                    <div class="column is-2">
+                        <img src="${img_path}${blog.img.src}" alt="${blog.img.alt}"
+                        style="border-radius:8px; object-fit:contain;
+                        width:${img_width}; height:${img_height}; position:relative; top: -45px">
+                    </div>
+                    <div class="column is-8">
                         <div class="content is-medium">
                             <h2 class="subtitle is-4">${format_date(blog.date)}</h2>
                             <h1 class="title">${blog.title}</h1>
-                            <div class="clipped">
-                                <p style="text-indent: 40px;">${blog.content.split("\n\n")[0]}</p>
-                                <p style="text-indent: 40px;">${blog.content.split("\n\n")[1]}</p>
-                            </div>
                             <div class="gradientback"></div>
                         </div>
                     </div>
