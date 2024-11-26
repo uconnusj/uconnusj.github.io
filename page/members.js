@@ -104,7 +104,174 @@ const eboard={
 
 // stores all members info
 const members={
-    
+    "Samantha Stroka": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Samantha Stroka is a sophomore majoring in Molecular and Cellular Biology on the Pre-PA track. On campus she is Fundraising Chair for UConn's Albanian Student Association, a member of UConn’s Pre-Physician Assistant Patient Care Alliance (PAPCA), part of Knit4NICU, and plays intramural soccer. Outside of school she works at Medtronic with Project Managment, helping to oversee and test products pre, during, and post launch. She loves to go on runs, paint, and watch Nancy Myers movies!`
+    },
+    "Anusha Prabhakar": {
+        position: [teams.editorial.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Anusha Prabhakar is a sophomore majoring in Structural Biology & Biophysics and Computer Science. Outside of USJ, she serves as President of the Astronomy Association and is a member of the UConn Emergency Med Club and UConn Rescue. In her free time, she enjoys beekeeping, classical dance, photography, and hiking!`
+    },
+    "Sean Reddy": {
+        position: [teams.technology.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Sean Reddy is a freshman majoring in Physiology and Neurobiology with a minor in Neuroscience. Outside of USJ, he is a member of the PNB Club and UConn Alzheimer’s Association. He is also a member of the UConn Symphonic Orchestra where he plays the viola. In his free time, Sean enjoys watching reality cooking shows and listening to music.`
+    },
+    "Andie Napolitano": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Andie is a freshman majoring in Allied Health Sciences. She is part of USJ’s journalism team. Outside of USJ, she is a member of Model UN and WiMSE. She is a researcher in UConn’s mHealth and Social Media lab, where she is part of a team studying the effects of diet tracking on weight loss, and previously studied childhood cancer communications. In her free time, she likes to spend time with friends and family, learn new things, go to the gym, and listen to music.`
+    },
+    "Rilee Harris": {
+        position: [teams.editorial.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Rilee is a sophomore Honors Scholar studying Molecular & Cell Biology while minoring in Studio Art. She is currently serving the editorial team at USJ. She works in Dr. Alexandrescu’s lab studying the structure and dynamics of novel zinc finger proteins. In her free time, Rilee enjoys drawing, reading, and buying candles.`
+    },
+    "Razil Fernandes": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Razil is a freshman in the UConn Honors Program majoring in Molecular and Cell Biology. Outside of USJ, she is involved in iGEM and holds a passion for genetics and biomedicine. She works as a Student Written Communications Assistant for UConn’s Materials Science and Engineering Department. Razil has a research background having completed a three-year independent research project related to hydrogels to treat Alzheimer’s and for use in developing fully functioning heart organs. Her specific areas of interest are in the mechanisms of neurodegenerative diseases. In her free time, Razil enjoys reading and spending time with friends.`
+    },
+    "Sam Chichester": {
+        position: [teams.technology.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Sam Chichester is a sophomore majoring in computer science with a concentration in software engineering. Outside of the classroom, he is studying web development and machine learning. In his spare time, he enjoys playing & listening to music, learning languages, and going to the gym.`
+    },
+    "Elizabeth Evans": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Elizabeth is a freshman majoring in Molecular and Cell Biology. Outside of USJ, she is a member of the pre-med society, future health leaders, and run club. She also volunteers at Mansfield Center for Nursing and Rehabilitation through the program Generations Connect. Elizabeth was previously a member of the Dodge-Kafka lab at UConn Health Center, where she researched cellular signaling pathways in skeletal muscle cells. She hopes to continue her passion for research. In her free time, Elizabeth enjoys working out, baking, and hanging out with friends.`
+    },
+    "Mikayla Rafala": {
+        position: [teams.graphic.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Mikayla Rafala is a Senior majoring in Graphic Design and Minoring in Digital Marketing. At USJ she is a part of the graphic design team. Her passion for graphic design began with a love for illustration, typography, and color while keeping a minimalist style. She has previously worked with UConn’s Design Center to work on publication designs and projects for the University and is currently working with Nutmeg Publishing at UConn. Some fun facts about her are that she loves mint tea, has a cat named Stevie, a turtle named turtle boy, and is interested in learning more about science.`
+    },
+    "Daris Pon Mohan Kumar": {
+        position: [teams.technology.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Daris Pon Mohan Kumar is a sophomore majoring in Computer Science & Engineering. At USJ, she is a part of the Web Development Team. Outside of the club, she is a part of the E-board for STEM Scholars as Secretary and for Honors Ambassadors as a Coordinator. She is also a UNIV Facilitator, a member of Astronomy Association, and works part-time at UConn Hillel. In her free time, you can find her listening to music, hiking, and doing spin classes at the Rec.`
+    },
+    "Victoria Dabrowski": {
+        position: [teams.editorial.name, teams.graphic.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Victoria Dabrowski is a freshman at UConn in Honors and the Special Program in Medicine, majoring in Biomedical Engineering with a planned minor in statistics. She is involved in the Collegiate Health Service Corps, Horticulture club and works as a dental assistant. In her free time, she enjoys hiking, knitting, and listening to music.`
+    },
+    "Anshul Patel": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Anshul is a freshman in the UConn Honors program majoring in Molecular and Cell Biology and Physiology and Neurobiology, with a passion for medical research and hands-on clinical experience. In high school, Anshul founded a tutoring committee in the New Haven area, helping students in grades 6-12 with a focus on Science and Math. He also served as Captain of the tennis team for two years. Additionally, he launched a healthcare initiative in India, aimed at improving health outcomes for children in rural areas. At UConn, Anshul is a freshman representative for the Indian Students Association and a member of the Undergraduate Science Journal’s Journalism Team. In his free time, he enjoys spending time with friends, listening to Drake, following Liverpool FC, and reading about psychology and philosophy.`
+    },
+    "Jenny Alaska": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Jenny Alaska is a junior Honors Scholar at UConn majoring in Biomedical Engineering with hopes of attending medical school. She is a member of the Journalism Team at USJ. Currently, Jenny is a research assistant under Dr. Sinder at UConn Health in the Department of Orthopedic Surgery, studying mechanical properties of bone tissue. She also works part time as a math tutor at the UConn Q Center and is a volunteer EMT in Trumbull, CT. Jenny is the Treasurer of the Women’s Club Soccer team at UConn, a Morale Captain for HuskyTHON 2025, and loves to run, read, and hike.`
+    },
+    "Christopher Smith": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Christopher Smith is a freshman at the University of Connecticut; he is pursuing a degree in physiology and neurobiology within the Honors Program. In terms of club at UConn, he participates in the Undergraduate Science Journal, Honors Council, and Honors in STEM.`
+    },
+    "Abby Cummings": {
+        position: [teams.editorial.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Abby is a freshman in the UConn honors program pursuing a dual degree in mechanical engineering and physics as well as a minor in computer science. At USJ, she works on the editorial team. Outside of the club, she is a senator in the Undergraduate Student Government, representing the College of Engineering as well as serving on the External Affairs Committee. She also works as a teaching assistant for anatomy and physiology courses at Johns Hopkins University. In her free time, Abby enjoys playing tennis, baking, and listening to music. She's excited to help publish this year's edition of the Undergraduate Science Journal, as well as to pursue her own research in physics.`
+    },
+    "Noha Myreen": {
+        position: [teams.journalism.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Noha Myreen is a freshman majoring in Molecular and Cell Biology. At USJ, she is a member of the Journalism team. She has previously worked on cardiac stent drug research under the guidance of Dr. Stouffer at UNC and conducted an independent congenital heart defect project during high school. During her free time, Noha loves to bake sweet treats and spend time with her friends and family. At her time at UConn, Noha plans on exploring her research passions further. She anticipates attending medical school in the future.`
+    },
+    "Akhil Potdar": {
+        position: [teams.editorial.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Akhil Potdar is a freshman in the UConn Honors Program majoring in Materials Science and Engineering with a planned double minor in Nanotechnology and Electronics and Systems. At USJ, he is a member of the editorial team. Outside of the club, he is a member of the UConn Chamber Orchestra Club and is a member of the UConn Quantum Computing Club. He is also a member of UConn’s Undergraduate Research in Microfabrication Program, where he does research in Dr. Necmi Biyikli’s Atomic Layer Engineering Lab. In his free time, Akhil likes to listen to music (Classical and the Beatles), watch biopics, play the saxophone, and hang out with friends.`
+    },
+    "Anshul Rastogi": {
+        position: eboard.technology.name.concat(eboard.graphic.name),
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Anshul Rastogi is a sophomore in the Special Program in Medicine (SPiM) pursuing a dual degree in Computer Science and Molecular & Cell Biology. At USJ, he serves as Head of Web Development and Co-Head of Graphic Design; outside the club, Anshul is involved in the as a member of the Astronomy Association, the Knit for NICU Merch Design Committee, the SPiM/DM Newsletter Committee, and as the President and Secretary of Fellowship of The Page. He’s also a part-time research assistant at Dr. Song’s Data Science and Intelligence Systems Laboratory. In his spare time, Anshul enjoys drawing and digital painting, creative writing, reading sci-fi/fantasy novels, working out, and playing (losing) the occasional chess game.`
+    },
+    "Devesh Karthik": {
+        position: eboard.editorial.name,
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Devesh Karthik is a sophomore majoring in Physics and the Executive Editor of the Undergraduate Science Journal. Outside of USJ, he is treasurer of UConn Astronomy Association, member of the Undergraduate Philosophy Society, and undergraduate researcher in theoretical condensed matter physics as a member of the Santos’ Group. In his free time, Devesh likes to watch movies, write stories, listen to music, and explore the outdoors.`
+    },
+    "Mishael Gill": {
+        position: eboard.journalism.name.concat(eboard.graphic.name),
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Mishael Gill is a sophomore Physiology and Neurobiology major in the Special Program in Medicine (SPiM). She serves as USJ’s Executive Journalist and co-Head of the Graphic Design team. She is currently working with Dr. Isaac Macwan at Fairfield University to conduct molecular dynamics simulations of the MDR-1 protein and various nanoparticles. On campus, she is involved as an Honors UNIV facilitator, Social Media Coordinator for Period @ UConn and Treasurer for the Supporting Women and Health Network. She loves watching Christopher Nolan movies and listening to Gracie Abrams.`
+    },
+    "Yarden Sackett": {
+        position: eboard.treasury.name,
+        imageSrc: ".png",
+        email: "",
+        bio: `Yarden Sackett is a physics major at UConn. He has previously worked on research involving modifying digital light sensors to pick up the spectra of bright stellar objects. At UConn, Yarden is working under professor and researcher Jonathan Trump on the early formations of black holes and will continue throughout his undergraduate career. After graduating, Yarden plans to continue in the STEM path and pursue a graduate degree in Aerospace Engineering.`
+    },
+    "Erica Lavoie": {
+        position: [teams.editorial.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Erica Lavoie is a senior at UConn majoring in Molecular & Cell Biology and minoring in Neuroscience. She is a member of USJ’s Editorial Team. Outside of USJ, she does research, is president of Women in Math, Science and Engineering Club, and enjoys watching hockey and football. She currently works in the Neuroscience Department at UConn Health in Dr. Stephen Crocker’s lab, and she has been in this position for 2 years. Erica’s work focuses on understanding microglial pathology in a neuroimmunologically driven condition known as Globoid Cell Leukodystrophy. During her time in Dr. Crocker’s lab, she has gained experience in the publication process by publishing a review article as a first author (PubMed ID: 37981468). She looks forward to contributing these interests and this experience to USJ.`
+    },
+    "Meghan Stepniak": {
+        position: [teams.graphic.name],
+        imageSrc: "",
+        email: "",
+        bio: `Meghan Stepniak is a super duper senior pursuing a dual degree in Biology and Fine Arts. While she enjoys learning about plant-animal-eco bio as much as she enjoys cell-brain-genetics bio, she feels a strong desire to satiate her childhood curiosity in neurobiology and looks forward to tailoring her science studies in that direction. In her artistic development, she views natural forms as a penultimate example of beauty and strong design, and this inspires her current pursuits in illustration and industrial design. When she is not reading, studying, or working on projects, Meghan enjoys cycling, hiking, and crochet. She looks forward to merging her interests, skills, and background in USJ.`
+    },
+    "Arinee Kaul": {
+        position: [teams.treasury.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Arinee Kaul is a freshman in the Honors Program majoring in Molecular and Cell Biology potentially planning to get dual degree in Pathobiology. She has research experience with creating an original research project in high school investigating Effects of Sight and Smell of Food on pH of saliva. She also worked under Dr.Borzecki at the VA Bedford exploring the burden of Penicillin allergy labelling on LTC and elderly population (narrative review). She was deeply involved in her school’s Art and Literary Magazine (Beyond Words) and loves to make crafts in her free time.  She is also an Indian classical dancer and singer.`
+    },
+    "Giselle Smith": {
+        position: [teams.advertisement.name],
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Giselle Smith is a freshman Biological Science major and has plans on minoring in Chinese. She has research experience under Dr Andrea Ward at Adelphi University studying the locomotion of fish and her own passion project @spreadingbiology on Instagram where she posts infographics on STEM related topics. Her website that she built spreadingbiology.co contains three of her research papers and a children’s book that she hand illustrated and wrote titled: Negative Nelly and the Pancreas; a Negative Feedback Story. During her free time, Giselle enjoys painting with acrylic paints and taking walks throughout the beautiful Storrs campus. At her time at UCONN, she plans to continue her passions in research and is excited to network with others. She also has plans to attend graduate school to further her education.`
+    },
+    "Caelah Etter": {
+        position: eboard.advertisement.name,
+        imageSrc: ".png",
+        email: "",
+        bio: `Caelah Etter is a junior studying Physics with minors in Astrophysics and Art in the UConn Honors Program. She is currently researching with Dr. Jonathan Trump and Dr. Bren Backhaus in the UConn physics department, researching emission line properties of high redshift galaxies. She is also in the works of planning her own research project using the UConn Observatory. In USJ, she is the Director of Advertisement and runs USJ’s Instagram! Outside of USJ she is part of Alpha Omicron Pi, Alpha Phi Omega, Women in Physics, and Hus-Keys Acapella. She enjoys listening to music, drinking coffee, hanging out with friends, and hanging with her two dogs.`
+    },
+    "Edrik Morales": {
+        position: eboard.chief.name,
+        imageSrc: ".jpg",
+        email: "",
+        bio: `Edrik Morales is a sophomore at the University of Connecticut (UCONN), majoring in Chemistry and Molecular & Cellular Biology. He is the current President of Undergraduate Science Journal. He gained valuable experience working in the Kerry Gilmore lab, where he focuses on flow chemistry. His work involves calibrating pump systems to automate reactions and calculating percent yield for specific chemical processes. Outside of his academics, Edrik serves as the treasurer of the UCONN Calisthenics Club. He enjoys spending time with friends, exploring nature, and staying active through workouts.`
+    },
+    "Malak Nechnach": {
+        position: eboard.outreach.name,
+        imageSrc: ".png",
+        email: "",
+        bio: `Malak Nechnach is a Junior majoring in Physiology and Neurobiology with a minor in Mathematics, on a neuroscience PhD track. She serves as the Head of the Outreach team. Outside of the club, she is a Resident Assistant on campus at Alumni Hall, a SPIN instructor at the rec, and a Peer Research Ambassador for the Office of Undergraduate Research (OUR). In addition, she is the chair of outreach for the PNB society, Vice president for the French club and North African Student Association. She also is a Research Assistant at Dr.Sciolino’s laboratory in the PNB department. In her spare time, Malak enjoys playing soccer, the piano and going on adventures.`
+    },
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////
