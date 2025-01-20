@@ -86,8 +86,12 @@ div.column.is-8:first-child {
   right: 0;
   width: 100%;
   height: auto;
-  pointer-events: none;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 80%);
+  transition: ease-out 0.7s;
+  opacity: 1;
+}
+.gradientback:hover {
+  opacity: 0;
 }
 
 /* START blog */
